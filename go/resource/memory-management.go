@@ -2,7 +2,7 @@ package resource
 
 import "fmt"
 
-//1.automate
+//1.using GC
 type Automate struct {
 
 }
