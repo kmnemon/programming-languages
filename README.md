@@ -1,2 +1,2 @@
 # programming-languages
-To learn a new programming language quickly, here we list the core concepts of C++20, Swift, and Go programming languages to assist developers in learning new programming languages efficiently.
+To learn a new programming language quickly, here we list the core concepts of C++20, Swift5.10, and Go1.22 programming languages to assist developers in learning new programming languages efficiently.
