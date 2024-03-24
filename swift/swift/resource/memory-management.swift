@@ -8,14 +8,17 @@
 import Foundation
 
 //1.using ARC
-class A {
+class ARC {
     
 }
 
 func usingARC() {
-    var ref1: A? = A()
-    var ref2: A? = ref1
+    var ref1: ARC? = ARC()
+    var ref2: ARC? = ref1
 
     ref1 = nil
     ref2 = nil
 }
+
+//2.reference cycles
+
