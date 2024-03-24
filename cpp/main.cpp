@@ -1,6 +1,7 @@
 import std;
 import classes;
+import resource;
 
 int main() {
-	B b;
+	Manual m(3);
 }
