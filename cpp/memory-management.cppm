@@ -67,6 +67,31 @@ public:
 };
 
 //3.reference cycles problem
+//no problem
+class BB;
+
+class AA {
+public:
+	BB* bb;
+	~AA() { std::cout << "destruct AA" << std::endl; }
+};
+
+class BB {
+public:
+	AA* aa;
+	~BB() { std::cout << "destruct BB" << std::endl; }
+};
+
+export void abc() {
+	AA* pa = new AA();
+	BB* pb = new BB();
+
+	delete pa;
+	delete pb;
+	//pa, pa destruct
+}
+
+//ARC problem
 class B;
 
 export class A {
@@ -122,3 +147,4 @@ export void weakReference() {
 	cb.reset();
 	//Apartment destruct
 }
+

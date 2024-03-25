@@ -3,5 +3,5 @@ import classes;
 import resource;
 
 int main() {
-	weakReference();
+	abc();
 }
