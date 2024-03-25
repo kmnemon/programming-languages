@@ -20,5 +20,22 @@ func usingARC() {
     ref2 = nil
 }
 
-//2.reference cycles
+//2.reference cycles problem
+class A {
+    var b: B?
+}
+
+class B {
+    var a: A?
+}
+
+func rc(){
+    var ca: A? = A()
+    var cb: B? = B()
+    ca!.b = cb
+    cb!.a = ca
+    
+    ca = nil
+    cb = nil
+}
 
