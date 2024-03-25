@@ -5,7 +5,7 @@ type SomeMethod interface {
 	someMethod() int
 }
 
-type SomeMethodStruct int
+type SomeMethodStruct struct{}
 
 func (i *SomeMethodStruct) someMethod() int {
 	return 1
@@ -28,9 +28,16 @@ type ReadWrite interface {
 // 3.type assertions
 func ta() {
 	var s SomeMethod
-	s = SomeMethodStruct{}
+	s = &SomeMethodStruct{}
 	sms := s.(SomeMethod)
-	
+	sms.someMethod()
 }
 
-//4.type switch
+// 4.type switch
+func ts(x any) {
+	switch x.(type) {
+	case nil:
+	case int, uint:
+	default:
+	}
+}
