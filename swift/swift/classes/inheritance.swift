@@ -7,7 +7,9 @@
 
 import Foundation
 
-//1.access superclass
+//1. init order
+
+//2.access superclass
 class Base1 {
     var b1: Int
 
@@ -54,3 +56,21 @@ class Derived1 : Base1 {
     }
 }
 
+//3.overriding property observers
+class Base2 {
+    var b2: Int = 1
+    final func base2Func() {} //can not override
+    
+    var base2: Int {
+        get { b2 * 2 }
+        set { b2 = newValue * 3 }
+    }
+}
+
+class Derived2 : Base2 {
+    override var base2: Int {
+        didSet {
+            print("b2 is set")
+        }
+    }
+}
