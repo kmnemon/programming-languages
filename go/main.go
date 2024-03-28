@@ -1,17 +1,10 @@
 package main
 
-import "fmt"
-
-type A struct {
-	a *int
-}
+import (
+	"github.com/kmnemon/programming/classes"
+)
 
 func main() {
-	za := A{new(int)}
-	zb := za
-
-	*zb.a = 5
-
-	fmt.Println(*za.a)
+	classes.CC()
 
 }
