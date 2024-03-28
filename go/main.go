@@ -5,6 +5,6 @@ import (
 )
 
 func main() {
-	classes.CC()
+	classes.StructEmbedding()
 
 }
