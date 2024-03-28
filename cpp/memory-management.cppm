@@ -115,7 +115,7 @@ export void rc() {
 
 	ca.reset();
 	cb.reset();
-	//ca and cb never destruct
+	//ca and cb never destruc
 }
 
 //4.weak reference

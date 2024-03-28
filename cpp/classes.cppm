@@ -1,4 +1,5 @@
 export module classes;
 
-export import :hierarchies;
+export import :inheritance;
 export import :interfaces;
+export import :object;
