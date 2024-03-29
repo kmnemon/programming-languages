@@ -19,22 +19,22 @@ private:
 
 
 //2. smart pointers
-class X {};
+class MMX {};
 
 export class SmartPointers {
 public:
 	//represents unique ownership (its destructor destroys its object)
 	void uniquePtr() {
-		std::unique_ptr<X> sp{ new X };
-		std::unique_ptr<X> sp3 = std::make_unique<X>();
+		std::unique_ptr<MMX> sp{ new MMX };
+		std::unique_ptr<MMX> sp3 = std::make_unique<MMX>();
 
-		std::unique_ptr<X> sp2 = std::move(sp);
+		std::unique_ptr<MMX> sp2 = std::move(sp);
 	}
 
 	//represents shared ownership (the last shared pointer¡¯s destructor destroys the object)
 	void sharedPtr() {
-		std::shared_ptr<X> sp = std::make_shared<X>();
-		std::shared_ptr<X> sp2 = sp;
+		std::shared_ptr<MMX> sp = std::make_shared<MMX>();
+		std::shared_ptr<MMX> sp2 = sp;
 
 		sp.reset();
 		sp2.reset();
@@ -42,10 +42,10 @@ public:
 
 	//A pointer to an object owned by a shared_ptr
 	void weakPtr() {
-		std::shared_ptr<X> sharedPtr = std::make_shared<X>();
+		std::shared_ptr<MMX> sharedPtr = std::make_shared<MMX>();
 
 		// Creating a weak pointer from the shared pointer
-		std::weak_ptr<X> weakPtr = sharedPtr;
+		std::weak_ptr<MMX> weakPtr = sharedPtr;
 
 		// Using the weak pointer to access the object
 		if (auto ptr = weakPtr.lock()) {
@@ -92,24 +92,24 @@ export void abc() {
 }
 
 //ARC problem
-class B;
+class MMB;
 
-export class A {
+export class MMA {
 public:
-	std::shared_ptr<B> b;
-	~A() { std::cout << "destruct A" << std::endl; }
+	std::shared_ptr<MMB> b;
+	~MMA() { std::cout << "destruct A" << std::endl; }
 };
 
-export class B {
+export class MMB {
 public:
-	std::shared_ptr<A> a;
-	~B() { std::cout << "destruct B" << std::endl; }
+	std::shared_ptr<MMA> a;
+	~MMB() { std::cout << "destruct B" << std::endl; }
 
 };
 
 export void rc() {
-	std::shared_ptr<A> ca = std::make_shared<A>();
-	std::shared_ptr<B> cb = std::make_shared<B>();
+	std::shared_ptr<MMA> ca = std::make_shared<MMA>();
+	std::shared_ptr<MMB> cb = std::make_shared<MMB>();
 	ca->b = cb;
 	cb->a = ca;
 
