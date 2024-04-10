@@ -1,4 +1,4 @@
-export module classes : interfaces;
+export module object : interfaces;
 
 class Shape {
 public:
