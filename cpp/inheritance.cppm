@@ -1,4 +1,4 @@
-export module classes : inheritance;
+export module object : inheritance;
 
 import std;
 
