@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 func switchCase() {
     let name = "ke"
     
