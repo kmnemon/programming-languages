@@ -22,6 +22,18 @@ class Loop {
         }
     }
     
+    func loop3(){
+        let array: [Any?] = ["abc", 18, nil, "ddd"]
+        
+        for case let .some(data) in array{
+            print(data)
+        }
+        
+        for case let data? in array{
+            print(data)
+        }
+    }
+    
     
     
 }

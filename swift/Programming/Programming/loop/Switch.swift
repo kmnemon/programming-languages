@@ -69,4 +69,40 @@ struct Switch {
         }
     }
     
+    func switchCase6(){
+        let name: String? = "twostraws"
+        let password: String? = "fr0st1es"
+        
+        switch (name, password) {
+        case let (.some(name), .some(password)):
+            print("Hello, \(name) \(password)")
+        case let (.some(name), .none):
+            print("\(name) Please enter a password.")
+        default:
+            print("Who are you?")
+        }
+        
+        switch (name, password) {
+        case let (name?, password?):
+            print("Hello, \(name) \(password)")
+        case let (username?, nil):
+            print("Please enter a password.")
+        default:
+            print("Who are you?")
+        }
+    }
+    
+    func switchCase7(){
+        let age = 30
+        
+        switch age {
+        case 0 ..< 10:
+            print("")
+        case 10 ..< 100:
+            print("")
+        default:
+            print("")
+        }
+    }
+    
 }

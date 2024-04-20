@@ -9,7 +9,7 @@ import XCTest
 
 final class ForeachTests: XCTestCase {
     func testSwichCase() {
-        var l = Loop()
-        l.loop2()
+        var s = Switch()
+        s.switchCase6()
     }
 }

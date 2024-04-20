@@ -19,5 +19,10 @@ func mapFunction() {
     let evensCompactMap = numbers2.compactMap(Int.init)
 }
 
+func lengthOfStrings(strings: [String]) -> [Int] {
+    return strings.map { $0.count }
+}
+
+
 
 

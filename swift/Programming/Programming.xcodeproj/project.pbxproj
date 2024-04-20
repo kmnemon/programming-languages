@@ -21,6 +21,8 @@
 		8A686AA82BD3590700B38E22 /* inheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AA52BD3590700B38E22 /* inheritance.swift */; };
 		8A686AA92BD3590700B38E22 /* interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AA62BD3590700B38E22 /* interfaces.swift */; };
 		8A686AAA2BD3590700B38E22 /* interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AA62BD3590700B38E22 /* interfaces.swift */; };
+		8A686AAD2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AAC2BD3C5F100B38E22 /* ProtocolProgramming.swift */; };
+		8A686AAE2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AAC2BD3C5F100B38E22 /* ProtocolProgramming.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +48,7 @@
 		8A686AA12BD34EE300B38E22 /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
 		8A686AA52BD3590700B38E22 /* inheritance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = inheritance.swift; path = classes/inheritance.swift; sourceTree = SOURCE_ROOT; };
 		8A686AA62BD3590700B38E22 /* interfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = interfaces.swift; path = classes/interfaces.swift; sourceTree = SOURCE_ROOT; };
+		8A686AAC2BD3C5F100B38E22 /* ProtocolProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolProgramming.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,7 @@
 				8A686A842BD32E2100B38E22 /* loop */,
 				8A686A862BD32E2100B38E22 /* resource */,
 				8A686AA42BD358E600B38E22 /* classes */,
+				8A686AAB2BD3C56F00B38E22 /* pop */,
 			);
 			path = Programming;
 			sourceTree = "<group>";
@@ -144,6 +148,14 @@
 				8A686AA62BD3590700B38E22 /* interfaces.swift */,
 			);
 			path = classes;
+			sourceTree = "<group>";
+		};
+		8A686AAB2BD3C56F00B38E22 /* pop */ = {
+			isa = PBXGroup;
+			children = (
+				8A686AAC2BD3C5F100B38E22 /* ProtocolProgramming.swift */,
+			);
+			path = pop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A686AA72BD3590700B38E22 /* inheritance.swift in Sources */,
+				8A686AAD2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
 				8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */,
 				8A686A8A2BD32E2100B38E22 /* MemoryManagement.swift in Sources */,
 				8A686AA92BD3590700B38E22 /* interfaces.swift in Sources */,
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A686AA82BD3590700B38E22 /* inheritance.swift in Sources */,
+				8A686AAE2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
 				8A686A9D2BD3359800B38E22 /* Lambda.swift in Sources */,
 				8A686A9C2BD3354200B38E22 /* Loop.swift in Sources */,
 				8A686AAA2BD3590700B38E22 /* interfaces.swift in Sources */,
