@@ -1,103 +1,105 @@
 package concurrency
 
-import (
-	"image"
-	"sync"
-)
+import "fmt"
 
-//1.channel - monitor goroutine
+// 1.done
+func doneChannel() {
+	done := make(chan struct{})
 
-var deposits = make(chan int) // send amount to deposit
-var balances = make(chan int) // receive balance
+	go func() {
+		fmt.Println("gorountine run~")
+		done <- struct{}{}
+	}()
 
-func Deposit(amount int) { deposits <- amount }
-func Balance() int       { return <-balances }
-func teller() {
-	var balance int // balance is confined to teller goroutine
+	<-done
+	fmt.Println("all goroutine finished")
+}
 
+// 2.pipeline
+func pipeline() {
+	naturals := make(chan int)
+	squares := make(chan int)
+	// Counter
+	go func() {
+		for x := 0; x < 100; x++ {
+			naturals <- x
+		}
+		close(naturals)
+	}()
+	// Squarer
+	go func() {
+		for x := range naturals {
+			squares <- x * x
+		}
+		close(squares)
+	}()
+	// Printer (in main goroutine)
 	for {
+		fmt.Println(<-squares)
+	}
+}
+
+//3.unidirectional channel types
+
+func counter(out chan<- int) {
+	for x := 0; x < 100; x++ {
+		out <- x
+	}
+	close(out)
+}
+
+func squarer(out chan<- int, in <-chan int) {
+	for v := range in {
+		out <- v * v
+	}
+	close(out)
+}
+
+func printer(in <-chan int) {
+	for v := range in {
+		fmt.Println(v)
+	}
+}
+
+func unidirectional() {
+	naturals := make(chan int)
+	squares := make(chan int)
+	go counter(naturals)
+	go squarer(squares, naturals)
+	printer(squares)
+}
+
+// 4.buffered channl
+func buffered() {
+	ch := make(chan string, 3)
+	close(ch)
+}
+
+// 5. Multiplexing with select
+/*
+1.select blocks until one of its cases can proceed.
+2.If multiple cases are ready, one is chosen at random.
+3.A default case, if present, executes immediately if no other case is ready.
+*/
+func multiplexSelect() {
+	ch := make(chan int, 1)
+	for i := 0; i < 10; i++ {
 		select {
-		case amount := <-deposits:
-			balance += amount
-		case balances <- balance:
+		case x := <-ch:
+			fmt.Println(x) // "0" "2" "4" "6" "8"
+		case ch <- i:
 		}
 	}
 }
 
-func init() {
-	go teller() // start the monitor goroutine
-}
+// 6. Cancelled
+var done = make(chan struct{})
 
-//2.channel - serial confinement
-
-type Cake struct{ state string }
-
-func baker(cooked chan<- *Cake) {
-	for {
-		cake := new(Cake)
-		cake.state = "cooked"
-		cooked <- cake // baker never touches this cake again
+func cancelled() bool {
+	select {
+	case <-done:
+		return true
+	default:
+		return false
 	}
-
-}
-
-func icer(iced chan<- *Cake, cooked <-chan *Cake) {
-	for cake := range cooked {
-		cake.state = "iced"
-		iced <- cake // icer never touches this cake again
-	}
-
-}
-
-//3.mutual exclusion
-
-var mu sync.Mutex // guards balance
-var balance int
-
-func Deposit2(amount int) {
-	mu.Lock()
-	balance = balance + amount
-	mu.Unlock()
-
-}
-
-func Balance2() int {
-	mu.Lock()
-	defer mu.Unlock()
-	return balance
-
-}
-
-//4.mutual exclusion - RWMutex
-
-var rwMu sync.RWMutex // guards balance
-var balance3 int
-
-func Deposit3(amount int) {
-	rwMu.Lock()
-	balance = balance3 + amount
-	rwMu.Unlock()
-
-}
-
-func Balance3() int {
-	rwMu.RLock() //readers lock
-	defer rwMu.RUnlock()
-	return balance
-
-}
-
-//RLock允许读取并行，写入和读取完全互斥，多次读取，一次写入
-
-//5.Lazy Initialization - sync.Once
-
-var loadIconsOnce sync.Once
-var icons map[string]image.Image
-
-func loadIcons()
-
-// Concurrency-safe.
-func Icon(name string) image.Image {
-	loadIconsOnce.Do(loadIcons)
-	return icons[name]
 }
