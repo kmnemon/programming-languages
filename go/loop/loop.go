@@ -9,3 +9,9 @@ func loop1() {
 		fmt.Printf("2**%d = %d\n", i, v)
 	}
 }
+
+func loop2() {
+	for i := range 10 {
+		fmt.Println(i)
+	}
+}
