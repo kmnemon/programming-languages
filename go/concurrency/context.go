@@ -3,10 +3,7 @@ package concurrency
 import (
 	"context"
 	"fmt"
-	"strings"
 	"time"
-
-	"github.com/google/uuid"
 )
 
 // 1.context with timeout
@@ -32,20 +29,16 @@ func handle(ctx context.Context, duration time.Duration) {
 
 // 2.context WithValue
 const (
-	KEY = "trace_id"
+	KEY = "trace_id01"
 )
 
 func NewRequestID() string {
-	return strings.Replace(uuid.New().String(), "-", "", -1)
+	return "the game is prefect"
 }
 
 func NewContextWithTraceID() context.Context {
 	ctx := context.WithValue(context.Background(), KEY, NewRequestID())
 	return ctx
-}
-
-func PrintLog(ctx context.Context, message string) {
-	fmt.Printf("%s|info|trace_id=%s|%s", time.Now().Format("2006-01-02 15:04:05"), GetContextValue(ctx, KEY), message)
 }
 
 func GetContextValue(ctx context.Context, k string) string {
@@ -57,5 +50,49 @@ func GetContextValue(ctx context.Context, k string) string {
 }
 
 func ProcessEnter(ctx context.Context) {
-	PrintLog(ctx, "go")
+	fmt.Println(GetContextValue(ctx, KEY))
+}
+
+// 3. context timeout
+func NewContextWithTimeout() (context.Context, context.CancelFunc) {
+	return context.WithTimeout(context.Background(), 3*time.Second)
+}
+func HttpHandler() {
+	ctx, cancel := NewContextWithTimeout()
+	defer cancel()
+	deal(ctx)
+}
+
+func deal(ctx context.Context) {
+	for i := 0; i < 10; i++ {
+		time.Sleep(1 * time.Second)
+		select {
+		case <-ctx.Done():
+			fmt.Println(ctx.Err())
+			return
+		default:
+			fmt.Printf("deal time is %d\n", i)
+		}
+	}
+}
+
+// 4.withcancel
+func Process() {
+	ctx, cancel := context.WithCancel(context.Background())
+	go Speak(ctx)
+	time.Sleep(10 * time.Second)
+	cancel()
+	time.Sleep(1 * time.Second)
+}
+
+func Speak(ctx context.Context) {
+	for range time.Tick(time.Second) {
+		select {
+		case <-ctx.Done():
+			fmt.Println("cancel")
+			return
+		default:
+			fmt.Println("processing...")
+		}
+	}
 }
