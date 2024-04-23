@@ -90,7 +90,7 @@ func Balance3() int {
 var loadIconsOnce sync.Once
 var icons map[string]image.Image
 
-func loadIcons()
+func loadIcons() {}
 
 // Concurrency-safe.
 func Icon(name string) image.Image {
