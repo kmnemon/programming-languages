@@ -42,3 +42,36 @@ func showPhoto2() async {
         print("Unexpected error: \(error).")
     }
 }
+
+//4.asynchronous sequence
+func asynchronousSequence() async{
+    let handle = FileHandle.standardInput
+    do {
+        for try await line in handle.bytes.lines {
+            print(line)
+        }
+    } catch {
+        print(error)
+    }
+}
+
+//5.call asynchronous in parallel
+func callAsynchronousInParallel() async {
+    async let firstPhoto = downloadPhoto(named: "photoNames[0]")
+    async let secondPhoto = downloadPhoto(named: "photoNames[1]")
+    async let thirdPhoto = downloadPhoto(named: "photoNames[2]")
+
+
+    let photos = await [firstPhoto, secondPhoto, thirdPhoto]
+//    show(photos)
+}
+
+func downloadPhoto(named: String) async -> String {
+    return ""
+}
+
+
+//6.Tasks and Task Groups
+func tasks() {
+    
+}

@@ -96,9 +96,9 @@
 		8A686A6C2BD32DB700B38E22 /* Programming */ = {
 			isa = PBXGroup;
 			children = (
+				8A686A6D2BD32DB700B38E22 /* main.swift */,
 				8A686AB32BD6214800B38E22 /* errorhandling */,
 				8A686AAF2BD53C9800B38E22 /* concurrency */,
-				8A686A6D2BD32DB700B38E22 /* main.swift */,
 				8A686A822BD32E2100B38E22 /* functional-programming */,
 				8A686A842BD32E2100B38E22 /* loop */,
 				8A686A862BD32E2100B38E22 /* resource */,
