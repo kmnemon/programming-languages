@@ -11,7 +11,7 @@
 		8A686A882BD32E2100B38E22 /* Loop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A852BD32E2100B38E22 /* Loop.swift */; };
 		8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A832BD32E2100B38E22 /* Lambda.swift */; };
 		8A686A8A2BD32E2100B38E22 /* MemoryManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A872BD32E2100B38E22 /* MemoryManagement.swift */; };
-		8A686A972BD32EB500B38E22 /* ForeachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A962BD32EB500B38E22 /* ForeachTests.swift */; };
+		8A686A972BD32EB500B38E22 /* SwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A962BD32EB500B38E22 /* SwitchTests.swift */; };
 		8A686A9C2BD3354200B38E22 /* Loop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A852BD32E2100B38E22 /* Loop.swift */; };
 		8A686A9D2BD3359800B38E22 /* Lambda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A832BD32E2100B38E22 /* Lambda.swift */; };
 		8A686A9E2BD335FD00B38E22 /* MemoryManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A872BD32E2100B38E22 /* MemoryManagement.swift */; };
@@ -27,6 +27,11 @@
 		8A686AB22BD53D1900B38E22 /* concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB02BD53D1900B38E22 /* concurrency.swift */; };
 		8A686AB52BD6216100B38E22 /* exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB42BD6216100B38E22 /* exception.swift */; };
 		8A686AB62BD6216100B38E22 /* exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB42BD6216100B38E22 /* exception.swift */; };
+		8AB12B632BF36802002CADFD /* error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B622BF36802002CADFD /* error.swift */; };
+		8AB12B6D2BF375C6002CADFD /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B6C2BF375C6002CADFD /* Lazy.swift */; };
+		8AB12B6E2BF375C6002CADFD /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B6C2BF375C6002CADFD /* Lazy.swift */; };
+		8AB12B702BF375CF002CADFD /* LazyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B6F2BF375CF002CADFD /* LazyTests.swift */; };
+		8AB12B712BF375CF002CADFD /* LazyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B6F2BF375CF002CADFD /* LazyTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,13 +53,16 @@
 		8A686A852BD32E2100B38E22 /* Loop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loop.swift; sourceTree = "<group>"; };
 		8A686A872BD32E2100B38E22 /* MemoryManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryManagement.swift; sourceTree = "<group>"; };
 		8A686A8F2BD32E7400B38E22 /* ProgrammingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgrammingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A686A962BD32EB500B38E22 /* ForeachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeachTests.swift; sourceTree = "<group>"; };
+		8A686A962BD32EB500B38E22 /* SwitchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTests.swift; sourceTree = "<group>"; };
 		8A686AA12BD34EE300B38E22 /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
 		8A686AA52BD3590700B38E22 /* inheritance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = inheritance.swift; path = classes/inheritance.swift; sourceTree = SOURCE_ROOT; };
 		8A686AA62BD3590700B38E22 /* interfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = interfaces.swift; path = classes/interfaces.swift; sourceTree = SOURCE_ROOT; };
 		8A686AAC2BD3C5F100B38E22 /* ProtocolProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolProgramming.swift; sourceTree = "<group>"; };
 		8A686AB02BD53D1900B38E22 /* concurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = concurrency.swift; sourceTree = "<group>"; };
 		8A686AB42BD6216100B38E22 /* exception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exception.swift; sourceTree = "<group>"; };
+		8AB12B622BF36802002CADFD /* error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = error.swift; sourceTree = "<group>"; };
+		8AB12B6C2BF375C6002CADFD /* Lazy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lazy.swift; sourceTree = "<group>"; };
+		8AB12B6F2BF375CF002CADFD /* LazyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,13 +105,14 @@
 			isa = PBXGroup;
 			children = (
 				8A686A6D2BD32DB700B38E22 /* main.swift */,
+				8A686A842BD32E2100B38E22 /* basic */,
 				8A686AB32BD6214800B38E22 /* errorhandling */,
 				8A686AAF2BD53C9800B38E22 /* concurrency */,
 				8A686A822BD32E2100B38E22 /* functional-programming */,
-				8A686A842BD32E2100B38E22 /* loop */,
 				8A686A862BD32E2100B38E22 /* resource */,
 				8A686AA42BD358E600B38E22 /* classes */,
 				8A686AAB2BD3C56F00B38E22 /* pop */,
+				8AB12B642BF3728B002CADFD /* performance */,
 			);
 			path = Programming;
 			sourceTree = "<group>";
@@ -116,13 +125,13 @@
 			path = "functional-programming";
 			sourceTree = "<group>";
 		};
-		8A686A842BD32E2100B38E22 /* loop */ = {
+		8A686A842BD32E2100B38E22 /* basic */ = {
 			isa = PBXGroup;
 			children = (
 				8A686A852BD32E2100B38E22 /* Loop.swift */,
 				8A686AA12BD34EE300B38E22 /* Switch.swift */,
 			);
-			path = loop;
+			path = basic;
 			sourceTree = "<group>";
 		};
 		8A686A862BD32E2100B38E22 /* resource */ = {
@@ -136,17 +145,18 @@
 		8A686A902BD32E7400B38E22 /* ProgrammingTests */ = {
 			isa = PBXGroup;
 			children = (
-				8A686A982BD32EBC00B38E22 /* loop */,
+				8A686A982BD32EBC00B38E22 /* basic */,
+				8AB12B672BF37336002CADFD /* performance */,
 			);
 			path = ProgrammingTests;
 			sourceTree = "<group>";
 		};
-		8A686A982BD32EBC00B38E22 /* loop */ = {
+		8A686A982BD32EBC00B38E22 /* basic */ = {
 			isa = PBXGroup;
 			children = (
-				8A686A962BD32EB500B38E22 /* ForeachTests.swift */,
+				8A686A962BD32EB500B38E22 /* SwitchTests.swift */,
 			);
-			path = loop;
+			path = basic;
 			sourceTree = "<group>";
 		};
 		8A686AA42BD358E600B38E22 /* classes */ = {
@@ -178,8 +188,25 @@
 			isa = PBXGroup;
 			children = (
 				8A686AB42BD6216100B38E22 /* exception.swift */,
+				8AB12B622BF36802002CADFD /* error.swift */,
 			);
 			path = errorhandling;
+			sourceTree = "<group>";
+		};
+		8AB12B642BF3728B002CADFD /* performance */ = {
+			isa = PBXGroup;
+			children = (
+				8AB12B6C2BF375C6002CADFD /* Lazy.swift */,
+			);
+			path = performance;
+			sourceTree = "<group>";
+		};
+		8AB12B672BF37336002CADFD /* performance */ = {
+			isa = PBXGroup;
+			children = (
+				8AB12B6F2BF375CF002CADFD /* LazyTests.swift */,
+			);
+			path = performance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,8 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A686AA72BD3590700B38E22 /* inheritance.swift in Sources */,
+				8AB12B6D2BF375C6002CADFD /* Lazy.swift in Sources */,
 				8A686AAD2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
 				8A686AB12BD53D1900B38E22 /* concurrency.swift in Sources */,
+				8AB12B632BF36802002CADFD /* error.swift in Sources */,
 				8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */,
 				8A686A8A2BD32E2100B38E22 /* MemoryManagement.swift in Sources */,
 				8A686AB52BD6216100B38E22 /* exception.swift in Sources */,
@@ -281,6 +310,7 @@
 				8A686A882BD32E2100B38E22 /* Loop.swift in Sources */,
 				8A686A6E2BD32DB700B38E22 /* main.swift in Sources */,
 				8A686AA22BD34EE300B38E22 /* Switch.swift in Sources */,
+				8AB12B702BF375CF002CADFD /* LazyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,9 +323,11 @@
 				8A686AB22BD53D1900B38E22 /* concurrency.swift in Sources */,
 				8A686A9D2BD3359800B38E22 /* Lambda.swift in Sources */,
 				8A686A9C2BD3354200B38E22 /* Loop.swift in Sources */,
+				8AB12B6E2BF375C6002CADFD /* Lazy.swift in Sources */,
 				8A686AB62BD6216100B38E22 /* exception.swift in Sources */,
 				8A686AAA2BD3590700B38E22 /* interfaces.swift in Sources */,
-				8A686A972BD32EB500B38E22 /* ForeachTests.swift in Sources */,
+				8A686A972BD32EB500B38E22 /* SwitchTests.swift in Sources */,
+				8AB12B712BF375CF002CADFD /* LazyTests.swift in Sources */,
 				8A686A9E2BD335FD00B38E22 /* MemoryManagement.swift in Sources */,
 				8A686AA32BD34EE300B38E22 /* Switch.swift in Sources */,
 			);

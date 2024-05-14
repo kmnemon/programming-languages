@@ -18,3 +18,22 @@ func availableRainyWeekendPhotos() -> Result<[String], Error> {
         try listDownloadedPhotos(inGallery: "A Rainy Weekend")
     }
 }
+
+//2.Try
+func listDownloaded() throws -> Int {
+    return  1
+}
+
+func handleErrorWithTry() {
+    do {
+        var a = try listDownloaded()
+    }
+    catch {
+        
+    }
+    
+    var b = try? listDownloaded()
+    
+    var c = try! listDownloaded()
+    
+}

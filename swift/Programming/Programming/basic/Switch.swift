@@ -8,7 +8,7 @@
 import Foundation
 
 struct Switch {
-    func switchCase1() {
+    static func switchCase1() {
         let name = "ke"
         
         switch name {
@@ -96,7 +96,7 @@ struct Switch {
         let age = 30
         
         switch age {
-        case 0 ..< 10:
+        case 0 ..< 18:
             print("")
         case 10 ..< 100:
             print("")
@@ -104,5 +104,51 @@ struct Switch {
             print("")
         }
     }
+    
+    enum WeatherType {
+        case Cloudy(coverage: Int)
+        case Sunny
+        case Windy
+    }
+    
+    static func enumSwitch() {
+        let today = WeatherType.Cloudy(coverage: 0)
+        
+        switch today {
+        case .Cloudy(let coverage) where coverage == 0:
+            print("You must live in the Death Valley")
+        case .Cloudy(let coverage) where (1...99).contains(coverage):
+            print("It's Cloudy \(coverage)")
+        case .Cloudy(let coverage) where coverage > 200:
+            print("It's Cloudy 100 \(coverage)")
+        case .Sunny:
+            print("It's Sunny")
+        case .Windy:
+            print("It's Windy")
+        default:
+            print("dufault")
+        }
+    }
+    
+    class View{}
+    class Button: View{}
+    
+    static func switchInherit() {
+        let UI: Any = Button()
+        
+        switch UI {
+        case is Button:
+            print("Found Button")
+        case is View:
+            print("Found View")
+        default:
+            print("Found Something else")
+            
+        }
+        
+        
+    }
+    
+    
     
 }
