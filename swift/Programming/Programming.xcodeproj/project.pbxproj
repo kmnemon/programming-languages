@@ -17,21 +17,27 @@
 		8A686A9E2BD335FD00B38E22 /* MemoryManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A872BD32E2100B38E22 /* MemoryManagement.swift */; };
 		8A686AA22BD34EE300B38E22 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AA12BD34EE300B38E22 /* Switch.swift */; };
 		8A686AA32BD34EE300B38E22 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AA12BD34EE300B38E22 /* Switch.swift */; };
-		8A686AA72BD3590700B38E22 /* inheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AA52BD3590700B38E22 /* inheritance.swift */; };
-		8A686AA82BD3590700B38E22 /* inheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AA52BD3590700B38E22 /* inheritance.swift */; };
-		8A686AA92BD3590700B38E22 /* interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AA62BD3590700B38E22 /* interfaces.swift */; };
-		8A686AAA2BD3590700B38E22 /* interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AA62BD3590700B38E22 /* interfaces.swift */; };
+		8A686AA72BD3590700B38E22 /* Inheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AA52BD3590700B38E22 /* Inheritance.swift */; };
+		8A686AA82BD3590700B38E22 /* Inheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AA52BD3590700B38E22 /* Inheritance.swift */; };
+		8A686AA92BD3590700B38E22 /* Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AA62BD3590700B38E22 /* Interfaces.swift */; };
+		8A686AAA2BD3590700B38E22 /* Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AA62BD3590700B38E22 /* Interfaces.swift */; };
 		8A686AAD2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AAC2BD3C5F100B38E22 /* ProtocolProgramming.swift */; };
 		8A686AAE2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AAC2BD3C5F100B38E22 /* ProtocolProgramming.swift */; };
-		8A686AB12BD53D1900B38E22 /* concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB02BD53D1900B38E22 /* concurrency.swift */; };
-		8A686AB22BD53D1900B38E22 /* concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB02BD53D1900B38E22 /* concurrency.swift */; };
-		8A686AB52BD6216100B38E22 /* exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB42BD6216100B38E22 /* exception.swift */; };
-		8A686AB62BD6216100B38E22 /* exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB42BD6216100B38E22 /* exception.swift */; };
-		8AB12B632BF36802002CADFD /* error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B622BF36802002CADFD /* error.swift */; };
+		8A686AB12BD53D1900B38E22 /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB02BD53D1900B38E22 /* Concurrency.swift */; };
+		8A686AB22BD53D1900B38E22 /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB02BD53D1900B38E22 /* Concurrency.swift */; };
+		8A686AB52BD6216100B38E22 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB42BD6216100B38E22 /* Exception.swift */; };
+		8A686AB62BD6216100B38E22 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB42BD6216100B38E22 /* Exception.swift */; };
+		8AB12B632BF36802002CADFD /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B622BF36802002CADFD /* Error.swift */; };
 		8AB12B6D2BF375C6002CADFD /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B6C2BF375C6002CADFD /* Lazy.swift */; };
 		8AB12B6E2BF375C6002CADFD /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B6C2BF375C6002CADFD /* Lazy.swift */; };
 		8AB12B702BF375CF002CADFD /* LazyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B6F2BF375CF002CADFD /* LazyTests.swift */; };
 		8AB12B712BF375CF002CADFD /* LazyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B6F2BF375CF002CADFD /* LazyTests.swift */; };
+		8AB12B732BF396F8002CADFD /* StructType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B722BF396F8002CADFD /* StructType.swift */; };
+		8AB12B742BF396F8002CADFD /* StructType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B722BF396F8002CADFD /* StructType.swift */; };
+		8AB12B772BF3974C002CADFD /* StructTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B762BF3974C002CADFD /* StructTypeTests.swift */; };
+		8AB12B782BF3974C002CADFD /* StructTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B762BF3974C002CADFD /* StructTypeTests.swift */; };
+		8AB12B7A2BF3AA4A002CADFD /* Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B792BF3AA4A002CADFD /* Closure.swift */; };
+		8AB12B7B2BF3AA4A002CADFD /* Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B792BF3AA4A002CADFD /* Closure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,14 +61,17 @@
 		8A686A8F2BD32E7400B38E22 /* ProgrammingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgrammingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A686A962BD32EB500B38E22 /* SwitchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTests.swift; sourceTree = "<group>"; };
 		8A686AA12BD34EE300B38E22 /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
-		8A686AA52BD3590700B38E22 /* inheritance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = inheritance.swift; path = classes/inheritance.swift; sourceTree = SOURCE_ROOT; };
-		8A686AA62BD3590700B38E22 /* interfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = interfaces.swift; path = classes/interfaces.swift; sourceTree = SOURCE_ROOT; };
+		8A686AA52BD3590700B38E22 /* Inheritance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Inheritance.swift; path = classes/Inheritance.swift; sourceTree = SOURCE_ROOT; };
+		8A686AA62BD3590700B38E22 /* Interfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Interfaces.swift; path = classes/Interfaces.swift; sourceTree = SOURCE_ROOT; };
 		8A686AAC2BD3C5F100B38E22 /* ProtocolProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolProgramming.swift; sourceTree = "<group>"; };
-		8A686AB02BD53D1900B38E22 /* concurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = concurrency.swift; sourceTree = "<group>"; };
-		8A686AB42BD6216100B38E22 /* exception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exception.swift; sourceTree = "<group>"; };
-		8AB12B622BF36802002CADFD /* error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = error.swift; sourceTree = "<group>"; };
+		8A686AB02BD53D1900B38E22 /* Concurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concurrency.swift; sourceTree = "<group>"; };
+		8A686AB42BD6216100B38E22 /* Exception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exception.swift; sourceTree = "<group>"; };
+		8AB12B622BF36802002CADFD /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		8AB12B6C2BF375C6002CADFD /* Lazy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lazy.swift; sourceTree = "<group>"; };
 		8AB12B6F2BF375CF002CADFD /* LazyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyTests.swift; sourceTree = "<group>"; };
+		8AB12B722BF396F8002CADFD /* StructType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructType.swift; sourceTree = "<group>"; };
+		8AB12B762BF3974C002CADFD /* StructTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructTypeTests.swift; sourceTree = "<group>"; };
+		8AB12B792BF3AA4A002CADFD /* Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				8A686A832BD32E2100B38E22 /* Lambda.swift */,
+				8AB12B792BF3AA4A002CADFD /* Closure.swift */,
 			);
 			path = "functional-programming";
 			sourceTree = "<group>";
@@ -145,6 +155,7 @@
 		8A686A902BD32E7400B38E22 /* ProgrammingTests */ = {
 			isa = PBXGroup;
 			children = (
+				8AB12B752BF3973A002CADFD /* classes */,
 				8A686A982BD32EBC00B38E22 /* basic */,
 				8AB12B672BF37336002CADFD /* performance */,
 			);
@@ -162,8 +173,9 @@
 		8A686AA42BD358E600B38E22 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				8A686AA52BD3590700B38E22 /* inheritance.swift */,
-				8A686AA62BD3590700B38E22 /* interfaces.swift */,
+				8A686AA52BD3590700B38E22 /* Inheritance.swift */,
+				8A686AA62BD3590700B38E22 /* Interfaces.swift */,
+				8AB12B722BF396F8002CADFD /* StructType.swift */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -179,7 +191,7 @@
 		8A686AAF2BD53C9800B38E22 /* concurrency */ = {
 			isa = PBXGroup;
 			children = (
-				8A686AB02BD53D1900B38E22 /* concurrency.swift */,
+				8A686AB02BD53D1900B38E22 /* Concurrency.swift */,
 			);
 			path = concurrency;
 			sourceTree = "<group>";
@@ -187,8 +199,8 @@
 		8A686AB32BD6214800B38E22 /* errorhandling */ = {
 			isa = PBXGroup;
 			children = (
-				8A686AB42BD6216100B38E22 /* exception.swift */,
-				8AB12B622BF36802002CADFD /* error.swift */,
+				8A686AB42BD6216100B38E22 /* Exception.swift */,
+				8AB12B622BF36802002CADFD /* Error.swift */,
 			);
 			path = errorhandling;
 			sourceTree = "<group>";
@@ -207,6 +219,14 @@
 				8AB12B6F2BF375CF002CADFD /* LazyTests.swift */,
 			);
 			path = performance;
+			sourceTree = "<group>";
+		};
+		8AB12B752BF3973A002CADFD /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				8AB12B762BF3974C002CADFD /* StructTypeTests.swift */,
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,17 +318,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A686AA72BD3590700B38E22 /* inheritance.swift in Sources */,
+				8A686AA72BD3590700B38E22 /* Inheritance.swift in Sources */,
 				8AB12B6D2BF375C6002CADFD /* Lazy.swift in Sources */,
 				8A686AAD2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
-				8A686AB12BD53D1900B38E22 /* concurrency.swift in Sources */,
-				8AB12B632BF36802002CADFD /* error.swift in Sources */,
+				8A686AB12BD53D1900B38E22 /* Concurrency.swift in Sources */,
+				8AB12B732BF396F8002CADFD /* StructType.swift in Sources */,
+				8AB12B7A2BF3AA4A002CADFD /* Closure.swift in Sources */,
+				8AB12B632BF36802002CADFD /* Error.swift in Sources */,
 				8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */,
 				8A686A8A2BD32E2100B38E22 /* MemoryManagement.swift in Sources */,
-				8A686AB52BD6216100B38E22 /* exception.swift in Sources */,
-				8A686AA92BD3590700B38E22 /* interfaces.swift in Sources */,
+				8A686AB52BD6216100B38E22 /* Exception.swift in Sources */,
+				8A686AA92BD3590700B38E22 /* Interfaces.swift in Sources */,
 				8A686A882BD32E2100B38E22 /* Loop.swift in Sources */,
 				8A686A6E2BD32DB700B38E22 /* main.swift in Sources */,
+				8AB12B772BF3974C002CADFD /* StructTypeTests.swift in Sources */,
 				8A686AA22BD34EE300B38E22 /* Switch.swift in Sources */,
 				8AB12B702BF375CF002CADFD /* LazyTests.swift in Sources */,
 			);
@@ -318,15 +341,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A686AA82BD3590700B38E22 /* inheritance.swift in Sources */,
+				8A686AA82BD3590700B38E22 /* Inheritance.swift in Sources */,
 				8A686AAE2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
-				8A686AB22BD53D1900B38E22 /* concurrency.swift in Sources */,
+				8AB12B7B2BF3AA4A002CADFD /* Closure.swift in Sources */,
+				8A686AB22BD53D1900B38E22 /* Concurrency.swift in Sources */,
 				8A686A9D2BD3359800B38E22 /* Lambda.swift in Sources */,
+				8AB12B782BF3974C002CADFD /* StructTypeTests.swift in Sources */,
 				8A686A9C2BD3354200B38E22 /* Loop.swift in Sources */,
 				8AB12B6E2BF375C6002CADFD /* Lazy.swift in Sources */,
-				8A686AB62BD6216100B38E22 /* exception.swift in Sources */,
-				8A686AAA2BD3590700B38E22 /* interfaces.swift in Sources */,
+				8A686AB62BD6216100B38E22 /* Exception.swift in Sources */,
+				8A686AAA2BD3590700B38E22 /* Interfaces.swift in Sources */,
 				8A686A972BD32EB500B38E22 /* SwitchTests.swift in Sources */,
+				8AB12B742BF396F8002CADFD /* StructType.swift in Sources */,
 				8AB12B712BF375CF002CADFD /* LazyTests.swift in Sources */,
 				8A686A9E2BD335FD00B38E22 /* MemoryManagement.swift in Sources */,
 				8A686AA32BD34EE300B38E22 /* Switch.swift in Sources */,

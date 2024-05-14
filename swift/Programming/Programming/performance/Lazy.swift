@@ -15,4 +15,19 @@ class X{
 
 class Lazy {
     lazy var l = "Hello \(X())"
+    
+    func fibonacci(_ num: Int) -> Int {
+        if num < 2 {
+            return num
+        } else {
+            return fibonacci(num - 1) + fibonacci(num - 2)
+        }
+    }
+    
+    func calcFibonacci() {
+        let fibonacciSequence = (0...199).lazy.map(fibonacci)
+        print(fibonacciSequence)
+    }
+    
+
 }
