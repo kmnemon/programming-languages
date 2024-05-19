@@ -27,6 +27,7 @@
 		8A686AB22BD53D1900B38E22 /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB02BD53D1900B38E22 /* Concurrency.swift */; };
 		8A686AB52BD6216100B38E22 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB42BD6216100B38E22 /* Exception.swift */; };
 		8A686AB62BD6216100B38E22 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB42BD6216100B38E22 /* Exception.swift */; };
+		8A6EA1B52BFABF39005E1293 /* FunctionGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6EA1B42BFABF39005E1293 /* FunctionGeneric.swift */; };
 		8AB12B632BF36802002CADFD /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B622BF36802002CADFD /* Error.swift */; };
 		8AB12B6D2BF375C6002CADFD /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B6C2BF375C6002CADFD /* Lazy.swift */; };
 		8AB12B6E2BF375C6002CADFD /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B6C2BF375C6002CADFD /* Lazy.swift */; };
@@ -38,6 +39,10 @@
 		8AB12B782BF3974C002CADFD /* StructTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B762BF3974C002CADFD /* StructTypeTests.swift */; };
 		8AB12B7A2BF3AA4A002CADFD /* Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B792BF3AA4A002CADFD /* Closure.swift */; };
 		8AB12B7B2BF3AA4A002CADFD /* Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B792BF3AA4A002CADFD /* Closure.swift */; };
+		8AB12B7D2BF7A167002CADFD /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B7C2BF7A167002CADFD /* Collection.swift */; };
+		8AB12B7E2BF7A167002CADFD /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B7C2BF7A167002CADFD /* Collection.swift */; };
+		8AB12B802BF7A237002CADFD /* TypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B7F2BF7A237002CADFD /* TypeTests.swift */; };
+		8AB12B812BF7A237002CADFD /* TypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B7F2BF7A237002CADFD /* TypeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,12 +71,15 @@
 		8A686AAC2BD3C5F100B38E22 /* ProtocolProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolProgramming.swift; sourceTree = "<group>"; };
 		8A686AB02BD53D1900B38E22 /* Concurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concurrency.swift; sourceTree = "<group>"; };
 		8A686AB42BD6216100B38E22 /* Exception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exception.swift; sourceTree = "<group>"; };
+		8A6EA1B42BFABF39005E1293 /* FunctionGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionGeneric.swift; sourceTree = "<group>"; };
 		8AB12B622BF36802002CADFD /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		8AB12B6C2BF375C6002CADFD /* Lazy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lazy.swift; sourceTree = "<group>"; };
 		8AB12B6F2BF375CF002CADFD /* LazyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyTests.swift; sourceTree = "<group>"; };
 		8AB12B722BF396F8002CADFD /* StructType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructType.swift; sourceTree = "<group>"; };
 		8AB12B762BF3974C002CADFD /* StructTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructTypeTests.swift; sourceTree = "<group>"; };
 		8AB12B792BF3AA4A002CADFD /* Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closure.swift; sourceTree = "<group>"; };
+		8AB12B7C2BF7A167002CADFD /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		8AB12B7F2BF7A237002CADFD /* TypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,7 @@
 		8A686A6C2BD32DB700B38E22 /* Programming */ = {
 			isa = PBXGroup;
 			children = (
+				8A6EA1B32BFABE9C005E1293 /* generic */,
 				8A686A6D2BD32DB700B38E22 /* main.swift */,
 				8A686A842BD32E2100B38E22 /* basic */,
 				8A686AB32BD6214800B38E22 /* errorhandling */,
@@ -140,6 +149,7 @@
 			children = (
 				8A686A852BD32E2100B38E22 /* Loop.swift */,
 				8A686AA12BD34EE300B38E22 /* Switch.swift */,
+				8AB12B7C2BF7A167002CADFD /* Collection.swift */,
 			);
 			path = basic;
 			sourceTree = "<group>";
@@ -166,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				8A686A962BD32EB500B38E22 /* SwitchTests.swift */,
+				8AB12B7F2BF7A237002CADFD /* TypeTests.swift */,
 			);
 			path = basic;
 			sourceTree = "<group>";
@@ -203,6 +214,14 @@
 				8AB12B622BF36802002CADFD /* Error.swift */,
 			);
 			path = errorhandling;
+			sourceTree = "<group>";
+		};
+		8A6EA1B32BFABE9C005E1293 /* generic */ = {
+			isa = PBXGroup;
+			children = (
+				8A6EA1B42BFABF39005E1293 /* FunctionGeneric.swift */,
+			);
+			path = generic;
 			sourceTree = "<group>";
 		};
 		8AB12B642BF3728B002CADFD /* performance */ = {
@@ -321,11 +340,14 @@
 				8A686AA72BD3590700B38E22 /* Inheritance.swift in Sources */,
 				8AB12B6D2BF375C6002CADFD /* Lazy.swift in Sources */,
 				8A686AAD2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
+				8AB12B802BF7A237002CADFD /* TypeTests.swift in Sources */,
+				8AB12B7D2BF7A167002CADFD /* Collection.swift in Sources */,
 				8A686AB12BD53D1900B38E22 /* Concurrency.swift in Sources */,
 				8AB12B732BF396F8002CADFD /* StructType.swift in Sources */,
 				8AB12B7A2BF3AA4A002CADFD /* Closure.swift in Sources */,
 				8AB12B632BF36802002CADFD /* Error.swift in Sources */,
 				8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */,
+				8A6EA1B52BFABF39005E1293 /* FunctionGeneric.swift in Sources */,
 				8A686A8A2BD32E2100B38E22 /* MemoryManagement.swift in Sources */,
 				8A686AB52BD6216100B38E22 /* Exception.swift in Sources */,
 				8A686AA92BD3590700B38E22 /* Interfaces.swift in Sources */,
@@ -348,10 +370,12 @@
 				8A686A9D2BD3359800B38E22 /* Lambda.swift in Sources */,
 				8AB12B782BF3974C002CADFD /* StructTypeTests.swift in Sources */,
 				8A686A9C2BD3354200B38E22 /* Loop.swift in Sources */,
+				8AB12B7E2BF7A167002CADFD /* Collection.swift in Sources */,
 				8AB12B6E2BF375C6002CADFD /* Lazy.swift in Sources */,
 				8A686AB62BD6216100B38E22 /* Exception.swift in Sources */,
 				8A686AAA2BD3590700B38E22 /* Interfaces.swift in Sources */,
 				8A686A972BD32EB500B38E22 /* SwitchTests.swift in Sources */,
+				8AB12B812BF7A237002CADFD /* TypeTests.swift in Sources */,
 				8AB12B742BF396F8002CADFD /* StructType.swift in Sources */,
 				8AB12B712BF375CF002CADFD /* LazyTests.swift in Sources */,
 				8A686A9E2BD335FD00B38E22 /* MemoryManagement.swift in Sources */,

@@ -15,4 +15,10 @@ final class StructTypeTests: XCTestCase {
         var b: StructTypeA.StructTypeB = StructTypeA.StructTypeB()
         print(b.b ?? 20)
     }
+    
+    func testCopyMeaning() {
+        var c = CopyMeaning(a: 2)
+        canInOutHasReferenceMeaning(copyOne: &c)
+        print(c.a)
+    }
 }

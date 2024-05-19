@@ -14,3 +14,10 @@ struct StructTypeA {
     }
 }
 
+struct CopyMeaning {
+    var a: Int
+}
+
+func canInOutHasReferenceMeaning(copyOne: inout CopyMeaning) {
+    copyOne.a = 10
+}
