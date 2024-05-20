@@ -28,6 +28,7 @@
 		8A686AB52BD6216100B38E22 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB42BD6216100B38E22 /* Exception.swift */; };
 		8A686AB62BD6216100B38E22 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB42BD6216100B38E22 /* Exception.swift */; };
 		8A6EA1B52BFABF39005E1293 /* FunctionGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6EA1B42BFABF39005E1293 /* FunctionGeneric.swift */; };
+		8A6EA1B72BFB0833005E1293 /* ClassGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6EA1B62BFB0833005E1293 /* ClassGeneric.swift */; };
 		8AB12B632BF36802002CADFD /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B622BF36802002CADFD /* Error.swift */; };
 		8AB12B6D2BF375C6002CADFD /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B6C2BF375C6002CADFD /* Lazy.swift */; };
 		8AB12B6E2BF375C6002CADFD /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B6C2BF375C6002CADFD /* Lazy.swift */; };
@@ -72,6 +73,7 @@
 		8A686AB02BD53D1900B38E22 /* Concurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concurrency.swift; sourceTree = "<group>"; };
 		8A686AB42BD6216100B38E22 /* Exception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exception.swift; sourceTree = "<group>"; };
 		8A6EA1B42BFABF39005E1293 /* FunctionGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionGeneric.swift; sourceTree = "<group>"; };
+		8A6EA1B62BFB0833005E1293 /* ClassGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassGeneric.swift; sourceTree = "<group>"; };
 		8AB12B622BF36802002CADFD /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		8AB12B6C2BF375C6002CADFD /* Lazy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lazy.swift; sourceTree = "<group>"; };
 		8AB12B6F2BF375CF002CADFD /* LazyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyTests.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				8A6EA1B42BFABF39005E1293 /* FunctionGeneric.swift */,
+				8A6EA1B62BFB0833005E1293 /* ClassGeneric.swift */,
 			);
 			path = generic;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */,
 				8A6EA1B52BFABF39005E1293 /* FunctionGeneric.swift in Sources */,
 				8A686A8A2BD32E2100B38E22 /* MemoryManagement.swift in Sources */,
+				8A6EA1B72BFB0833005E1293 /* ClassGeneric.swift in Sources */,
 				8A686AB52BD6216100B38E22 /* Exception.swift in Sources */,
 				8A686AA92BD3590700B38E22 /* Interfaces.swift in Sources */,
 				8A686A882BD32E2100B38E22 /* Loop.swift in Sources */,
