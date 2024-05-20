@@ -19,5 +19,5 @@ struct CopyMeaning {
 }
 
 func canInOutHasReferenceMeaning(copyOne: inout CopyMeaning) {
-    copyOne.a = 10
+    copy
 }
