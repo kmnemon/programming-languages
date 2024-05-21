@@ -45,6 +45,7 @@
 		8AB12B7E2BF7A167002CADFD /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B7C2BF7A167002CADFD /* Collection.swift */; };
 		8AB12B802BF7A237002CADFD /* TypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B7F2BF7A237002CADFD /* TypeTests.swift */; };
 		8AB12B812BF7A237002CADFD /* TypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B7F2BF7A237002CADFD /* TypeTests.swift */; };
+		8AD18D182BFCDF2400080AF3 /* ProtocolGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D172BFCDF2400080AF3 /* ProtocolGeneric.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -84,6 +85,7 @@
 		8AB12B792BF3AA4A002CADFD /* Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closure.swift; sourceTree = "<group>"; };
 		8AB12B7C2BF7A167002CADFD /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		8AB12B7F2BF7A237002CADFD /* TypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTests.swift; sourceTree = "<group>"; };
+		8AD18D172BFCDF2400080AF3 /* ProtocolGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolGeneric.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 			children = (
 				8A6EA1B42BFABF39005E1293 /* FunctionGeneric.swift */,
 				8A6EA1B62BFB0833005E1293 /* ClassGeneric.swift */,
+				8AD18D172BFCDF2400080AF3 /* ProtocolGeneric.swift */,
 			);
 			path = generic;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				8A686A8A2BD32E2100B38E22 /* MemoryManagement.swift in Sources */,
 				8A6EA1B72BFB0833005E1293 /* ClassGeneric.swift in Sources */,
 				8A686AB52BD6216100B38E22 /* Exception.swift in Sources */,
+				8AD18D182BFCDF2400080AF3 /* ProtocolGeneric.swift in Sources */,
 				8A686AA92BD3590700B38E22 /* Interfaces.swift in Sources */,
 				8A686A882BD32E2100B38E22 /* Loop.swift in Sources */,
 				8A686A6E2BD32DB700B38E22 /* main.swift in Sources */,
