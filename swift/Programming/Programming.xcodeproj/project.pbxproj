@@ -46,6 +46,7 @@
 		8AB12B802BF7A237002CADFD /* TypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B7F2BF7A237002CADFD /* TypeTests.swift */; };
 		8AB12B812BF7A237002CADFD /* TypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B7F2BF7A237002CADFD /* TypeTests.swift */; };
 		8AD18D182BFCDF2400080AF3 /* ProtocolGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D172BFCDF2400080AF3 /* ProtocolGeneric.swift */; };
+		8AD18D1A2BFD593B00080AF3 /* VariadicFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D192BFD593B00080AF3 /* VariadicFunction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,6 +87,7 @@
 		8AB12B7C2BF7A167002CADFD /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		8AB12B7F2BF7A237002CADFD /* TypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTests.swift; sourceTree = "<group>"; };
 		8AD18D172BFCDF2400080AF3 /* ProtocolGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolGeneric.swift; sourceTree = "<group>"; };
+		8AD18D192BFD593B00080AF3 /* VariadicFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariadicFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				8A686AA12BD34EE300B38E22 /* Switch.swift */,
 				8AB12B7C2BF7A167002CADFD /* Collection.swift */,
 				8A6EA1B82BFB1CAC005E1293 /* ValueReference.swift */,
+				8AD18D192BFD593B00080AF3 /* VariadicFunction.swift */,
 			);
 			path = basic;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				8AB12B772BF3974C002CADFD /* StructTypeTests.swift in Sources */,
 				8A686AA22BD34EE300B38E22 /* Switch.swift in Sources */,
 				8AB12B702BF375CF002CADFD /* LazyTests.swift in Sources */,
+				8AD18D1A2BFD593B00080AF3 /* VariadicFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

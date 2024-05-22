@@ -8,13 +8,34 @@
 import Foundation
 
 class Closure {
-    func closureExample() {
+    func closureExample1() {
+        let greet = {
+            print("hellow")
+        }
+        
+
+    }
+    
+    func runSomeClosure(closure: () -> Void) {
+        closure()
+    }
+    //runSomeClosure(greetPerson)
+    
+    func closureExample2() {
         let greet: (String) -> String = { name in
             return "Hello, \(name)!"
         }
+        
+        let greet1 = { (name: String) in
+            return "Hello, \(name)!"
+        }
+        
+        var greetPerson = { [unowned self] (name: String)  in
+            print("Hello, \(name)!")
+        }
 
         // Call the closure and assign its return value to a variable
-        let greeting = greet("John")
+        let greeting = greet1("John")
 
         // Print the greeting
         print(greeting)
