@@ -47,6 +47,12 @@
 		8AB12B812BF7A237002CADFD /* TypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B7F2BF7A237002CADFD /* TypeTests.swift */; };
 		8AD18D182BFCDF2400080AF3 /* ProtocolGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D172BFCDF2400080AF3 /* ProtocolGeneric.swift */; };
 		8AD18D1A2BFD593B00080AF3 /* VariadicFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D192BFD593B00080AF3 /* VariadicFunction.swift */; };
+		8AD18D242C00D4C100080AF3 /* CollectionTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D232C00D4C100080AF3 /* CollectionTypeTests.swift */; };
+		8AD18D252C00D4C100080AF3 /* CollectionTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D232C00D4C100080AF3 /* CollectionTypeTests.swift */; };
+		8AD18D272C00D62500080AF3 /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D262C00D62500080AF3 /* CollectionType.swift */; };
+		8AD18D2B2C00DF8D00080AF3 /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D262C00D62500080AF3 /* CollectionType.swift */; };
+		8AD18D2E2C01D35E00080AF3 /* LambdaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D2D2C01D35E00080AF3 /* LambdaTests.swift */; };
+		8AD18D2F2C01D35E00080AF3 /* LambdaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D2D2C01D35E00080AF3 /* LambdaTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,6 +94,9 @@
 		8AB12B7F2BF7A237002CADFD /* TypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTests.swift; sourceTree = "<group>"; };
 		8AD18D172BFCDF2400080AF3 /* ProtocolGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolGeneric.swift; sourceTree = "<group>"; };
 		8AD18D192BFD593B00080AF3 /* VariadicFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariadicFunction.swift; sourceTree = "<group>"; };
+		8AD18D232C00D4C100080AF3 /* CollectionTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTypeTests.swift; sourceTree = "<group>"; };
+		8AD18D262C00D62500080AF3 /* CollectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionType.swift; sourceTree = "<group>"; };
+		8AD18D2D2C01D35E00080AF3 /* LambdaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LambdaTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,30 +138,31 @@
 		8A686A6C2BD32DB700B38E22 /* Programming */ = {
 			isa = PBXGroup;
 			children = (
-				8A6EA1B32BFABE9C005E1293 /* generic */,
+				8AD18D1B2C00C4D200080AF3 /* Collection */,
+				8A6EA1B32BFABE9C005E1293 /* Generic */,
 				8A686A6D2BD32DB700B38E22 /* main.swift */,
-				8A686A842BD32E2100B38E22 /* basic */,
-				8A686AB32BD6214800B38E22 /* errorhandling */,
-				8A686AAF2BD53C9800B38E22 /* concurrency */,
-				8A686A822BD32E2100B38E22 /* functional-programming */,
-				8A686A862BD32E2100B38E22 /* resource */,
-				8A686AA42BD358E600B38E22 /* classes */,
-				8A686AAB2BD3C56F00B38E22 /* pop */,
-				8AB12B642BF3728B002CADFD /* performance */,
+				8A686A842BD32E2100B38E22 /* Basic */,
+				8A686AB32BD6214800B38E22 /* Errorhandling */,
+				8A686AAF2BD53C9800B38E22 /* Concurrency */,
+				8A686A822BD32E2100B38E22 /* FunctionalProgramming */,
+				8A686A862BD32E2100B38E22 /* Resource */,
+				8A686AA42BD358E600B38E22 /* Classes */,
+				8A686AAB2BD3C56F00B38E22 /* POP */,
+				8AB12B642BF3728B002CADFD /* Performance */,
 			);
 			path = Programming;
 			sourceTree = "<group>";
 		};
-		8A686A822BD32E2100B38E22 /* functional-programming */ = {
+		8A686A822BD32E2100B38E22 /* FunctionalProgramming */ = {
 			isa = PBXGroup;
 			children = (
 				8A686A832BD32E2100B38E22 /* Lambda.swift */,
 				8AB12B792BF3AA4A002CADFD /* Closure.swift */,
 			);
-			path = "functional-programming";
+			path = FunctionalProgramming;
 			sourceTree = "<group>";
 		};
-		8A686A842BD32E2100B38E22 /* basic */ = {
+		8A686A842BD32E2100B38E22 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
 				8A686A852BD32E2100B38E22 /* Loop.swift */,
@@ -161,103 +171,129 @@
 				8A6EA1B82BFB1CAC005E1293 /* ValueReference.swift */,
 				8AD18D192BFD593B00080AF3 /* VariadicFunction.swift */,
 			);
-			path = basic;
+			path = Basic;
 			sourceTree = "<group>";
 		};
-		8A686A862BD32E2100B38E22 /* resource */ = {
+		8A686A862BD32E2100B38E22 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				8A686A872BD32E2100B38E22 /* MemoryManagement.swift */,
 			);
-			path = resource;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		8A686A902BD32E7400B38E22 /* ProgrammingTests */ = {
 			isa = PBXGroup;
 			children = (
-				8AB12B752BF3973A002CADFD /* classes */,
-				8A686A982BD32EBC00B38E22 /* basic */,
-				8AB12B672BF37336002CADFD /* performance */,
+				8AD18D2C2C01D20A00080AF3 /* FunctionProgramming */,
+				8AD18D1E2C00C5BD00080AF3 /* Collection */,
+				8AB12B752BF3973A002CADFD /* Classes */,
+				8A686A982BD32EBC00B38E22 /* Basic */,
+				8AB12B672BF37336002CADFD /* Performance */,
 			);
 			path = ProgrammingTests;
 			sourceTree = "<group>";
 		};
-		8A686A982BD32EBC00B38E22 /* basic */ = {
+		8A686A982BD32EBC00B38E22 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
 				8A686A962BD32EB500B38E22 /* SwitchTests.swift */,
 				8AB12B7F2BF7A237002CADFD /* TypeTests.swift */,
 			);
-			path = basic;
+			path = Basic;
 			sourceTree = "<group>";
 		};
-		8A686AA42BD358E600B38E22 /* classes */ = {
+		8A686AA42BD358E600B38E22 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				8A686AA52BD3590700B38E22 /* Inheritance.swift */,
 				8A686AA62BD3590700B38E22 /* Interfaces.swift */,
 				8AB12B722BF396F8002CADFD /* StructType.swift */,
 			);
-			path = classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		8A686AAB2BD3C56F00B38E22 /* pop */ = {
+		8A686AAB2BD3C56F00B38E22 /* POP */ = {
 			isa = PBXGroup;
 			children = (
 				8A686AAC2BD3C5F100B38E22 /* ProtocolProgramming.swift */,
 			);
-			path = pop;
+			path = POP;
 			sourceTree = "<group>";
 		};
-		8A686AAF2BD53C9800B38E22 /* concurrency */ = {
+		8A686AAF2BD53C9800B38E22 /* Concurrency */ = {
 			isa = PBXGroup;
 			children = (
 				8A686AB02BD53D1900B38E22 /* Concurrency.swift */,
 			);
-			path = concurrency;
+			path = Concurrency;
 			sourceTree = "<group>";
 		};
-		8A686AB32BD6214800B38E22 /* errorhandling */ = {
+		8A686AB32BD6214800B38E22 /* Errorhandling */ = {
 			isa = PBXGroup;
 			children = (
 				8A686AB42BD6216100B38E22 /* Exception.swift */,
 				8AB12B622BF36802002CADFD /* Error.swift */,
 			);
-			path = errorhandling;
+			path = Errorhandling;
 			sourceTree = "<group>";
 		};
-		8A6EA1B32BFABE9C005E1293 /* generic */ = {
+		8A6EA1B32BFABE9C005E1293 /* Generic */ = {
 			isa = PBXGroup;
 			children = (
 				8A6EA1B42BFABF39005E1293 /* FunctionGeneric.swift */,
 				8A6EA1B62BFB0833005E1293 /* ClassGeneric.swift */,
 				8AD18D172BFCDF2400080AF3 /* ProtocolGeneric.swift */,
 			);
-			path = generic;
+			path = Generic;
 			sourceTree = "<group>";
 		};
-		8AB12B642BF3728B002CADFD /* performance */ = {
+		8AB12B642BF3728B002CADFD /* Performance */ = {
 			isa = PBXGroup;
 			children = (
 				8AB12B6C2BF375C6002CADFD /* Lazy.swift */,
 			);
-			path = performance;
+			path = Performance;
 			sourceTree = "<group>";
 		};
-		8AB12B672BF37336002CADFD /* performance */ = {
+		8AB12B672BF37336002CADFD /* Performance */ = {
 			isa = PBXGroup;
 			children = (
 				8AB12B6F2BF375CF002CADFD /* LazyTests.swift */,
 			);
-			path = performance;
+			path = Performance;
 			sourceTree = "<group>";
 		};
-		8AB12B752BF3973A002CADFD /* classes */ = {
+		8AB12B752BF3973A002CADFD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				8AB12B762BF3974C002CADFD /* StructTypeTests.swift */,
 			);
-			path = classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8AD18D1B2C00C4D200080AF3 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				8AD18D262C00D62500080AF3 /* CollectionType.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		8AD18D1E2C00C5BD00080AF3 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				8AD18D232C00D4C100080AF3 /* CollectionTypeTests.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		8AD18D2C2C01D20A00080AF3 /* FunctionProgramming */ = {
+			isa = PBXGroup;
+			children = (
+				8AD18D2D2C01D35E00080AF3 /* LambdaTests.swift */,
+			);
+			path = FunctionProgramming;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +391,7 @@
 				8AB12B802BF7A237002CADFD /* TypeTests.swift in Sources */,
 				8AB12B7D2BF7A167002CADFD /* Collection.swift in Sources */,
 				8A686AB12BD53D1900B38E22 /* Concurrency.swift in Sources */,
+				8AD18D272C00D62500080AF3 /* CollectionType.swift in Sources */,
 				8A6EA1B92BFB1CAC005E1293 /* ValueReference.swift in Sources */,
 				8AB12B732BF396F8002CADFD /* StructType.swift in Sources */,
 				8AB12B7A2BF3AA4A002CADFD /* Closure.swift in Sources */,
@@ -372,6 +409,8 @@
 				8A686AA22BD34EE300B38E22 /* Switch.swift in Sources */,
 				8AB12B702BF375CF002CADFD /* LazyTests.swift in Sources */,
 				8AD18D1A2BFD593B00080AF3 /* VariadicFunction.swift in Sources */,
+				8AD18D2E2C01D35E00080AF3 /* LambdaTests.swift in Sources */,
+				8AD18D242C00D4C100080AF3 /* CollectionTypeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +422,9 @@
 				8A686AAE2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
 				8AB12B7B2BF3AA4A002CADFD /* Closure.swift in Sources */,
 				8A686AB22BD53D1900B38E22 /* Concurrency.swift in Sources */,
+				8AD18D2F2C01D35E00080AF3 /* LambdaTests.swift in Sources */,
 				8A686A9D2BD3359800B38E22 /* Lambda.swift in Sources */,
+				8AD18D2B2C00DF8D00080AF3 /* CollectionType.swift in Sources */,
 				8AB12B782BF3974C002CADFD /* StructTypeTests.swift in Sources */,
 				8A686A9C2BD3354200B38E22 /* Loop.swift in Sources */,
 				8AB12B7E2BF7A167002CADFD /* Collection.swift in Sources */,
@@ -395,6 +436,7 @@
 				8AB12B742BF396F8002CADFD /* StructType.swift in Sources */,
 				8AB12B712BF375CF002CADFD /* LazyTests.swift in Sources */,
 				8A686A9E2BD335FD00B38E22 /* MemoryManagement.swift in Sources */,
+				8AD18D252C00D4C100080AF3 /* CollectionTypeTests.swift in Sources */,
 				8A686AA32BD34EE300B38E22 /* Switch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
