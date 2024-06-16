@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Error {
+class Guard {
     func giveAwardTo(name: String) {
         guard name == "Taylor Swift" else {
             print("No way!")

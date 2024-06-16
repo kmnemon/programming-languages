@@ -37,3 +37,45 @@ func handleErrorWithTry() {
     var c = try! listDownloaded()
     
 }
+
+//3 typed throws
+/*
+ enum StatisticsError: Error {
+     case noRatings
+     case invalidRating(Int)
+ }
+ 
+ func handleThrowType() {
+ let ratings = []
+ do throws(StatisticsError) {
+     try summarize(ratings)
+ } catch {
+     switch error {
+     case .noRatings:
+         print("No ratings available")
+     case .invalidRating(let rating):
+         print("Invalid rating: \(rating)")
+     }
+ }
+ 
+ do {
+     try summarize(ratings)
+ } catch {
+     switch error {
+     case .noRatings:
+         print("No ratings available")
+     case .invalidRating(let rating):
+         print("Invalid rating: \(rating)")
+     }
+ }
+ */
+
+//defer
+func deferExample() {
+    print("start...")
+    defer {
+        print("clean...")
+    }
+    
+    print("ending...")
+}
