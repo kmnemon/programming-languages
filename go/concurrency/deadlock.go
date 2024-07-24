@@ -89,3 +89,58 @@ func livelock() {
 	peopleInHallway.Wait()
 
 }
+
+// Starvation is any situation where a concurrent process
+// cannot get all the resources it needs to perform work.
+// starvation usually implies that there are one or more greedy concurrent process
+// that are unfairly preventing one or more concurrent processes from accomplishing work
+// as efficiently as possible, or maybe at all.
+func starvation() {
+	var wg sync.WaitGroup
+	var sharedLock sync.Mutex
+	const runtime = 1 * time.Second
+
+	greedyWorker := func() {
+		defer wg.Done()
+
+		var count int
+		//the greedy worker greedily holds onto the shared lock for the entirety of its work loop
+		for begin := time.Now(); time.Since(begin) <= runtime; {
+			sharedLock.Lock()
+			time.Sleep(3 * time.Nanosecond)
+			sharedLock.Unlock()
+			count++
+		}
+
+		fmt.Printf("Greedy worker was able to execute %v work loops\n", count)
+	}
+
+	politeWorker := func() {
+		defer wg.Done()
+
+		var count int
+		//the polite worker attempts to only lock when it needs to.
+		for begin := time.Now(); time.Since(begin) <= runtime; {
+			sharedLock.Lock()
+			time.Sleep(1 * time.Nanosecond)
+			sharedLock.Unlock()
+
+			sharedLock.Lock()
+			time.Sleep(1 * time.Nanosecond)
+			sharedLock.Unlock()
+
+			sharedLock.Lock()
+			time.Sleep(1 * time.Nanosecond)
+			sharedLock.Unlock()
+
+			count++
+		}
+		fmt.Printf("Polite worker was able to execute %v work loops. \n", count)
+	}
+
+	wg.Add(2)
+	go greedyWorker()
+	go politeWorker()
+
+	wg.Wait()
+}
