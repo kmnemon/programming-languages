@@ -119,5 +119,3 @@ func compositionFunction() {
         .filter { $0.continent == "Europe" }
         .reduce(0) { $0 + $1.population }
 }
-
-c
