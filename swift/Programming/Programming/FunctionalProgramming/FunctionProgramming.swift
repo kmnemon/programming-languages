@@ -7,7 +7,8 @@
 
 import Foundation
 
-//Functional programming - Programming without assignment statements.
+//Functional programming - Programming without assignment statements(without variables).
+//functional programs are composed of true mathematical, referentially transparent functions
 
 //non-funcitonal
 var n: Int = 1
@@ -19,7 +20,7 @@ func done() -> Bool {
 
 func doSomething() {
     sum += n * n
-    ++n
+    n += 1
 }
 
 func sumFirstTenSquaresNonFunctional() {
@@ -30,7 +31,7 @@ func sumFirstTenSquaresNonFunctional() {
 
 
 //functional
-func sumFirstTenSquaresHelper(sum: Int, i: Int) -> Int {
+func sumFirstTenSquaresHelper(_ sum: Int, _ i: Int) -> Int {
     if i > 10 {
         return sum
     }
@@ -40,4 +41,5 @@ func sumFirstTenSquaresHelper(sum: Int, i: Int) -> Int {
 func sumFirstTenSquares()-> Int {
     return sumFirstTenSquaresHelper(0, 1)
 }
+
 

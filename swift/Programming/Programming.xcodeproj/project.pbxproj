@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A2206F82C5237F100EC2FE5 /* FunctionProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2206F72C5237F100EC2FE5 /* FunctionProgramming.swift */; };
+		8A2AFCCC2C5247D5004DCD4F /* FunctionProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2206F72C5237F100EC2FE5 /* FunctionProgramming.swift */; };
+		8A2AFCCD2C5247D6004DCD4F /* FunctionProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2206F72C5237F100EC2FE5 /* FunctionProgramming.swift */; };
 		8A686A6E2BD32DB700B38E22 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A6D2BD32DB700B38E22 /* main.swift */; };
 		8A686A882BD32E2100B38E22 /* Loop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A852BD32E2100B38E22 /* Loop.swift */; };
 		8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A832BD32E2100B38E22 /* Lambda.swift */; };
@@ -396,7 +397,7 @@
 				8A686AB12BD53D1900B38E22 /* Concurrency.swift in Sources */,
 				8AD18D272C00D62500080AF3 /* CollectionType.swift in Sources */,
 				8A6EA1B92BFB1CAC005E1293 /* ValueReference.swift in Sources */,
-				8A2206F82C5237F100EC2FE5 /* FunctionProgramming.swift in Sources */,
+				8A2AFCCD2C5247D6004DCD4F /* FunctionProgramming.swift in Sources */,
 				8AB12B732BF396F8002CADFD /* StructType.swift in Sources */,
 				8AB12B7A2BF3AA4A002CADFD /* Closure.swift in Sources */,
 				8AB12B632BF36802002CADFD /* Guard.swift in Sources */,
@@ -442,6 +443,7 @@
 				8A686A9E2BD335FD00B38E22 /* MemoryManagement.swift in Sources */,
 				8AD18D252C00D4C100080AF3 /* CollectionTypeTests.swift in Sources */,
 				8A686AA32BD34EE300B38E22 /* Switch.swift in Sources */,
+				8A2AFCCC2C5247D5004DCD4F /* FunctionProgramming.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
