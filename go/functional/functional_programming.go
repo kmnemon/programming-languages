@@ -36,6 +36,8 @@ func sumFirstTenSquares() int {
 
 // non-functional, tail call optimization (TCO),
 // compiler ture that last program into the milestoneprogram
+// TCO is only applicable if the recursive call is the very lastthing to be executed within the function
+// tail call functions
 func sumFirstTenSquaresHelperTCO(sum int, i int) int {
 loop:
 	if i > 10 {
