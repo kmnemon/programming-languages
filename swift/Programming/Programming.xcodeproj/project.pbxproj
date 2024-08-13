@@ -55,6 +55,8 @@
 		8AD18D2B2C00DF8D00080AF3 /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D262C00D62500080AF3 /* CollectionType.swift */; };
 		8AD18D2E2C01D35E00080AF3 /* LambdaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D2D2C01D35E00080AF3 /* LambdaTests.swift */; };
 		8AD18D2F2C01D35E00080AF3 /* LambdaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D2D2C01D35E00080AF3 /* LambdaTests.swift */; };
+		8AF4B5932C6ADC4E0087956A /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4B5922C6ADC4E0087956A /* Properties.swift */; };
+		8AF4B5942C6ADC4E0087956A /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4B5922C6ADC4E0087956A /* Properties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -100,6 +102,7 @@
 		8AD18D232C00D4C100080AF3 /* CollectionTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTypeTests.swift; sourceTree = "<group>"; };
 		8AD18D262C00D62500080AF3 /* CollectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionType.swift; sourceTree = "<group>"; };
 		8AD18D2D2C01D35E00080AF3 /* LambdaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LambdaTests.swift; sourceTree = "<group>"; };
+		8AF4B5922C6ADC4E0087956A /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,7 @@
 				8AB12B7C2BF7A167002CADFD /* Collection.swift */,
 				8A6EA1B82BFB1CAC005E1293 /* ValueReference.swift */,
 				8AD18D192BFD593B00080AF3 /* VariadicFunction.swift */,
+				8AF4B5922C6ADC4E0087956A /* Properties.swift */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
@@ -409,6 +413,7 @@
 				8AD18D182BFCDF2400080AF3 /* ProtocolGeneric.swift in Sources */,
 				8A686AA92BD3590700B38E22 /* Interfaces.swift in Sources */,
 				8A686A882BD32E2100B38E22 /* Loop.swift in Sources */,
+				8AF4B5932C6ADC4E0087956A /* Properties.swift in Sources */,
 				8A686A6E2BD32DB700B38E22 /* main.swift in Sources */,
 				8AB12B772BF3974C002CADFD /* StructTypeTests.swift in Sources */,
 				8A686AA22BD34EE300B38E22 /* Switch.swift in Sources */,
@@ -431,6 +436,7 @@
 				8A686A9D2BD3359800B38E22 /* Lambda.swift in Sources */,
 				8AD18D2B2C00DF8D00080AF3 /* CollectionType.swift in Sources */,
 				8AB12B782BF3974C002CADFD /* StructTypeTests.swift in Sources */,
+				8AF4B5942C6ADC4E0087956A /* Properties.swift in Sources */,
 				8A686A9C2BD3354200B38E22 /* Loop.swift in Sources */,
 				8AB12B7E2BF7A167002CADFD /* Collection.swift in Sources */,
 				8AB12B6E2BF375C6002CADFD /* Lazy.swift in Sources */,

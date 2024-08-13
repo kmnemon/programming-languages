@@ -1,27 +1,20 @@
 package main
 
 import (
-	"context"
 	"fmt"
-	"time"
+	"net/http"
+
+	"github.com/kmnemon/programming/network"
 )
 
 func main() {
-	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Second)
-	defer cancel()
-
-	go handle(ctx, 500*time.Millisecond)
-	select {
-	case <-ctx.Done():
-		fmt.Println("main", ctx.Err())
+	http.HandleFunc("/stock-stream", network.LongLivedHandler)
+	server := &http.Server{
+		Addr: ":8080",
 	}
-}
 
-func handle(ctx context.Context, duration time.Duration) {
-	select {
-	case <-ctx.Done():
-		fmt.Println("handle", ctx.Err())
-	case <-time.After(duration):
-		fmt.Println("process request with", duration)
+	fmt.Println("Server is listening on port 8080")
+	if err := server.ListenAndServe(); err != nil {
+		fmt.Println("Server failed:", err)
 	}
 }
