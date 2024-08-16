@@ -3,12 +3,21 @@ package csp
 import (
 	"fmt"
 	"testing"
-	"time"
-
-	"golang.org/x/time/rate"
 )
 
 func TestRatelimiter(t *testing.T) {
-	fmt.Println(rate.NewLimiter(Per(2, time.Second), 1).Limit())
-	fmt.Println(rate.NewLimiter(Per(10, time.Minute), 10).Limit())
+	var fib func(n int) <-chan int
+	fib = func(n int) <-chan int {
+		result := make(chan int)
+		go func() {
+			defer close(result)
+			if n <= 2 {
+				result <- 1
+				return
+			}
+			result <- <-fib(n-1) + <-fib(n-2)
+		}()
+		return result
+	}
+	fmt.Printf("fib(4) = %d", <-fib(4))
 }
