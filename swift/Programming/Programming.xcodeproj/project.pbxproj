@@ -25,8 +25,8 @@
 		8A686AAA2BD3590700B38E22 /* Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AA62BD3590700B38E22 /* Interfaces.swift */; };
 		8A686AAD2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AAC2BD3C5F100B38E22 /* ProtocolProgramming.swift */; };
 		8A686AAE2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AAC2BD3C5F100B38E22 /* ProtocolProgramming.swift */; };
-		8A686AB12BD53D1900B38E22 /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB02BD53D1900B38E22 /* Concurrency.swift */; };
-		8A686AB22BD53D1900B38E22 /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB02BD53D1900B38E22 /* Concurrency.swift */; };
+		8A686AB12BD53D1900B38E22 /* AsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB02BD53D1900B38E22 /* AsyncAwait.swift */; };
+		8A686AB22BD53D1900B38E22 /* AsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB02BD53D1900B38E22 /* AsyncAwait.swift */; };
 		8A686AB52BD6216100B38E22 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB42BD6216100B38E22 /* Exception.swift */; };
 		8A686AB62BD6216100B38E22 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686AB42BD6216100B38E22 /* Exception.swift */; };
 		8A6EA1B52BFABF39005E1293 /* FunctionGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6EA1B42BFABF39005E1293 /* FunctionGeneric.swift */; };
@@ -57,6 +57,7 @@
 		8AD18D2F2C01D35E00080AF3 /* LambdaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D2D2C01D35E00080AF3 /* LambdaTests.swift */; };
 		8AF4B5932C6ADC4E0087956A /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4B5922C6ADC4E0087956A /* Properties.swift */; };
 		8AF4B5942C6ADC4E0087956A /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4B5922C6ADC4E0087956A /* Properties.swift */; };
+		8AF4B5982C70288D0087956A /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4B5972C70288D0087956A /* Tasks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -84,7 +85,7 @@
 		8A686AA52BD3590700B38E22 /* Inheritance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Inheritance.swift; path = classes/Inheritance.swift; sourceTree = SOURCE_ROOT; };
 		8A686AA62BD3590700B38E22 /* Interfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Interfaces.swift; path = classes/Interfaces.swift; sourceTree = SOURCE_ROOT; };
 		8A686AAC2BD3C5F100B38E22 /* ProtocolProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolProgramming.swift; sourceTree = "<group>"; };
-		8A686AB02BD53D1900B38E22 /* Concurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concurrency.swift; sourceTree = "<group>"; };
+		8A686AB02BD53D1900B38E22 /* AsyncAwait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwait.swift; sourceTree = "<group>"; };
 		8A686AB42BD6216100B38E22 /* Exception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exception.swift; sourceTree = "<group>"; };
 		8A6EA1B42BFABF39005E1293 /* FunctionGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionGeneric.swift; sourceTree = "<group>"; };
 		8A6EA1B62BFB0833005E1293 /* ClassGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassGeneric.swift; sourceTree = "<group>"; };
@@ -103,6 +104,7 @@
 		8AD18D262C00D62500080AF3 /* CollectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionType.swift; sourceTree = "<group>"; };
 		8AD18D2D2C01D35E00080AF3 /* LambdaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LambdaTests.swift; sourceTree = "<group>"; };
 		8AF4B5922C6ADC4E0087956A /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		8AF4B5972C70288D0087956A /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,7 +234,8 @@
 		8A686AAF2BD53C9800B38E22 /* Concurrency */ = {
 			isa = PBXGroup;
 			children = (
-				8A686AB02BD53D1900B38E22 /* Concurrency.swift */,
+				8A686AB02BD53D1900B38E22 /* AsyncAwait.swift */,
+				8AF4B5972C70288D0087956A /* Tasks.swift */,
 			);
 			path = Concurrency;
 			sourceTree = "<group>";
@@ -398,7 +401,7 @@
 				8A686AAD2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
 				8AB12B802BF7A237002CADFD /* TypeTests.swift in Sources */,
 				8AB12B7D2BF7A167002CADFD /* Collection.swift in Sources */,
-				8A686AB12BD53D1900B38E22 /* Concurrency.swift in Sources */,
+				8A686AB12BD53D1900B38E22 /* AsyncAwait.swift in Sources */,
 				8AD18D272C00D62500080AF3 /* CollectionType.swift in Sources */,
 				8A6EA1B92BFB1CAC005E1293 /* ValueReference.swift in Sources */,
 				8A2AFCCD2C5247D6004DCD4F /* FunctionProgramming.swift in Sources */,
@@ -406,6 +409,7 @@
 				8AB12B7A2BF3AA4A002CADFD /* Closure.swift in Sources */,
 				8AB12B632BF36802002CADFD /* Guard.swift in Sources */,
 				8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */,
+				8AF4B5982C70288D0087956A /* Tasks.swift in Sources */,
 				8A6EA1B52BFABF39005E1293 /* FunctionGeneric.swift in Sources */,
 				8A686A8A2BD32E2100B38E22 /* MemoryManagement.swift in Sources */,
 				8A6EA1B72BFB0833005E1293 /* ClassGeneric.swift in Sources */,
@@ -431,7 +435,7 @@
 				8A686AA82BD3590700B38E22 /* Inheritance.swift in Sources */,
 				8A686AAE2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
 				8AB12B7B2BF3AA4A002CADFD /* Closure.swift in Sources */,
-				8A686AB22BD53D1900B38E22 /* Concurrency.swift in Sources */,
+				8A686AB22BD53D1900B38E22 /* AsyncAwait.swift in Sources */,
 				8AD18D2F2C01D35E00080AF3 /* LambdaTests.swift in Sources */,
 				8A686A9D2BD3359800B38E22 /* Lambda.swift in Sources */,
 				8AD18D2B2C00DF8D00080AF3 /* CollectionType.swift in Sources */,
