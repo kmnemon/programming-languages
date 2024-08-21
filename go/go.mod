@@ -1,5 +1,5 @@
 module github.com/kmnemon/programming
 
-go 1.22.2
+go 1.23
 
-require golang.org/x/time v0.6.0 // indirect
+require golang.org/x/time v0.6.0
