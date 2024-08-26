@@ -7,8 +7,18 @@
 
 import XCTest
 
+struct AAA {
+    func aa() -> Void {
+      print("~~~~aa func~~~~")
+    }
+}
+
 final class LambdaTests: XCTestCase {
     func testMap() {
-        sortFunction()
+        var a: AAA?
+        a?.aa()
+        print("~~~~what~~~~")
+        
+//        sortFunction()
     }
 }
