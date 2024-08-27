@@ -8,6 +8,12 @@
 import Foundation
 
 class Loop {
+    func loopNumber() {
+        for i in 1...10 {
+            print(i)
+        }
+    }
+    
     let games = ["Mahjong", "Gomoku Narabe Ren", "Popeye no Eigo Asobi"]
     
     func loop1(){

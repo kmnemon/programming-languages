@@ -9,7 +9,7 @@
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "YES"
+            buildForRunning = "NO"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
             buildForAnalyzing = "NO">
@@ -48,6 +48,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8A686A692BD32DB700B38E22"
+            BuildableName = "Programming"
+            BlueprintName = "Programming"
+            ReferencedContainer = "container:Programming.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -58,9 +68,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8A686A8E2BD32E7400B38E22"
-            BuildableName = "ProgrammingTests.xctest"
-            BlueprintName = "ProgrammingTests"
+            BlueprintIdentifier = "8A686A692BD32DB700B38E22"
+            BuildableName = "Programming"
+            BlueprintName = "Programming"
             ReferencedContainer = "container:Programming.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

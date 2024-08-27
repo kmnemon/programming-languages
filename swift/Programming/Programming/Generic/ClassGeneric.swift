@@ -9,7 +9,7 @@ import Foundation
 
 //1.generic type
 struct deque<T>{
-    var array = [T]
+    var array = [T]()
     
     mutating func pushBack(obj: T) {
         array.append(obj)
