@@ -74,3 +74,27 @@ class Derived2 : Base2 {
         }
     }
 }
+
+//4. static vs class override
+class Base3 {
+    class func b() {
+        print("Base3-b()")
+    }
+    
+    static func b2() {
+        
+    }
+}
+
+class Derived3 : Base3 {
+    override class func b() {
+        print("Derived3-b()")
+    }
+    
+    //not allowed to override static method in super class
+//    override static func b2() {
+//
+//    }
+}
+
+
