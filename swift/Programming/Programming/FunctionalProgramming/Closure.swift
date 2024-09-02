@@ -119,6 +119,16 @@ func closureInFunctionParameter(fn: (Int) -> Void) {
     fn(i)
 }
 
+//4. capture lists in closure
+func captureListsInClosure() {
+    var index = 0
+    let closure = { [index] in
+        print(index)
+    }
+    index = 1
+    Closure() // this will print "0", not "1"
+}
+
 
 
 
