@@ -53,6 +53,9 @@
 		8AB12B7D2BF7A167002CADFD /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B7C2BF7A167002CADFD /* Collection.swift */; };
 		8AB12B7E2BF7A167002CADFD /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B7C2BF7A167002CADFD /* Collection.swift */; };
 		8AB12B812BF7A237002CADFD /* TypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB12B7F2BF7A237002CADFD /* TypeTests.swift */; };
+		8AD11F812C8FA1F4002B5D41 /* OpaqueBoxedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD11F802C8FA1F4002B5D41 /* OpaqueBoxedProtocol.swift */; };
+		8AD11F822C8FA1F4002B5D41 /* OpaqueBoxedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD11F802C8FA1F4002B5D41 /* OpaqueBoxedProtocol.swift */; };
+		8AD11F852C8FAFD2002B5D41 /* OpaqueBoxedProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD11F842C8FAFD2002B5D41 /* OpaqueBoxedProtocolTests.swift */; };
 		8AD18D182BFCDF2400080AF3 /* ProtocolGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D172BFCDF2400080AF3 /* ProtocolGeneric.swift */; };
 		8AD18D1A2BFD593B00080AF3 /* VariadicFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D192BFD593B00080AF3 /* VariadicFunction.swift */; };
 		8AD18D252C00D4C100080AF3 /* CollectionTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD18D232C00D4C100080AF3 /* CollectionTypeTests.swift */; };
@@ -107,6 +110,8 @@
 		8AB12B792BF3AA4A002CADFD /* Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closure.swift; sourceTree = "<group>"; };
 		8AB12B7C2BF7A167002CADFD /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		8AB12B7F2BF7A237002CADFD /* TypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTests.swift; sourceTree = "<group>"; };
+		8AD11F802C8FA1F4002B5D41 /* OpaqueBoxedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpaqueBoxedProtocol.swift; sourceTree = "<group>"; };
+		8AD11F842C8FAFD2002B5D41 /* OpaqueBoxedProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpaqueBoxedProtocolTests.swift; sourceTree = "<group>"; };
 		8AD18D172BFCDF2400080AF3 /* ProtocolGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolGeneric.swift; sourceTree = "<group>"; };
 		8AD18D192BFD593B00080AF3 /* VariadicFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariadicFunction.swift; sourceTree = "<group>"; };
 		8AD18D232C00D4C100080AF3 /* CollectionTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTypeTests.swift; sourceTree = "<group>"; };
@@ -213,6 +218,7 @@
 		8A686A902BD32E7400B38E22 /* ProgrammingTests */ = {
 			isa = PBXGroup;
 			children = (
+				8AD11F832C8FAFB1002B5D41 /* POP */,
 				8A9D36D82C80257D00D56018 /* Memory */,
 				8A36A0392C7C39AB00C33475 /* Generic */,
 				8AD18D2C2C01D20A00080AF3 /* FunctionProgramming */,
@@ -247,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				8A686AAC2BD3C5F100B38E22 /* ProtocolProgramming.swift */,
+				8AD11F802C8FA1F4002B5D41 /* OpaqueBoxedProtocol.swift */,
 			);
 			path = POP;
 			sourceTree = "<group>";
@@ -318,6 +325,14 @@
 				8AB12B762BF3974C002CADFD /* StructTypeTests.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		8AD11F832C8FAFB1002B5D41 /* POP */ = {
+			isa = PBXGroup;
+			children = (
+				8AD11F842C8FAFD2002B5D41 /* OpaqueBoxedProtocolTests.swift */,
+			);
+			path = POP;
 			sourceTree = "<group>";
 		};
 		8AD18D1B2C00C4D200080AF3 /* Collection */ = {
@@ -439,6 +454,7 @@
 				8A686AAD2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
 				8AB12B7D2BF7A167002CADFD /* Collection.swift in Sources */,
 				8A686AB12BD53D1900B38E22 /* AsyncAwait.swift in Sources */,
+				8AD11F812C8FA1F4002B5D41 /* OpaqueBoxedProtocol.swift in Sources */,
 				8AD18D272C00D62500080AF3 /* CollectionType.swift in Sources */,
 				8A9D36D62C80236700D56018 /* ARC.swift in Sources */,
 				8A6EA1B92BFB1CAC005E1293 /* ValueReference.swift in Sources */,
@@ -487,6 +503,7 @@
 				8A686AAA2BD3590700B38E22 /* Interfaces.swift in Sources */,
 				8A686A972BD32EB500B38E22 /* SwitchTests.swift in Sources */,
 				8AB12B812BF7A237002CADFD /* TypeTests.swift in Sources */,
+				8AD11F852C8FAFD2002B5D41 /* OpaqueBoxedProtocolTests.swift in Sources */,
 				8AB12B742BF396F8002CADFD /* StructType.swift in Sources */,
 				8AB12B712BF375CF002CADFD /* LazyTests.swift in Sources */,
 				8A36A03B2C7C39CC00C33475 /* FunctionGenericTests.swift in Sources */,
@@ -496,6 +513,7 @@
 				8A36A03E2C7C6D9D00C33475 /* ClosureTests.swift in Sources */,
 				8A2AFCCC2C5247D5004DCD4F /* FunctionProgramming.swift in Sources */,
 				8A36A03C2C7C3A2600C33475 /* FunctionGeneric.swift in Sources */,
+				8AD11F822C8FA1F4002B5D41 /* OpaqueBoxedProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
