@@ -21,6 +21,7 @@ struct CopyMeaning {
 }
 
 func canInOutHasReferenceMeaning(copyOne: inout CopyMeaning) {
+    copyOne.a = 10
 }
 
 //3.boxing

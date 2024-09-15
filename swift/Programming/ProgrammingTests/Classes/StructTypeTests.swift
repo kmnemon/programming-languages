@@ -21,4 +21,8 @@ final class StructTypeTests: XCTestCase {
         canInOutHasReferenceMeaning(copyOne: &c)
         print(c.a)
     }
+    
+    func testStruct() {
+        
+    }
 }
