@@ -9,6 +9,7 @@ import Foundation
 
 //1.closure
 class Closure {
+    // #example 1
     func closureExample1() {
         let greet = {
             print("hellow")
@@ -22,6 +23,7 @@ class Closure {
     }
     //runSomeClosure(greetPerson)
     
+    //# example2
     func closureExample2() {
         let greet: (String) -> String = { name in
             return "Hello, \(name)!"
@@ -38,9 +40,20 @@ class Closure {
         // Call the closure and assign its return value to a variable
         let greeting = greet1("John")
         
-        // Print the greeting
         print(greeting)
     }
+    
+    //# example3: trailing closure
+    func closureExample3(closure: (String) -> String) {
+        print(closure("John"))
+    }
+    
+    func callTheFunctionWithTrailingClosure() {
+        closureExample3 { name in
+            return "Hello, \(name)!"
+        }
+    }
+    
 }
 
 //2. escaping ,nonescaping and auto closure
