@@ -11,4 +11,8 @@ final class SwitchTests: XCTestCase {
     func testEnumSwitch() {
         Switch.enumSwitch()
     }
+    
+    func testLop() {
+        Loop.loopStride()
+    }
 }

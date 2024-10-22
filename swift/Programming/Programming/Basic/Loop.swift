@@ -95,6 +95,11 @@ class Loop {
         }
     }
     
+    static func loopStride() {
+        for i in stride(from: 0, to: 1, by: 0.1) {
+            print(i)
+        }
+    }
         
     
 }

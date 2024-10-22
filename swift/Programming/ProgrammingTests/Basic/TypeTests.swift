@@ -18,4 +18,8 @@ final class TypeTests: XCTestCase {
         a.sorted()
     }
     
+    func testDecimal() {
+        MoneyType()
+    }
+    
 }

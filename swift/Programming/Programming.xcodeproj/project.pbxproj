@@ -65,6 +65,8 @@
 		8AF4B5932C6ADC4E0087956A /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4B5922C6ADC4E0087956A /* Properties.swift */; };
 		8AF4B5942C6ADC4E0087956A /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4B5922C6ADC4E0087956A /* Properties.swift */; };
 		8AF4B5982C70288D0087956A /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4B5972C70288D0087956A /* Tasks.swift */; };
+		8AF830382CC74D2C00B31278 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF830372CC74D2800B31278 /* Type.swift */; };
+		8AF830392CC74D2C00B31278 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF830372CC74D2800B31278 /* Type.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -119,6 +121,7 @@
 		8AD18D2D2C01D35E00080AF3 /* LambdaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LambdaTests.swift; sourceTree = "<group>"; };
 		8AF4B5922C6ADC4E0087956A /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		8AF4B5972C70288D0087956A /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		8AF830372CC74D2800B31278 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +200,7 @@
 		8A686A842BD32E2100B38E22 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
+				8AF830372CC74D2800B31278 /* Type.swift */,
 				8A686A852BD32E2100B38E22 /* Loop.swift */,
 				8A686AA12BD34EE300B38E22 /* Switch.swift */,
 				8AB12B7C2BF7A167002CADFD /* Collection.swift */,
@@ -460,6 +464,7 @@
 				8A6EA1B92BFB1CAC005E1293 /* ValueReference.swift in Sources */,
 				8A2AFCCD2C5247D6004DCD4F /* FunctionProgramming.swift in Sources */,
 				8A36A0372C74047A00C33475 /* Actor.swift in Sources */,
+				8AF830392CC74D2C00B31278 /* Type.swift in Sources */,
 				8AB12B732BF396F8002CADFD /* StructType.swift in Sources */,
 				8AB12B7A2BF3AA4A002CADFD /* Closure.swift in Sources */,
 				8AB12B632BF36802002CADFD /* Guard.swift in Sources */,
@@ -490,6 +495,7 @@
 				8AD18D2F2C01D35E00080AF3 /* LambdaTests.swift in Sources */,
 				8A686A9D2BD3359800B38E22 /* Lambda.swift in Sources */,
 				8AD18D2B2C00DF8D00080AF3 /* CollectionType.swift in Sources */,
+				8AF830382CC74D2C00B31278 /* Type.swift in Sources */,
 				8AB12B782BF3974C002CADFD /* StructTypeTests.swift in Sources */,
 				8A9D36DA2C80259100D56018 /* ARCTests.swift in Sources */,
 				8AF4B5942C6ADC4E0087956A /* Properties.swift in Sources */,
@@ -641,10 +647,11 @@
 		8A686A722BD32DB700B38E22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 62DH2Z26V5;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -652,10 +659,11 @@
 		8A686A732BD32DB700B38E22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 62DH2Z26V5;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -663,13 +671,14 @@
 		8A686A942BD32E7400B38E22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 62DH2Z26V5;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ke.ProgrammingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -678,13 +687,14 @@
 		8A686A952BD32E7400B38E22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 62DH2Z26V5;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ke.ProgrammingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
