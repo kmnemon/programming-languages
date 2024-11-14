@@ -107,6 +107,10 @@ class ArrayType {
         let array = ContiguousArray<Int>(1...1000000)
 
     }
+    
+    func repeatingArray() {
+        let cards = Array<Dog>(repeating: Dog(breed: "godie", age: 1), count: 10)
+    }
 }
 
 class SetType {
