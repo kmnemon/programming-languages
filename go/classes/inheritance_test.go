@@ -23,3 +23,7 @@ func TestCopyValue(t *testing.T) {
 	c[3] = "haha"
 	fmt.Println(d)
 }
+
+func TestCompareFighter(t *testing.T) {
+	compareFighter()
+}

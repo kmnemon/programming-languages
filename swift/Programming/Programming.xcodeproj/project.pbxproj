@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A0696202CEB68390036DEA1 /* Opaque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A06961F2CEB68180036DEA1 /* Opaque.swift */; };
 		8A2AFCCC2C5247D5004DCD4F /* FunctionProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2206F72C5237F100EC2FE5 /* FunctionProgramming.swift */; };
 		8A2AFCCD2C5247D6004DCD4F /* FunctionProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2206F72C5237F100EC2FE5 /* FunctionProgramming.swift */; };
 		8A36A0372C74047A00C33475 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36A0362C74047A00C33475 /* Actor.swift */; };
@@ -92,6 +93,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A06961F2CEB68180036DEA1 /* Opaque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opaque.swift; sourceTree = "<group>"; };
 		8A2206F72C5237F100EC2FE5 /* FunctionProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionProgramming.swift; sourceTree = "<group>"; };
 		8A36A0362C74047A00C33475 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 		8A36A03A2C7C39CC00C33475 /* FunctionGenericTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionGenericTests.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 		8A686AA42BD358E600B38E22 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8A06961F2CEB68180036DEA1 /* Opaque.swift */,
 				8A5ABFB42CDB41AA003CBC1A /* Operator.swift */,
 				8A686AA52BD3590700B38E22 /* Inheritance.swift */,
 				8A686AA62BD3590700B38E22 /* Interfaces.swift */,
@@ -515,6 +518,7 @@
 				8AD18D182BFCDF2400080AF3 /* ProtocolGeneric.swift in Sources */,
 				8A686AA92BD3590700B38E22 /* Interfaces.swift in Sources */,
 				8A686A882BD32E2100B38E22 /* Loop.swift in Sources */,
+				8A0696202CEB68390036DEA1 /* Opaque.swift in Sources */,
 				8AF4B5932C6ADC4E0087956A /* Properties.swift in Sources */,
 				8A686A6E2BD32DB700B38E22 /* main.swift in Sources */,
 				8A5ABFBA2CDB55F5003CBC1A /* PropertyWrappers.swift in Sources */,
