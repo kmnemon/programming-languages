@@ -24,7 +24,7 @@ import Foundation
  
  */
 
-class Tasks {
+struct Tasks {
     //1. Task.sleep
     func listPhotos(inGallery name: String) async throws -> [String] {
         try await Task.sleep(for: .seconds(2))
@@ -36,6 +36,18 @@ class Tasks {
             let photos = try await listPhotos(inGallery: "A Rainy Weekend")
         } catch {
             print("Unexpected error: \(error).")
+        }
+    }
+    
+    //2. insert suspension point
+    /*
+     Assuming the code that renders video is synchronous, it doesn’t contain any suspension points. The work to render video could also take a long time. However, you can periodically call Task.yield() to explicitly add suspension points. Structuring long-running code this way lets Swift balance between making progress on this task, and letting other tasks in your program make progress on their work.
+     */
+    func generateSlideshow(forGallery gallery: String) async throws{
+        let photos = try await listPhotos(inGallery: gallery)
+        for photo in photos {
+            // ... render a few seconds of video for this photo ...
+            await Task.yield()
         }
     }
 }

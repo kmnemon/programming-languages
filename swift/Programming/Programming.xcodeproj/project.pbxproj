@@ -22,6 +22,7 @@
 		8A5AC0562CE334A2003CBC1A /* maperror.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5AC0552CE3349D003CBC1A /* maperror.swift */; };
 		8A5AC0572CE334A2003CBC1A /* maperror.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5AC0552CE3349D003CBC1A /* maperror.swift */; };
 		8A5AC0EA2CEC33F6003CBC1A /* swifttesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5AC0E92CEC33EF003CBC1A /* swifttesting.swift */; };
+		8A5AC0ED2CEC8863003CBC1A /* AsyncAwaitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5AC0EC2CEC885B003CBC1A /* AsyncAwaitTests.swift */; };
 		8A686A6E2BD32DB700B38E22 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A6D2BD32DB700B38E22 /* main.swift */; };
 		8A686A882BD32E2100B38E22 /* Loop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A852BD32E2100B38E22 /* Loop.swift */; };
 		8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A832BD32E2100B38E22 /* Lambda.swift */; };
@@ -103,6 +104,7 @@
 		8A5ABFB82CDB55E5003CBC1A /* PropertyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
 		8A5AC0552CE3349D003CBC1A /* maperror.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maperror.swift; sourceTree = "<group>"; };
 		8A5AC0E92CEC33EF003CBC1A /* swifttesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swifttesting.swift; sourceTree = "<group>"; };
+		8A5AC0EC2CEC885B003CBC1A /* AsyncAwaitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitTests.swift; sourceTree = "<group>"; };
 		8A686A6A2BD32DB700B38E22 /* Programming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Programming; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A686A6D2BD32DB700B38E22 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8A686A832BD32E2100B38E22 /* Lambda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lambda.swift; sourceTree = "<group>"; };
@@ -175,6 +177,14 @@
 				8A5ABFB82CDB55E5003CBC1A /* PropertyWrappers.swift */,
 			);
 			path = Macro;
+			sourceTree = "<group>";
+		};
+		8A5AC0EB2CEC8842003CBC1A /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				8A5AC0EC2CEC885B003CBC1A /* AsyncAwaitTests.swift */,
+			);
+			path = Concurrency;
 			sourceTree = "<group>";
 		};
 		8A686A612BD32DB700B38E22 = {
@@ -254,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				8A5AC0E92CEC33EF003CBC1A /* swifttesting.swift */,
+				8A5AC0EB2CEC8842003CBC1A /* Concurrency */,
 				8AD11F832C8FAFB1002B5D41 /* POP */,
 				8A9D36D82C80257D00D56018 /* Memory */,
 				8A36A0392C7C39AB00C33475 /* Generic */,
@@ -550,6 +561,7 @@
 				8AF4B5942C6ADC4E0087956A /* Properties.swift in Sources */,
 				8A36A0382C7404AE00C33475 /* Actor.swift in Sources */,
 				8A9D36D72C80236700D56018 /* ARC.swift in Sources */,
+				8A5AC0ED2CEC8863003CBC1A /* AsyncAwaitTests.swift in Sources */,
 				8AF8303C2CC7545200B31278 /* Debug.swift in Sources */,
 				8A686A9C2BD3354200B38E22 /* Loop.swift in Sources */,
 				8A9D36D12C7DC6FF00D56018 /* main.swift in Sources */,
