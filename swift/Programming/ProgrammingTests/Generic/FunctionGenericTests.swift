@@ -5,11 +5,11 @@
 //  Created by ke on 2024/8/26.
 //
 
-import XCTest
+import Testing
 
 
-final class FunctionGenericTests: XCTestCase {
-    func testInspect() {
+struct FunctionGenericTests {
+    @Test func testInspect() {
         inspect(value: 1)
     }
 }

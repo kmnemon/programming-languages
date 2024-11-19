@@ -5,20 +5,20 @@
 //  Created by ke on 2024/5/17.
 //
 
-import XCTest
+import Testing
 
-final class TypeTests: XCTestCase {
-    func testDic() {
+struct TypeTests {
+    @Test func testDic() {
         var d = DictionaryType()
         d.dictionary1()
     }
     
-    func testArray() {
+    @Test func testArray() {
         var a = ArrayType()
         a.sorted()
     }
     
-    func testDecimal() {
+    @Test func testDecimal() {
         MoneyType()
     }
     

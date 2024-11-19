@@ -5,11 +5,11 @@
 //  Created by ke on 2024/8/26.
 //
 
-import XCTest
+import Testing
 
 
-final class ClosureTests: XCTestCase {
-    func testTrailingClosure() {
+struct ClosureTests {
+    @Test func testTrailingClosure() {
         closureInFunctionParameter { item in
             print(item)
         }

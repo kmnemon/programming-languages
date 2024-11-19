@@ -5,16 +5,16 @@
 //  Created by ke on 2024/5/25.
 //
 
-import XCTest
+import Testing
 
 struct AAA {
-    func aa() -> Void {
+    @Test func aa() -> Void {
       print("~~~~aa func~~~~")
     }
 }
 
-final class LambdaTests: XCTestCase {
-    func testMap() {
+struct LambdaTests {
+    @Test func testMap() {
         var a: AAA?
         a?.aa()
         print("~~~~what~~~~")

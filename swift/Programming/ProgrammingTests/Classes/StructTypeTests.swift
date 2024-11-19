@@ -5,10 +5,10 @@
 //  Created by ke on 2024/5/14.
 //
 
-import XCTest
+import Testing
 
-final class StructTypeTests: XCTestCase {
-    func testNestedStruct() {
+struct StructTypeTests {
+    @Test func testNestedStruct() {
         let a: StructTypeA = StructTypeA()
         print(a.a ?? 10)
         
@@ -16,7 +16,7 @@ final class StructTypeTests: XCTestCase {
         print(b.b ?? 20)
     }
     
-    func testCopyMeaning() {
+    @Test func testCopyMeaning() {
         var c = CopyMeaning(a: 2)
         canInOutHasReferenceMeaning(copyOne: &c)
         print(c.a)

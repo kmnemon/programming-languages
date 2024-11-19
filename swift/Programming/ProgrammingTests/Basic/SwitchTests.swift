@@ -5,14 +5,14 @@
 //  Created by ke on 2024/4/20.
 //
 
-import XCTest
+import Testing
 
-final class SwitchTests: XCTestCase {
-    func testEnumSwitch() {
+struct SwitchTests {
+    @Test func testEnumSwitch() {
         Switch.enumSwitch()
     }
     
-    func testLop() {
+    @Test func testLop() {
         Loop.loopStride()
     }
 }

@@ -5,10 +5,15 @@
 //  Created by ke on 2024/9/10.
 //
 
-import XCTest
+import Testing
 
-final class OpaqueBoxedProtocolTests: XCTestCase {
-    func testBoxedProtocol() {
+struct OpaqueBoxedProtocolTests {
+    init() async throws {
+        
+    }
+    
+
+    @Test func testBoxedProtocol() {
         var b = BoxedProtocol()
         b.run()
     }

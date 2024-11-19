@@ -5,10 +5,10 @@
 //  Created by ke on 2024/8/29.
 //
 
-import XCTest
+import Testing
 
-final class ATCTests: XCTestCase {
-    func testWeak() {
+struct ATCTests {
+    @Test func testWeak() {
         ARC.weakRun()
     }
 }

@@ -5,10 +5,10 @@
 //  Created by ke on 2024/5/14.
 //
 
-import XCTest
+import Testing
 
-final class LazyTests: XCTestCase {
-    func testLazyInit() {
+struct LazyTests {
+    @Test func testLazyInit() {
         Lazy()
     }
 }

@@ -5,9 +5,9 @@
 //  Created by ke on 2024/5/24.
 //
 
-import XCTest
+import Testing
 
-final class CollectionTests: XCTestCase {
-    func testCollection() {
+struct CollectionTests {
+    @Test func testCollection() {
     }
 }
