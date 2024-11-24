@@ -27,3 +27,7 @@ func TestCopyValue(t *testing.T) {
 func TestCompareFighter(t *testing.T) {
 	compareFighter()
 }
+
+type A struct {
+	X []int
+}
