@@ -2,15 +2,11 @@ package errormanage
 
 import "fmt"
 
-//Adding additional context to an error
-//Marking an error as a specific error
-
 func bar() error {
 	return nil
 }
 
-// before Go 1.13
-// we want to wrap BarError add addtion information
+// 1. Marking an error as a specific error
 type BarError struct {
 	Err error
 }
@@ -28,7 +24,7 @@ func Foo() error {
 	return nil
 }
 
-// now
+// 2. Adding additional context to an error
 // %w without having to create another error type, a client can unwarp the parent error
 func Foo2() error {
 	err := bar()
@@ -39,6 +35,7 @@ func Foo2() error {
 	return nil
 }
 
+// 3. Adding additional context to an error and transform
 // %v transform it into another error, and the source error is no longer available
 func Foo3() error {
 	err := bar()
