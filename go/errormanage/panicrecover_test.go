@@ -1,6 +1,8 @@
 package errormanage
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestPanic(t *testing.T) {
 	callThePanic()
