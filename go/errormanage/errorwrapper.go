@@ -1,9 +1,12 @@
 package errormanage
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 func bar() error {
-	return nil
+	return fmt.Errorf("bar(): error")
 }
 
 // 1. Marking an error as a specific error
@@ -29,7 +32,7 @@ func Foo() error {
 func Foo2() error {
 	err := bar()
 	if err != nil {
-		return fmt.Errorf("bar failed: %w", err)
+		return fmt.Errorf("Foo2(): bar failed: %w", err)
 	}
 
 	return nil
@@ -40,8 +43,43 @@ func Foo2() error {
 func Foo3() error {
 	err := bar()
 	if err != nil {
-		return fmt.Errorf("bar failed: %v", err)
+		return fmt.Errorf("Foo3(): bar failed: %v", err)
 	}
 
 	return nil
+}
+
+// how to check the error
+func CheckError() {
+	err := Foo2()
+	if err != nil {
+		fmt.Println(err.Error())
+	}
+}
+
+//.........................
+
+// check the original errors
+type transientError struct {
+	err error
+}
+
+func (t transientError) Error() string {
+	return fmt.Sprintf("transient error: %v", t.err)
+}
+
+func bar2() error {
+	err := fmt.Errorf("the db failed")
+	return fmt.Errorf("bar2() failed: %w", transientError{err: err})
+}
+
+func CheckTheOriginError() {
+	err := bar2()
+	if err != nil {
+		if errors.As(err, &transientError{}) {
+			//if it is transientError do something
+		} else {
+			//another type of error do something
+		}
+	}
 }
