@@ -7,12 +7,21 @@
 
 import Testing
 
+struct Counter {
+    var value: Int
+    var setValue: (Int) -> ()
+    
+    func what(value: Int) {
+        setValue(value + 1)
+    }
+}
+
 struct StructTypeTests {
     @Test func testNestedStruct() {
         let a: StructTypeA = StructTypeA()
         print(a.a ?? 10)
         
-        var b: StructTypeA.StructTypeB = StructTypeA.StructTypeB()
+        let b: StructTypeA.StructTypeB = StructTypeA.StructTypeB()
         print(b.b ?? 20)
     }
     
@@ -22,7 +31,23 @@ struct StructTypeTests {
         print(c.a)
     }
     
-    func testStruct() {
+    @Test func testStruct() {
+        var a = 0
+        
+        let c = Counter(value: a, setValue: {a = $0})
+        
+        c.what(value: 10)
+        print("reslut is\(a)")
+        
+        print("reslut is\(c.value)\n")
+        
+        
+        
         
     }
 }
+
+
+
+
+
