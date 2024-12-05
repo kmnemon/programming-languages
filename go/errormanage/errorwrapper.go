@@ -59,8 +59,13 @@ func CheckError() {
 
 //.........................
 
-// check the original errors
+// 1. check the original and unwrap errors
+/*
+Purpose: errors.As is used to extract and check if an error in the chain can be cast to a specific type (usually a concrete error type). This allows you to inspect or interact with errors that have a specific type or additional information.
+Use Case: errors.As is useful when you need to access or handle an error that is wrapped in a more concrete type (such as a custom error type with additional fields).
+*/
 type transientError struct {
+	id  int
 	err error
 }
 
@@ -70,16 +75,40 @@ func (t transientError) Error() string {
 
 func bar2() error {
 	err := fmt.Errorf("the db failed")
-	return fmt.Errorf("bar2() failed: %w", transientError{err: err})
+	return fmt.Errorf("bar2() failed: %w", transientError{err: err, id: 123})
 }
 
-func CheckTheOriginError() {
+func CheckTheOriginErrorAndUnWrap() {
 	err := bar2()
 	if err != nil {
-		if errors.As(err, &transientError{}) {
+		var t transientError
+		if errors.As(err, &t) {
 			//if it is transientError do something
+			fmt.Println(t.id)
 		} else {
 			//another type of error do something
 		}
+	}
+}
+
+// 2.check the original error
+/*
+Purpose: errors.Is is used to check if a specific error is equal to a target error, or if an error is wrapped in another error, it checks if the target error appears anywhere in the error chain.
+Use Case: Typically, errors.Is is used when you want to check if an error matches a specific sentinel error or is part of an error chain.
+*/
+var ErrNotFound = errors.New("not found")
+
+func search() error {
+	// Simulate an error being wrapped
+	return fmt.Errorf("search failed: %w", ErrNotFound)
+}
+
+func checkTheOriginalError() {
+	err := search()
+
+	if errors.Is(err, ErrNotFound) {
+		fmt.Println("Item not found!")
+	} else {
+		fmt.Println("Other error:", err)
 	}
 }
