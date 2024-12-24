@@ -35,9 +35,7 @@ func getDrawable2() -> any Drawable {
 
 
 
-
-
-
-func difference() {
+func usage() {
+    //you can put different type in the array if they are comform to Drawable protocol
     let drawables: [any Drawable] = [Circle(), Rectangle()]
 }
