@@ -23,6 +23,11 @@
 		8A5AC0572CE334A2003CBC1A /* maperror.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5AC0552CE3349D003CBC1A /* maperror.swift */; };
 		8A5AC0EA2CEC33F6003CBC1A /* swifttesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5AC0E92CEC33EF003CBC1A /* swifttesting.swift */; };
 		8A5AC0ED2CEC8863003CBC1A /* AsyncAwaitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5AC0EC2CEC885B003CBC1A /* AsyncAwaitTests.swift */; };
+		8A5B3C022D24B382002C6A28 /* Senario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C012D24B378002C6A28 /* Senario.swift */; };
+		8A5B3C032D24B382002C6A28 /* Senario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C012D24B378002C6A28 /* Senario.swift */; };
+		8A5B3C052D24C098002C6A28 /* TasksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C042D24C091002C6A28 /* TasksTests.swift */; };
+		8A5B3C072D24C3DC002C6A28 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4B5972C70288D0087956A /* Tasks.swift */; };
+		8A5B3C092D24DC60002C6A28 /* SenarioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C082D24DC58002C6A28 /* SenarioTests.swift */; };
 		8A686A6E2BD32DB700B38E22 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A6D2BD32DB700B38E22 /* main.swift */; };
 		8A686A882BD32E2100B38E22 /* Loop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A852BD32E2100B38E22 /* Loop.swift */; };
 		8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A832BD32E2100B38E22 /* Lambda.swift */; };
@@ -107,6 +112,9 @@
 		8A5AC0552CE3349D003CBC1A /* maperror.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maperror.swift; sourceTree = "<group>"; };
 		8A5AC0E92CEC33EF003CBC1A /* swifttesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swifttesting.swift; sourceTree = "<group>"; };
 		8A5AC0EC2CEC885B003CBC1A /* AsyncAwaitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitTests.swift; sourceTree = "<group>"; };
+		8A5B3C012D24B378002C6A28 /* Senario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senario.swift; sourceTree = "<group>"; };
+		8A5B3C042D24C091002C6A28 /* TasksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTests.swift; sourceTree = "<group>"; };
+		8A5B3C082D24DC58002C6A28 /* SenarioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenarioTests.swift; sourceTree = "<group>"; };
 		8A686A6A2BD32DB700B38E22 /* Programming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Programming; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A686A6D2BD32DB700B38E22 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8A686A832BD32E2100B38E22 /* Lambda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lambda.swift; sourceTree = "<group>"; };
@@ -186,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				8A5AC0EC2CEC885B003CBC1A /* AsyncAwaitTests.swift */,
+				8A5B3C042D24C091002C6A28 /* TasksTests.swift */,
+				8A5B3C082D24DC58002C6A28 /* SenarioTests.swift */,
 			);
 			path = Concurrency;
 			sourceTree = "<group>";
@@ -317,6 +327,7 @@
 				8A686AB02BD53D1900B38E22 /* AsyncAwait.swift */,
 				8AF4B5972C70288D0087956A /* Tasks.swift */,
 				8A36A0362C74047A00C33475 /* Actor.swift */,
+				8A5B3C012D24B378002C6A28 /* Senario.swift */,
 			);
 			path = Concurrency;
 			sourceTree = "<group>";
@@ -519,6 +530,7 @@
 				8AD18D272C00D62500080AF3 /* CollectionType.swift in Sources */,
 				8A9D36D62C80236700D56018 /* ARC.swift in Sources */,
 				8A6EA1B92BFB1CAC005E1293 /* ValueReference.swift in Sources */,
+				8A5B3C032D24B382002C6A28 /* Senario.swift in Sources */,
 				8A2AFCCD2C5247D6004DCD4F /* FunctionProgramming.swift in Sources */,
 				8A36A0372C74047A00C33475 /* Actor.swift in Sources */,
 				8AF830392CC74D2C00B31278 /* Type.swift in Sources */,
@@ -573,7 +585,9 @@
 				8A9D36D12C7DC6FF00D56018 /* main.swift in Sources */,
 				8AB12B7E2BF7A167002CADFD /* Collection.swift in Sources */,
 				8A5AC0EA2CEC33F6003CBC1A /* swifttesting.swift in Sources */,
+				8A5B3C072D24C3DC002C6A28 /* Tasks.swift in Sources */,
 				8AB12B6E2BF375C6002CADFD /* Lazy.swift in Sources */,
+				8A5B3C052D24C098002C6A28 /* TasksTests.swift in Sources */,
 				8A686AB62BD6216100B38E22 /* Exception.swift in Sources */,
 				8A686AAA2BD3590700B38E22 /* Interfaces.swift in Sources */,
 				8A686A972BD32EB500B38E22 /* SwitchTests.swift in Sources */,
@@ -581,11 +595,13 @@
 				8AD11F852C8FAFD2002B5D41 /* OpaqueBoxedProtocolTests.swift in Sources */,
 				8A5ABFB62CDB41B0003CBC1A /* Operator.swift in Sources */,
 				8AB12B742BF396F8002CADFD /* StructType.swift in Sources */,
+				8A5B3C022D24B382002C6A28 /* Senario.swift in Sources */,
 				8AB12B712BF375CF002CADFD /* LazyTests.swift in Sources */,
 				8A36A03B2C7C39CC00C33475 /* FunctionGenericTests.swift in Sources */,
 				8A686A9E2BD335FD00B38E22 /* MemoryManagement.swift in Sources */,
 				8A5ABFB92CDB55F5003CBC1A /* PropertyWrappers.swift in Sources */,
 				8AD18D252C00D4C100080AF3 /* CollectionTypeTests.swift in Sources */,
+				8A5B3C092D24DC60002C6A28 /* SenarioTests.swift in Sources */,
 				8AC80B162CE39B39000317A3 /* String.swift in Sources */,
 				8A686AA32BD34EE300B38E22 /* Switch.swift in Sources */,
 				8A36A03E2C7C6D9D00C33475 /* ClosureTests.swift in Sources */,

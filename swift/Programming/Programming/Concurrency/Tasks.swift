@@ -50,4 +50,22 @@ struct Tasks {
             await Task.yield()
         }
     }
+    
+    //3. task
+    /*
+     the performTask's Task does not block the thread, this example can not get the result in fetchData()
+     */
+    static func fetchData() async -> String {
+        try! await Task.sleep(for: .seconds(2))
+        return "Data fetched"
+    }
+    
+    static func performTask() {
+        Task {
+            let result = await fetchData()
+            print("Result: \(result)")
+        }
+        
+   
+    }
 }

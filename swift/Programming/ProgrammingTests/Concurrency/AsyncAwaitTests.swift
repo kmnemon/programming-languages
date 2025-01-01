@@ -8,7 +8,7 @@
 import Testing
 
 @Suite("AsyncAwait") struct AsyncAwaitTests {
-    @Test func asyncAwaitTest() async throws {
+    @Test func testAsyncAwait() async throws {
         await #expect(throws: (any Error).self) {
             try await AsyncAwait.availableSymbols()
         }
