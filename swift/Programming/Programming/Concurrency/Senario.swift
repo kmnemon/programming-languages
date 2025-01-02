@@ -7,14 +7,14 @@
 
 import Foundation
 
-/* Senario 1: Concurrent
+/* Senario 1: Parallel
  */
 func taskA() async -> Int {
     try! await Task.sleep(for: .seconds(2))
     return 5
 }
 
-func concurrentExample() async -> Int {
+func parallelExample() async -> Int {
     async let resultA = taskA()
     async let resultB = taskA()
     
@@ -23,7 +23,7 @@ func concurrentExample() async -> Int {
     return r1 + r2
 }
 
-/* Senario 2: Parallel
+/* Senario 2: Concurrent
  */
 func taskA1() async -> Int {
     try! await Task.sleep(for: .seconds(2))
@@ -34,7 +34,7 @@ func taskB1(a1: Int) async -> Int {
     return a1 + 2
 }
 
-func parallelExample1() async -> Int {
+func concurrentExample() async -> Int {
     var result = 0
     let taskCount = 5
     
@@ -56,7 +56,7 @@ func parallelExample1() async -> Int {
     return result
 }
 
-/* Senario 3: first Concurrent, then Parallel
+/* Senario 3: first Parallel, then Concurrent
  */
 func taskA2() async -> Int {
     try! await Task.sleep(for: .seconds(2))
@@ -67,7 +67,7 @@ func taskB2(a1: Int) async -> Int {
     return a1 + 2
 }
 
-func concurrentWithParallelExample() async -> Int {
+func parallelWithConcurrentExample() async -> Int {
     var result = 0
     let taskCount = 5
     let streamCount = 2

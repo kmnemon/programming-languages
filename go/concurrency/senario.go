@@ -3,14 +3,14 @@ package concurrency
 import "time"
 
 /*
-Senario 1: Concurrent
+Senario 1: Parallel
 */
 func taskA() int {
 	time.Sleep(2 * time.Second)
 	return 5
 }
 
-func concurrentExample() int {
+func parallelExample() int {
 	c := make(chan int)
 
 	go func() {
@@ -27,7 +27,7 @@ func concurrentExample() int {
 }
 
 /*
-Senario 2: Parallel
+Senario 2: Concurrent
 */
 func taskA1() int {
 	time.Sleep(2 * time.Second)
@@ -38,7 +38,7 @@ func taskB1(a1 int) int {
 	return a1 + 2
 }
 
-func parallelExample() int {
+func concurrentExample() int {
 	c := make(chan int, 3)
 
 	rc := make(chan int)
@@ -64,7 +64,7 @@ func parallelExample() int {
 }
 
 /*
-Senario 3: first Concurrent, then Parallel
+Senario 3: first Parallel, then Concurrent
 */
 func taskA2() int {
 	time.Sleep(2 * time.Second)
@@ -75,7 +75,7 @@ func taskB2(a1 int) int {
 	return a1 + 2
 }
 
-func concurrentWithParallelExample() int {
+func parallelWithConcurrentExample() int {
 	c := make(chan int, 3)
 
 	rc := make(chan int)
