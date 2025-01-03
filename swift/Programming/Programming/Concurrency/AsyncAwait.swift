@@ -10,7 +10,7 @@ import Foundation
 extension String: Error { }
 
 struct AsyncAwait {
-    //1. async await
+    //1. async/await in function
     static func availableSymbols() async throws -> [String] {
         guard let url = URL(string: "http://localhost:8080/littlejohn/symbols")
         else {
@@ -24,6 +24,35 @@ struct AsyncAwait {
         }
         return try JSONDecoder().decode([String].self, from: data)
     }
+    
+    //2. async/await in computed property
+    var myProperty: String {
+        get async {
+            //get the string from some external system
+            return "hello world"
+        }
+    }
+    
+    func printMyProperty() async {
+        print(await myPorperty)
+    }
+    
+    //3. async/await in closures
+    func myFunction(worker: () async -> Int) {
+        //do some network or database I/O
+    }
+    
+    func computeNumber() async -> Int {
+        return 5
+    }
+    
+    func callMyFunction() {
+        myFunction {
+            return await computeNumber()
+        }
+    }
+    
+    
 }
 
 
