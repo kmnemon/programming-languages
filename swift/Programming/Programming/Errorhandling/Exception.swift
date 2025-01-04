@@ -19,17 +19,25 @@ func availableRainyWeekendPhotos() -> Result<[String], Error> {
     }
 }
 
-//2.Try
-func listDownloaded() throws -> Int {
-    return  1
+//2.Try/catch
+enum StatisticsError: Error {
+    case noRatings
+    case invalidRating(Int)
+}
+
+func listDownloaded() throws {
+    throw StatisticsError.noRatings
 }
 
 func handleErrorWithTry() {
     do {
         var a = try listDownloaded()
-    }
-    catch {
-        
+    } catch StatisticsError.noRatings {
+        print(".noRatings")
+    } catch StatisticsError.invalidRating {
+        print(".invalidRating")
+    } catch {
+        print("unexpected error")
     }
     
     var b = try? listDownloaded()
@@ -38,44 +46,34 @@ func handleErrorWithTry() {
     
 }
 
-//3 typed throws
-/*
- enum StatisticsError: Error {
-     case noRatings
-     case invalidRating(Int)
- }
- 
- func handleThrowType() {
- let ratings = []
- do throws(StatisticsError) {
-     try summarize(ratings)
- } catch {
-     switch error {
-     case .noRatings:
-         print("No ratings available")
-     case .invalidRating(let rating):
-         print("Invalid rating: \(rating)")
-     }
- }
- 
- do {
-     try summarize(ratings)
- } catch {
-     switch error {
-     case .noRatings:
-         print("No ratings available")
-     case .invalidRating(let rating):
-         print("Invalid rating: \(rating)")
-     }
- }
- */
+//3 Try/catch Typed throws
+func summarize() throws(StatisticsError) {
+    throw StatisticsError.noRatings
+}
 
-//defer
-func deferExample() {
-    print("start...")
-    defer {
-        print("clean...")
+func handleThrowType() {
+    do throws(StatisticsError) {
+        try summarize()
+    } catch {
+        switch error {
+            case .noRatings:
+                print("No ratings available")
+            case .invalidRating(let rating):
+                print("Invalid rating: \(rating)")
+        }
     }
     
-    print("ending...")
+    //If a function or do block throws errors of only a single type, Swift infers that this code is using typed throws. Using this shorter syntax
+    do {
+        try summarize()
+    } catch {
+        switch error {
+            case .noRatings:
+                print("No ratings available")
+            case .invalidRating(let rating):
+                print("Invalid rating: \(rating)")
+        }
+    }
+    
 }
+    

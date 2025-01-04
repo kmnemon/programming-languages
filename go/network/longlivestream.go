@@ -12,7 +12,7 @@ type Stock struct {
 	Value float64 `json:"value"`
 }
 
-func LongLivedHandler(w http.ResponseWriter, r *http.Request) {
+func LongLiveStreamHandler(w http.ResponseWriter, r *http.Request) {
 	// Set headers to keep the connection open
 	w.Header().Set("Content-Type", "application/json")
 	w.Header().Set("Cache-Control", "no-cache")

@@ -8,12 +8,13 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/stock-stream", network.LongLivedHandler)
+	network.HandleFunction()
+
 	server := &http.Server{
-		Addr: ":8080",
+		Addr: ":9091",
 	}
 
-	fmt.Println("Server is listening on port 8080")
+	fmt.Println("Server is listening on port 9091")
 	if err := server.ListenAndServe(); err != nil {
 		fmt.Println("Server failed:", err)
 	}
