@@ -36,6 +36,13 @@
 		8A5B3C152D297ABB002C6A28 /* SendingReceivingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C142D297AAE002C6A28 /* SendingReceivingDataTests.swift */; };
 		8A5B3C172D297B96002C6A28 /* SendingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C162D297B92002C6A28 /* SendingData.swift */; };
 		8A5B3C182D297B96002C6A28 /* SendingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C162D297B92002C6A28 /* SendingData.swift */; };
+		8A5B3C1A2D2A016E002C6A28 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C192D2A0168002C6A28 /* Download.swift */; };
+		8A5B3C1B2D2A016E002C6A28 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C192D2A0168002C6A28 /* Download.swift */; };
+		8A5B3C1D2D2A020F002C6A28 /* DownloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C1C2D2A0209002C6A28 /* DownloadTests.swift */; };
+		8A5B3C1F2D2A2B2E002C6A28 /* ByteAccumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C1E2D2A2B2C002C6A28 /* ByteAccumulator.swift */; };
+		8A5B3C202D2A2B2E002C6A28 /* ByteAccumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C1E2D2A2B2C002C6A28 /* ByteAccumulator.swift */; };
+		8A5B3C222D2A2B34002C6A28 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C212D2A2B32002C6A28 /* Utility.swift */; };
+		8A5B3C232D2A2B34002C6A28 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C212D2A2B32002C6A28 /* Utility.swift */; };
 		8A686A6E2BD32DB700B38E22 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A6D2BD32DB700B38E22 /* main.swift */; };
 		8A686A882BD32E2100B38E22 /* Loop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A852BD32E2100B38E22 /* Loop.swift */; };
 		8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A832BD32E2100B38E22 /* Lambda.swift */; };
@@ -128,6 +135,10 @@
 		8A5B3C112D297973002C6A28 /* ReceivingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivingData.swift; sourceTree = "<group>"; };
 		8A5B3C142D297AAE002C6A28 /* SendingReceivingDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingReceivingDataTests.swift; sourceTree = "<group>"; };
 		8A5B3C162D297B92002C6A28 /* SendingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingData.swift; sourceTree = "<group>"; };
+		8A5B3C192D2A0168002C6A28 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		8A5B3C1C2D2A0209002C6A28 /* DownloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadTests.swift; sourceTree = "<group>"; };
+		8A5B3C1E2D2A2B2C002C6A28 /* ByteAccumulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteAccumulator.swift; sourceTree = "<group>"; };
+		8A5B3C212D2A2B32002C6A28 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		8A686A6A2BD32DB700B38E22 /* Programming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Programming; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A686A6D2BD32DB700B38E22 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8A686A832BD32E2100B38E22 /* Lambda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lambda.swift; sourceTree = "<group>"; };
@@ -216,6 +227,9 @@
 		8A5B3C0A2D296AC4002C6A28 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				8A5B3C1E2D2A2B2C002C6A28 /* ByteAccumulator.swift */,
+				8A5B3C212D2A2B32002C6A28 /* Utility.swift */,
+				8A5B3C192D2A0168002C6A28 /* Download.swift */,
 				8A5B3C162D297B92002C6A28 /* SendingData.swift */,
 				8A5B3C112D297973002C6A28 /* ReceivingData.swift */,
 				8A5B3C0B2D296AE0002C6A28 /* LongLiveStream.swift */,
@@ -226,6 +240,7 @@
 		8A5B3C0E2D2974EC002C6A28 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				8A5B3C1C2D2A0209002C6A28 /* DownloadTests.swift */,
 				8A5B3C142D297AAE002C6A28 /* SendingReceivingDataTests.swift */,
 				8A5B3C0F2D2974FA002C6A28 /* LongLiveStreamTests.swift */,
 			);
@@ -564,10 +579,13 @@
 				8AD18D272C00D62500080AF3 /* CollectionType.swift in Sources */,
 				8A9D36D62C80236700D56018 /* ARC.swift in Sources */,
 				8A6EA1B92BFB1CAC005E1293 /* ValueReference.swift in Sources */,
+				8A5B3C1B2D2A016E002C6A28 /* Download.swift in Sources */,
 				8A5B3C032D24B382002C6A28 /* Senario.swift in Sources */,
 				8A2AFCCD2C5247D6004DCD4F /* FunctionProgramming.swift in Sources */,
 				8A36A0372C74047A00C33475 /* Actor.swift in Sources */,
 				8AF830392CC74D2C00B31278 /* Type.swift in Sources */,
+				8A5B3C232D2A2B34002C6A28 /* Utility.swift in Sources */,
+				8A5B3C202D2A2B2E002C6A28 /* ByteAccumulator.swift in Sources */,
 				8AB12B732BF396F8002CADFD /* StructType.swift in Sources */,
 				8AB12B7A2BF3AA4A002CADFD /* Closure.swift in Sources */,
 				8AF8303D2CC7545200B31278 /* Debug.swift in Sources */,
@@ -612,6 +630,7 @@
 				8AD18D2B2C00DF8D00080AF3 /* CollectionType.swift in Sources */,
 				8AF830382CC74D2C00B31278 /* Type.swift in Sources */,
 				8AB12B782BF3974C002CADFD /* StructTypeTests.swift in Sources */,
+				8A5B3C222D2A2B34002C6A28 /* Utility.swift in Sources */,
 				8A9D36DA2C80259100D56018 /* ARCTests.swift in Sources */,
 				8AF4B5942C6ADC4E0087956A /* Properties.swift in Sources */,
 				8A36A0382C7404AE00C33475 /* Actor.swift in Sources */,
@@ -630,6 +649,7 @@
 				8A686AB62BD6216100B38E22 /* Exception.swift in Sources */,
 				8A686AAA2BD3590700B38E22 /* Interfaces.swift in Sources */,
 				8A686A972BD32EB500B38E22 /* SwitchTests.swift in Sources */,
+				8A5B3C1D2D2A020F002C6A28 /* DownloadTests.swift in Sources */,
 				8AB12B812BF7A237002CADFD /* TypeTests.swift in Sources */,
 				8AD11F852C8FAFD2002B5D41 /* OpaqueBoxedProtocolTests.swift in Sources */,
 				8A5ABFB62CDB41B0003CBC1A /* Operator.swift in Sources */,
@@ -640,8 +660,10 @@
 				8A5B3C152D297ABB002C6A28 /* SendingReceivingDataTests.swift in Sources */,
 				8A36A03B2C7C39CC00C33475 /* FunctionGenericTests.swift in Sources */,
 				8A686A9E2BD335FD00B38E22 /* MemoryManagement.swift in Sources */,
+				8A5B3C1A2D2A016E002C6A28 /* Download.swift in Sources */,
 				8A5ABFB92CDB55F5003CBC1A /* PropertyWrappers.swift in Sources */,
 				8AD18D252C00D4C100080AF3 /* CollectionTypeTests.swift in Sources */,
+				8A5B3C1F2D2A2B2E002C6A28 /* ByteAccumulator.swift in Sources */,
 				8A5B3C092D24DC60002C6A28 /* SenarioTests.swift in Sources */,
 				8AC80B162CE39B39000317A3 /* String.swift in Sources */,
 				8A686AA32BD34EE300B38E22 /* Switch.swift in Sources */,
