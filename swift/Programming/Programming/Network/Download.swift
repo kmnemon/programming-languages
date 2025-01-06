@@ -7,6 +7,27 @@
 
 import Foundation
 
+/*
+ AsyncSequence is a protocol describing a sequence that can produce elements asynchronously.
+ • Iterating over the sequence in a for loop, using await and, if the AsyncSequence is throwing, try. The code suspends at each loop iteration to get the next value:
+
+    for try await item in asyncSequence { // Next item from `asyncSequence` }
+
+ • Using the asynchronous alternative of a standard library iterator with a while loop. This is similar to using a synchronous sequence: You need to make an iterator and repeatedly call next() using await until the sequence is over:
+
+    var iterator = asyncSequence.makeAsyncIterator() while let item = try await iterator.next() { ...}
+
+ • Using standard sequence methods like dropFirst(_:), prefix(_:) and filter(_:):
+
+    for await item in asyncSequence .dropFirst(5) .prefix(10) .filter { $0 > 10 } .map { "Item: \($0)" } { ...}
+
+ • Using special raw-byte sequence wrappers, such as reading file contents or fetching data from a server URL:
+ 
+    let bytes = URL(fileURLWithPath: "myFile.txt").resourceBytes
+    for await character in bytes.characters { ... }
+    for await line in bytes.lines { }
+ */
+
 extension Download {
     struct DownloadFile: Codable, Identifiable, Equatable {
       var id: String { return name }
