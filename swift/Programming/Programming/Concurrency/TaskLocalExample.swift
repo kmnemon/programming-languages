@@ -8,7 +8,7 @@
 import Foundation
 
 /*
- 
+ https://www.hackingwithswift.com/quick-start/concurrency/how-to-create-and-use-task-local-values
  Task-local values are analogous to thread-local values in an old-style multithreading environment: we attach some metadata to our task, and any code running inside that task can read that data as needed.
  
  Swift’s implementation is carefully scoped so that you create contexts where the data is available, rather than just injecting it directly into the task, which makes it possible to adjust your metadata over time. However, inside that context all code is able to read your task-local values, regardless of how it’s used.
@@ -24,14 +24,14 @@ import Foundation
 import Foundation
 
 //1. Usage
-extension TaskLocal {
+extension TaskLocalExample {
     class User {
         @TaskLocal static var id = "Anonymous"
     }
 }
 
 
-struct TaskLocal {
+struct TaskLocalExample {
     static func tasklocal() async throws {
         let first = Task {
             try await User.$id.withValue("Piper") {
@@ -54,3 +54,9 @@ struct TaskLocal {
         try await second.value
     }
 }
+
+
+//2. real example
+/*
+ in real-world code, task-local values are useful for places where you need to repeatedly pass values around inside your tasks – values that need to be shared within the task, but not across your whole program like a singleton might be
+ */

@@ -7,7 +7,7 @@
 
 import Testing
 
-@Test func testTaskLocal() async throws {
-    try await TaskLocal.tasklocal()
+@Test func testTaskLocalExample() async throws {
+    try await TaskLocalExample.tasklocal()
     print("finishd")
 }
