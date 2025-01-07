@@ -8,8 +8,8 @@
 import Testing
 
 struct TasksTests {
-    @Test func testPerformTask() {
-        Tasks.performTask()
+    @Test func testPerformTask() async throws{
+        await Tasks.getTaskValue()
         print("finishd")
     }
 }

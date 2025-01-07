@@ -44,7 +44,7 @@ struct Tasks {
     }
     
     //3.Task.value
-    static func getTaskValue() async{
+    static func getTaskValue() async {
         let task = Task {
             await fetchData()
         }
