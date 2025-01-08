@@ -79,11 +79,11 @@ func callAsynchronousInParallel() async {
     async let thirdPhoto = downloadPhoto(named: "photoNames[2]")
     
     
-    let photos = await [firstPhoto, secondPhoto, thirdPhoto]
+    let photos = try? await [firstPhoto, secondPhoto, thirdPhoto]
     //    show(photos)
 }
 
-func downloadPhoto(named: String) async -> String {
+func downloadPhoto(named: String) async throws -> String {
     return ""
 }
 

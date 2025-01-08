@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8A0696202CEB68390036DEA1 /* Opaque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A06961F2CEB68180036DEA1 /* Opaque.swift */; };
+		8A0FF8E12D2D0543003ACC69 /* CustomSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8E02D2D052A003ACC69 /* CustomSession.swift */; };
+		8A0FF8E22D2D0543003ACC69 /* CustomSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8E02D2D052A003ACC69 /* CustomSession.swift */; };
 		8A1ADFF72D2BCDA40038F96B /* TaskLocalExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ADFF62D2BCD8D0038F96B /* TaskLocalExample.swift */; };
 		8A1ADFF82D2BCDA40038F96B /* TaskLocalExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ADFF62D2BCD8D0038F96B /* TaskLocalExample.swift */; };
 		8A1ADFFA2D2BDBE10038F96B /* TaskLocalExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ADFF92D2BDBDB0038F96B /* TaskLocalExampleTests.swift */; };
@@ -128,6 +130,7 @@
 
 /* Begin PBXFileReference section */
 		8A06961F2CEB68180036DEA1 /* Opaque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opaque.swift; sourceTree = "<group>"; };
+		8A0FF8E02D2D052A003ACC69 /* CustomSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSession.swift; sourceTree = "<group>"; };
 		8A1ADFF62D2BCD8D0038F96B /* TaskLocalExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLocalExample.swift; sourceTree = "<group>"; };
 		8A1ADFF92D2BDBDB0038F96B /* TaskLocalExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLocalExampleTests.swift; sourceTree = "<group>"; };
 		8A1AE0002D2CC7E10038F96B /* TimerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerExample.swift; sourceTree = "<group>"; };
@@ -251,6 +254,7 @@
 				8A5B3C162D297B92002C6A28 /* SendingData.swift */,
 				8A5B3C112D297973002C6A28 /* ReceivingData.swift */,
 				8A5B3C0B2D296AE0002C6A28 /* LongLiveStream.swift */,
+				8A0FF8E02D2D052A003ACC69 /* CustomSession.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -612,6 +616,7 @@
 				8A5B3C202D2A2B2E002C6A28 /* ByteAccumulator.swift in Sources */,
 				8AB12B732BF396F8002CADFD /* StructType.swift in Sources */,
 				8AB12B7A2BF3AA4A002CADFD /* Closure.swift in Sources */,
+				8A0FF8E12D2D0543003ACC69 /* CustomSession.swift in Sources */,
 				8AF8303D2CC7545200B31278 /* Debug.swift in Sources */,
 				8A5B3C182D297B96002C6A28 /* SendingData.swift in Sources */,
 				8AB12B632BF36802002CADFD /* Guard.swift in Sources */,
@@ -694,6 +699,7 @@
 				8A1ADFFA2D2BDBE10038F96B /* TaskLocalExampleTests.swift in Sources */,
 				8AD18D252C00D4C100080AF3 /* CollectionTypeTests.swift in Sources */,
 				8A1ADFF82D2BCDA40038F96B /* TaskLocalExample.swift in Sources */,
+				8A0FF8E22D2D0543003ACC69 /* CustomSession.swift in Sources */,
 				8A5B3C1F2D2A2B2E002C6A28 /* ByteAccumulator.swift in Sources */,
 				8A5B3C092D24DC60002C6A28 /* SenarioTests.swift in Sources */,
 				8A1AE0022D2CC7E60038F96B /* TimerExample.swift in Sources */,
