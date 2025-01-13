@@ -9,7 +9,7 @@ import Foundation
 
 
 //1.Result
-func listDownloadedPhotos(inGallery: String) throws ->[String]{
+func listDownloadedPhotos(inGallery: String) throws ->[String] {
     return []
 }
 
@@ -77,3 +77,27 @@ func handleThrowType() {
     
 }
     
+//4. rethrow
+func executeTask(_ task: () throws -> Void) rethrows {
+    print("Starting task...")
+    try task()
+    print("Task completed.")
+}
+
+func runExecuteTask() {
+    // Usage with a throwing closure
+    do {
+        try executeTask {
+            print("Doing work...")
+            throw NSError(domain: "ExampleError", code: 1, userInfo: nil)
+        }
+    } catch {
+        print("Caught error: \(error)")
+    }
+    
+    // Usage with a non-throwing closure
+    executeTask {
+        print("Doing non-throwing work...")
+    }
+}
+
