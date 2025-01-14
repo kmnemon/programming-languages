@@ -18,6 +18,10 @@
 		8A0FF8EE2D3510E8003ACC69 /* AsyncToSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8EC2D3510D2003ACC69 /* AsyncToSequence.swift */; };
 		8A0FF8F02D3601E8003ACC69 /* ActorContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8EF2D3601E2003ACC69 /* ActorContext.swift */; };
 		8A0FF8F12D3601E8003ACC69 /* ActorContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8EF2D3601E2003ACC69 /* ActorContext.swift */; };
+		8A0FF8F32D3655C9003ACC69 /* TaskGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8F22D3655C2003ACC69 /* TaskGroup.swift */; };
+		8A0FF8F42D3655C9003ACC69 /* TaskGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8F22D3655C2003ACC69 /* TaskGroup.swift */; };
+		8A0FF8F62D36717F003ACC69 /* TaskGroupCancel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8F52D367178003ACC69 /* TaskGroupCancel.swift */; };
+		8A0FF8F72D36717F003ACC69 /* TaskGroupCancel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8F52D367178003ACC69 /* TaskGroupCancel.swift */; };
 		8A1ADFF72D2BCDA40038F96B /* TaskLocalExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ADFF62D2BCD8D0038F96B /* TaskLocalExample.swift */; };
 		8A1ADFF82D2BCDA40038F96B /* TaskLocalExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ADFF62D2BCD8D0038F96B /* TaskLocalExample.swift */; };
 		8A1ADFFA2D2BDBE10038F96B /* TaskLocalExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ADFF92D2BDBDB0038F96B /* TaskLocalExampleTests.swift */; };
@@ -145,6 +149,8 @@
 		8A0FF8E92D34EDE3003ACC69 /* CustomAsyncSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncSequence.swift; sourceTree = "<group>"; };
 		8A0FF8EC2D3510D2003ACC69 /* AsyncToSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncToSequence.swift; sourceTree = "<group>"; };
 		8A0FF8EF2D3601E2003ACC69 /* ActorContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorContext.swift; sourceTree = "<group>"; };
+		8A0FF8F22D3655C2003ACC69 /* TaskGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroup.swift; sourceTree = "<group>"; };
+		8A0FF8F52D367178003ACC69 /* TaskGroupCancel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupCancel.swift; sourceTree = "<group>"; };
 		8A1ADFF62D2BCD8D0038F96B /* TaskLocalExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLocalExample.swift; sourceTree = "<group>"; };
 		8A1ADFF92D2BDBDB0038F96B /* TaskLocalExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLocalExampleTests.swift; sourceTree = "<group>"; };
 		8A1AE0002D2CC7E10038F96B /* TimerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerExample.swift; sourceTree = "<group>"; };
@@ -417,6 +423,8 @@
 				8A686AB02BD53D1900B38E22 /* AsyncAwait.swift */,
 				8ADF4E552D35BA38009B5A7D /* Continuations.swift */,
 				8AF4B5972C70288D0087956A /* Tasks.swift */,
+				8A0FF8F22D3655C2003ACC69 /* TaskGroup.swift */,
+				8A0FF8F52D367178003ACC69 /* TaskGroupCancel.swift */,
 				8A1ADFF62D2BCD8D0038F96B /* TaskLocalExample.swift */,
 				8A36A0362C74047A00C33475 /* Actor.swift */,
 				8A5B3C242D2C8CA8002C6A28 /* MainActor.swift */,
@@ -642,6 +650,7 @@
 				8A0FF8F12D3601E8003ACC69 /* ActorContext.swift in Sources */,
 				8A0FF8EB2D34EDEE003ACC69 /* CustomAsyncSequence.swift in Sources */,
 				8A5B3C182D297B96002C6A28 /* SendingData.swift in Sources */,
+				8A0FF8F62D36717F003ACC69 /* TaskGroupCancel.swift in Sources */,
 				8AB12B632BF36802002CADFD /* Guard.swift in Sources */,
 				8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */,
 				8A5B3C132D2979DD002C6A28 /* ReceivingData.swift in Sources */,
@@ -667,6 +676,7 @@
 				8A686AA22BD34EE300B38E22 /* Switch.swift in Sources */,
 				8A5B3C0D2D296B01002C6A28 /* LongLiveStream.swift in Sources */,
 				8AC80B152CE39B39000317A3 /* String.swift in Sources */,
+				8A0FF8F42D3655C9003ACC69 /* TaskGroup.swift in Sources */,
 				8AD18D1A2BFD593B00080AF3 /* VariadicFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -677,6 +687,7 @@
 			files = (
 				8A686AA82BD3590700B38E22 /* Inheritance.swift in Sources */,
 				8A686AAE2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
+				8A0FF8F32D3655C9003ACC69 /* TaskGroup.swift in Sources */,
 				8AB12B7B2BF3AA4A002CADFD /* Closure.swift in Sources */,
 				8A5B3C122D2979DD002C6A28 /* ReceivingData.swift in Sources */,
 				8A686AB22BD53D1900B38E22 /* AsyncAwait.swift in Sources */,
@@ -701,6 +712,7 @@
 				8ABE51612D1ACC54006362FE /* Boxed.swift in Sources */,
 				8A686A9C2BD3354200B38E22 /* Loop.swift in Sources */,
 				8A9D36D12C7DC6FF00D56018 /* main.swift in Sources */,
+				8A0FF8F72D36717F003ACC69 /* TaskGroupCancel.swift in Sources */,
 				8AB12B7E2BF7A167002CADFD /* Collection.swift in Sources */,
 				8A5AC0EA2CEC33F6003CBC1A /* swifttesting.swift in Sources */,
 				8A5B3C072D24C3DC002C6A28 /* Tasks.swift in Sources */,
