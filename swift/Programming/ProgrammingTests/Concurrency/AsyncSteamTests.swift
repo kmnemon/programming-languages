@@ -8,5 +8,5 @@
 import Testing
 
 @Test func testSimpleAsyncStream() async {
-    await AsyncStreamExample.SimpleAsyncStream()
+    await AsyncStreamExample.simpleAsyncStream()
 }

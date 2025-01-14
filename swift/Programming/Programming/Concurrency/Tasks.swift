@@ -70,17 +70,13 @@ struct Tasks {
     }
     
     //6. Task.sleep
+    /*
+     Swift's Task.sleep() method automatically checks for cancellation, meaning that if you cancel a sleeping task it will be woken and throw a CancellationError for you to catch.
+     */
     func listPhotos(inGallery name: String) async throws -> [String] {
         try await Task.sleep(for: .seconds(2))
+        //try await Task.sleep(for: .seconds(3), tolerance: .seconds(1))
         return ["IMG001", "IMG99", "IMG0404"]
-    }
-    
-    func showPhoto2() async {
-        do {
-            let photos = try await listPhotos(inGallery: "A Rainy Weekend")
-        } catch {
-            print("Unexpected error: \(error).")
-        }
     }
     
     //9. insert suspension point

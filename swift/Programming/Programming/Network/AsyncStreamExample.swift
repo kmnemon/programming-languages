@@ -15,7 +15,7 @@ import Foundation
  */
 
 struct AsyncStreamExample {
-    func simpleAsyncStream() async {
+    static func simpleAsyncStream() async {
         let stream = AsyncStream { continuation in
             for i in 1...9 {
                 continuation.yield(i)

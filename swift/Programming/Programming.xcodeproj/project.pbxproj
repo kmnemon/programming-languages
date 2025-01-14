@@ -16,6 +16,8 @@
 		8A0FF8EB2D34EDEE003ACC69 /* CustomAsyncSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8E92D34EDE3003ACC69 /* CustomAsyncSequence.swift */; };
 		8A0FF8ED2D3510E8003ACC69 /* AsyncToSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8EC2D3510D2003ACC69 /* AsyncToSequence.swift */; };
 		8A0FF8EE2D3510E8003ACC69 /* AsyncToSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8EC2D3510D2003ACC69 /* AsyncToSequence.swift */; };
+		8A0FF8F02D3601E8003ACC69 /* ActorContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8EF2D3601E2003ACC69 /* ActorContext.swift */; };
+		8A0FF8F12D3601E8003ACC69 /* ActorContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8EF2D3601E2003ACC69 /* ActorContext.swift */; };
 		8A1ADFF72D2BCDA40038F96B /* TaskLocalExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ADFF62D2BCD8D0038F96B /* TaskLocalExample.swift */; };
 		8A1ADFF82D2BCDA40038F96B /* TaskLocalExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ADFF62D2BCD8D0038F96B /* TaskLocalExample.swift */; };
 		8A1ADFFA2D2BDBE10038F96B /* TaskLocalExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1ADFF92D2BDBDB0038F96B /* TaskLocalExampleTests.swift */; };
@@ -142,6 +144,7 @@
 		8A0FF8E62D310A1E003ACC69 /* AsyncSequenceExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSequenceExample.swift; sourceTree = "<group>"; };
 		8A0FF8E92D34EDE3003ACC69 /* CustomAsyncSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncSequence.swift; sourceTree = "<group>"; };
 		8A0FF8EC2D3510D2003ACC69 /* AsyncToSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncToSequence.swift; sourceTree = "<group>"; };
+		8A0FF8EF2D3601E2003ACC69 /* ActorContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorContext.swift; sourceTree = "<group>"; };
 		8A1ADFF62D2BCD8D0038F96B /* TaskLocalExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLocalExample.swift; sourceTree = "<group>"; };
 		8A1ADFF92D2BDBDB0038F96B /* TaskLocalExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLocalExampleTests.swift; sourceTree = "<group>"; };
 		8A1AE0002D2CC7E10038F96B /* TimerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerExample.swift; sourceTree = "<group>"; };
@@ -417,6 +420,7 @@
 				8A1ADFF62D2BCD8D0038F96B /* TaskLocalExample.swift */,
 				8A36A0362C74047A00C33475 /* Actor.swift */,
 				8A5B3C242D2C8CA8002C6A28 /* MainActor.swift */,
+				8A0FF8EF2D3601E2003ACC69 /* ActorContext.swift */,
 				8A5B3C012D24B378002C6A28 /* Senario.swift */,
 				8A1AE0002D2CC7E10038F96B /* TimerExample.swift */,
 			);
@@ -635,6 +639,7 @@
 				8AB12B7A2BF3AA4A002CADFD /* Closure.swift in Sources */,
 				8A0FF8E12D2D0543003ACC69 /* CustomSession.swift in Sources */,
 				8AF8303D2CC7545200B31278 /* Debug.swift in Sources */,
+				8A0FF8F12D3601E8003ACC69 /* ActorContext.swift in Sources */,
 				8A0FF8EB2D34EDEE003ACC69 /* CustomAsyncSequence.swift in Sources */,
 				8A5B3C182D297B96002C6A28 /* SendingData.swift in Sources */,
 				8AB12B632BF36802002CADFD /* Guard.swift in Sources */,
@@ -680,6 +685,7 @@
 				8A686A9D2BD3359800B38E22 /* Lambda.swift in Sources */,
 				8AD18D2B2C00DF8D00080AF3 /* CollectionType.swift in Sources */,
 				8AF830382CC74D2C00B31278 /* Type.swift in Sources */,
+				8A0FF8F02D3601E8003ACC69 /* ActorContext.swift in Sources */,
 				8AB12B782BF3974C002CADFD /* StructTypeTests.swift in Sources */,
 				8A5B3C222D2A2B34002C6A28 /* Utility.swift in Sources */,
 				8A9D36DA2C80259100D56018 /* ARCTests.swift in Sources */,
