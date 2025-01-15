@@ -121,6 +121,10 @@
 		8ADF4E542D354B64009B5A7D /* AsyncStreamExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4E522D354B5D009B5A7D /* AsyncStreamExample.swift */; };
 		8ADF4E562D35BA8D009B5A7D /* Continuations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4E552D35BA38009B5A7D /* Continuations.swift */; };
 		8ADF4E572D35BA8D009B5A7D /* Continuations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4E552D35BA38009B5A7D /* Continuations.swift */; };
+		8ADF4E592D384920009B5A7D /* TaskGroupDiffType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4E582D384918009B5A7D /* TaskGroupDiffType.swift */; };
+		8ADF4E5A2D384920009B5A7D /* TaskGroupDiffType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4E582D384918009B5A7D /* TaskGroupDiffType.swift */; };
+		8ADF4E5C2D3852B0009B5A7D /* TaskGroupDiscard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4E5B2D385299009B5A7D /* TaskGroupDiscard.swift */; };
+		8ADF4E5D2D3852B0009B5A7D /* TaskGroupDiscard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4E5B2D385299009B5A7D /* TaskGroupDiscard.swift */; };
 		8AF4B5932C6ADC4E0087956A /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4B5922C6ADC4E0087956A /* Properties.swift */; };
 		8AF4B5942C6ADC4E0087956A /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4B5922C6ADC4E0087956A /* Properties.swift */; };
 		8AF4B5982C70288D0087956A /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4B5972C70288D0087956A /* Tasks.swift */; };
@@ -214,6 +218,8 @@
 		8AD18D2D2C01D35E00080AF3 /* LambdaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LambdaTests.swift; sourceTree = "<group>"; };
 		8ADF4E522D354B5D009B5A7D /* AsyncStreamExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStreamExample.swift; sourceTree = "<group>"; };
 		8ADF4E552D35BA38009B5A7D /* Continuations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continuations.swift; sourceTree = "<group>"; };
+		8ADF4E582D384918009B5A7D /* TaskGroupDiffType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupDiffType.swift; sourceTree = "<group>"; };
+		8ADF4E5B2D385299009B5A7D /* TaskGroupDiscard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupDiscard.swift; sourceTree = "<group>"; };
 		8AF4B5922C6ADC4E0087956A /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		8AF4B5972C70288D0087956A /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		8AF830372CC74D2800B31278 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
@@ -425,6 +431,8 @@
 				8AF4B5972C70288D0087956A /* Tasks.swift */,
 				8A0FF8F22D3655C2003ACC69 /* TaskGroup.swift */,
 				8A0FF8F52D367178003ACC69 /* TaskGroupCancel.swift */,
+				8ADF4E582D384918009B5A7D /* TaskGroupDiffType.swift */,
+				8ADF4E5B2D385299009B5A7D /* TaskGroupDiscard.swift */,
 				8A1ADFF62D2BCD8D0038F96B /* TaskLocalExample.swift */,
 				8A36A0362C74047A00C33475 /* Actor.swift */,
 				8A5B3C242D2C8CA8002C6A28 /* MainActor.swift */,
@@ -628,6 +636,7 @@
 				8AB12B6D2BF375C6002CADFD /* Lazy.swift in Sources */,
 				8A686AAD2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
 				8AB12B7D2BF7A167002CADFD /* Collection.swift in Sources */,
+				8ADF4E5A2D384920009B5A7D /* TaskGroupDiffType.swift in Sources */,
 				8A686AB12BD53D1900B38E22 /* AsyncAwait.swift in Sources */,
 				8AD11F812C8FA1F4002B5D41 /* OpaqueBoxedProtocol.swift in Sources */,
 				8A0FF8EE2D3510E8003ACC69 /* AsyncToSequence.swift in Sources */,
@@ -650,6 +659,7 @@
 				8A0FF8F12D3601E8003ACC69 /* ActorContext.swift in Sources */,
 				8A0FF8EB2D34EDEE003ACC69 /* CustomAsyncSequence.swift in Sources */,
 				8A5B3C182D297B96002C6A28 /* SendingData.swift in Sources */,
+				8ADF4E5C2D3852B0009B5A7D /* TaskGroupDiscard.swift in Sources */,
 				8A0FF8F62D36717F003ACC69 /* TaskGroupCancel.swift in Sources */,
 				8AB12B632BF36802002CADFD /* Guard.swift in Sources */,
 				8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */,
@@ -694,8 +704,10 @@
 				8AD18D2F2C01D35E00080AF3 /* LambdaTests.swift in Sources */,
 				8A5AC0562CE334A2003CBC1A /* maperror.swift in Sources */,
 				8A686A9D2BD3359800B38E22 /* Lambda.swift in Sources */,
+				8ADF4E592D384920009B5A7D /* TaskGroupDiffType.swift in Sources */,
 				8AD18D2B2C00DF8D00080AF3 /* CollectionType.swift in Sources */,
 				8AF830382CC74D2C00B31278 /* Type.swift in Sources */,
+				8ADF4E5D2D3852B0009B5A7D /* TaskGroupDiscard.swift in Sources */,
 				8A0FF8F02D3601E8003ACC69 /* ActorContext.swift in Sources */,
 				8AB12B782BF3974C002CADFD /* StructTypeTests.swift in Sources */,
 				8A5B3C222D2A2B34002C6A28 /* Utility.swift in Sources */,
