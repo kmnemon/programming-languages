@@ -45,7 +45,7 @@ class LongLiveViewModel2 {
       return URLSession(configuration: configuration)
     }()
     
-    func availableStocks() async throws{
+    func availableStocks() async throws {
         guard let url = URL(string: "http://localhost:8080/stock-stream")
         else {
             throw "The URL could not be created"
@@ -62,4 +62,16 @@ class LongLiveViewModel2 {
 //            print("Updated: \(Date())")
 //        }
     }
+}
+
+
+//3. If you wanted the work to be sent off to the main actor without waiting for its result to come back, you can place it in a new task like this
+func couldBeAnywhere() {
+    Task {
+        await MainActor.run {
+            print("This is on the main actor.")
+        }
+    }
+
+    // more work you want to do
 }
