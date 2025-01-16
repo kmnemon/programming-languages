@@ -75,3 +75,41 @@ func couldBeAnywhere() {
 
     // more work you want to do
 }
+
+//4.you can also mark your task’s closure as being @MainActor
+/*
+ This is particularly helpful when you’re inside a synchronous context, so you need to push work to the main actor without using the await keyword.
+ */
+func couldBeAnywhere2() {
+    Task { @MainActor in
+        print("This is on the main actor.")
+    }
+
+    // more work you want to do
+}
+
+
+//5.which one run first
+//1,2,4,5,3
+@MainActor @Observable
+class ViewModel {
+    func runTest() async {
+        print("1")
+
+        await MainActor.run {
+            print("2")
+
+            Task { @MainActor in
+                print("3")
+            }
+
+            print("4")
+        }
+
+        print("5")
+    }
+}
+
+//let model = ViewModel()
+//await model.runTest()
+//try await Task.sleep(for: .seconds(0.1))
