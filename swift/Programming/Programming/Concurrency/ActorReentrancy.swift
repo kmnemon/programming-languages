@@ -11,7 +11,7 @@ import Foundation
 actor Player {
     var name = "Anonymous"
     var score = 0
-
+    
     func addToScore() {
         Task {
             score += 1
@@ -29,3 +29,16 @@ func ActorReentrancy() async {
     
     try? await Task.sleep(for: .seconds(1.1))
 }
+
+enum AAAA: Error {
+    case aaa
+}
+
+class Player2 {
+    func addTo() async throws {
+        try? await Task.sleep(for: .seconds(0.1))
+    }
+    
+}
+
+
