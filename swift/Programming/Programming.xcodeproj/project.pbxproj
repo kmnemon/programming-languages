@@ -138,6 +138,8 @@
 		8AFFF23F2D38F3B60083F276 /* ActorIsolateFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFF23D2D38F3B60083F276 /* ActorIsolateFunc.swift */; };
 		8AFFF2412D38F4150083F276 /* ActorNonisolated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFF2402D38F4150083F276 /* ActorNonisolated.swift */; };
 		8AFFF2422D38F4150083F276 /* ActorNonisolated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFF2402D38F4150083F276 /* ActorNonisolated.swift */; };
+		8AFFF2482D3A5F7E0083F276 /* ActorReentrancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFF2472D3A5F700083F276 /* ActorReentrancy.swift */; };
+		8AFFF2492D3A5F7E0083F276 /* ActorReentrancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFF2472D3A5F700083F276 /* ActorReentrancy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -233,6 +235,7 @@
 		8AFFF23A2D38D9E30083F276 /* ActorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorExample.swift; sourceTree = "<group>"; };
 		8AFFF23D2D38F3B60083F276 /* ActorIsolateFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorIsolateFunc.swift; sourceTree = "<group>"; };
 		8AFFF2402D38F4150083F276 /* ActorNonisolated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorNonisolated.swift; sourceTree = "<group>"; };
+		8AFFF2472D3A5F700083F276 /* ActorReentrancy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorReentrancy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -449,6 +452,7 @@
 				8A36A0362C74047A00C33475 /* ActorWorker.swift */,
 				8A5B3C242D2C8CA8002C6A28 /* MainActor.swift */,
 				8A0FF8EF2D3601E2003ACC69 /* ActorContext.swift */,
+				8AFFF2472D3A5F700083F276 /* ActorReentrancy.swift */,
 				8A5B3C012D24B378002C6A28 /* Senario.swift */,
 				8A1AE0002D2CC7E10038F96B /* TimerExample.swift */,
 			);
@@ -700,6 +704,7 @@
 				8A5ABFB52CDB41B0003CBC1A /* Operator.swift in Sources */,
 				8A686AA22BD34EE300B38E22 /* Switch.swift in Sources */,
 				8A5B3C0D2D296B01002C6A28 /* LongLiveStream.swift in Sources */,
+				8AFFF2492D3A5F7E0083F276 /* ActorReentrancy.swift in Sources */,
 				8AC80B152CE39B39000317A3 /* String.swift in Sources */,
 				8A0FF8F42D3655C9003ACC69 /* TaskGroup.swift in Sources */,
 				8AD18D1A2BFD593B00080AF3 /* VariadicFunction.swift in Sources */,
@@ -754,6 +759,7 @@
 				8AB12B812BF7A237002CADFD /* TypeTests.swift in Sources */,
 				8AD11F852C8FAFD2002B5D41 /* OpaqueBoxedProtocolTests.swift in Sources */,
 				8A5ABFB62CDB41B0003CBC1A /* Operator.swift in Sources */,
+				8AFFF2482D3A5F7E0083F276 /* ActorReentrancy.swift in Sources */,
 				8AB12B742BF396F8002CADFD /* StructType.swift in Sources */,
 				8A5B3C102D297516002C6A28 /* LongLiveStreamTests.swift in Sources */,
 				8A5B3C022D24B382002C6A28 /* Senario.swift in Sources */,
