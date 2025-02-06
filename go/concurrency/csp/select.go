@@ -7,9 +7,9 @@ import (
 
 //1.Multiplexing with select
 /*
-1.select blocks until one of its cases can proceed.
-2.If multiple cases are ready, one is chosen at random.
-3.A default case, if present, executes immediately if no other case is ready.
+1. select blocks until one of its cases can proceed.
+2. If multiple cases are ready, one is chosen at random.
+3. A default case, if present, executes immediately if no other case is ready.
 */
 func multiplexSelect() {
 	ch := make(chan int, 1)

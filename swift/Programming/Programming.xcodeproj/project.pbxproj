@@ -88,6 +88,8 @@
 		8A6EA1B52BFABF39005E1293 /* FunctionGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6EA1B42BFABF39005E1293 /* FunctionGeneric.swift */; };
 		8A6EA1B72BFB0833005E1293 /* ClassGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6EA1B62BFB0833005E1293 /* ClassGeneric.swift */; };
 		8A6EA1B92BFB1CAC005E1293 /* ValueReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6EA1B82BFB1CAC005E1293 /* ValueReference.swift */; };
+		8A92DA4A2D5472EB0088E5B9 /* LazyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A92DA492D5472E50088E5B9 /* LazyType.swift */; };
+		8A92DA4B2D5472EB0088E5B9 /* LazyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A92DA492D5472E50088E5B9 /* LazyType.swift */; };
 		8A9D36D12C7DC6FF00D56018 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A6D2BD32DB700B38E22 /* main.swift */; };
 		8A9D36D62C80236700D56018 /* ARC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D36D52C80236700D56018 /* ARC.swift */; };
 		8A9D36D72C80236700D56018 /* ARC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D36D52C80236700D56018 /* ARC.swift */; };
@@ -208,6 +210,7 @@
 		8A6EA1B42BFABF39005E1293 /* FunctionGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionGeneric.swift; sourceTree = "<group>"; };
 		8A6EA1B62BFB0833005E1293 /* ClassGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassGeneric.swift; sourceTree = "<group>"; };
 		8A6EA1B82BFB1CAC005E1293 /* ValueReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueReference.swift; sourceTree = "<group>"; };
+		8A92DA492D5472E50088E5B9 /* LazyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyType.swift; sourceTree = "<group>"; };
 		8A9D36D52C80236700D56018 /* ARC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARC.swift; sourceTree = "<group>"; };
 		8A9D36D92C80259100D56018 /* ARCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCTests.swift; sourceTree = "<group>"; };
 		8AB12B622BF36802002CADFD /* Guard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guard.swift; sourceTree = "<group>"; };
@@ -505,6 +508,7 @@
 			isa = PBXGroup;
 			children = (
 				8AB12B6C2BF375C6002CADFD /* Lazy.swift */,
+				8A92DA492D5472E50088E5B9 /* LazyType.swift */,
 			);
 			path = Performance;
 			sourceTree = "<group>";
@@ -688,6 +692,7 @@
 				8A0FF8F62D36717F003ACC69 /* TaskGroupCancel.swift in Sources */,
 				8AB12B632BF36802002CADFD /* Guard.swift in Sources */,
 				8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */,
+				8A92DA4B2D5472EB0088E5B9 /* LazyType.swift in Sources */,
 				8A5B3C132D2979DD002C6A28 /* ReceivingData.swift in Sources */,
 				8A5AC0572CE334A2003CBC1A /* maperror.swift in Sources */,
 				8AF4B5982C70288D0087956A /* Tasks.swift in Sources */,
@@ -744,6 +749,7 @@
 				8A9D36DA2C80259100D56018 /* ARCTests.swift in Sources */,
 				8A0FF8EA2D34EDEE003ACC69 /* CustomAsyncSequence.swift in Sources */,
 				8AF4B5942C6ADC4E0087956A /* Properties.swift in Sources */,
+				8A92DA4A2D5472EB0088E5B9 /* LazyType.swift in Sources */,
 				8A36A0382C7404AE00C33475 /* ActorWorker.swift in Sources */,
 				8A1AE0072D2CD74E0038F96B /* AsyncSteamTests.swift in Sources */,
 				8A9D36D72C80236700D56018 /* ARC.swift in Sources */,

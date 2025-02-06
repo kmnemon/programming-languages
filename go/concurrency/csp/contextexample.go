@@ -3,6 +3,7 @@ package csp
 import (
 	"context"
 	"fmt"
+	"net/http"
 	"time"
 )
 
@@ -44,10 +45,29 @@ func (pi publishImplement) Publish(ctx context.Context, position Position) error
 	select {
 	case <-ctx.Done():
 		// If the context times out or is canceled, handle it here.
+
+		/*
+			1. A context.Canceled error if the channel was canceled
+			2. A context.DeadlineExceeded error if the context’s deadline passed
+		*/
 		return ctx.Err()
 	default:
 		// Simulating some publishing logic.
 		fmt.Printf("Published Position: (%d, %d)\n", position.x, position.y)
 		return nil
 	}
+}
+
+// 2.withvalue
+type key string
+
+const isValidHostKey key = "isValidHost"
+
+func checkValid(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		validHost := (r.Host == "acme")
+		ctx := context.WithValue(r.Context(), isValidHostKey, validHost)
+
+		next.ServeHTTP(w, r.WithContext(ctx))
+	})
 }
