@@ -61,3 +61,30 @@ func defaultSelect2() {
 		}
 	}
 }
+
+// 4. merge channels
+func mergeChannels(ch1, ch2 <-chan int) <-chan int {
+	ch := make(chan int)
+
+	go func() {
+		for ch1 != nil || ch2 != nil {
+			select {
+			case v, open := <-ch1:
+				if !open {
+					ch1 = nil
+					break
+				}
+				ch <- v
+			case v, open := <-ch2:
+				if !open {
+					ch2 = nil
+					break
+				}
+				ch <- v
+			}
+		}
+		close(ch)
+	}()
+
+	return ch
+}
