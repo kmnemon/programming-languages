@@ -37,6 +37,13 @@ func fetchSubscribersFromDB() -> [Subscriber] {
     return subscribers
 }
 
+func fetchSubscribersFromDB(_ pages: Int) -> [Subscriber] {
+    var subscribers: [Subscriber] = []
+    subscribers.append(Subscriber(email: "alice@example.com", recCount: 12))
+    subscribers.append(Subscriber(email: "bob@example.com", recCount: 5))
+    return subscribers
+}
+
 func subCouponRank( _ subscriber: Subscriber) -> String {
     subscriber.recCount > 10 ? "best" : "good"
 }
@@ -70,15 +77,32 @@ func emailsForSubscribers(_ subscribers: [Subscriber], _ goods: [String], _ best
 }
 
 func sendIssue() {
-    //Data and Calculations
     var coupons = fetchCouponsFromDB()
     var goodCoupons = selectCouponsByRank(coupons, "good")
     var bestCoupons = selectCouponsByRank(coupons, "best")
     var subscribers = fetchSubscribersFromDB()
     let emails = emailsForSubscribers(subscribers, goodCoupons, bestCoupons)
     
-    //Action
     for email in emails {
         print(email)
     }
+}
+
+func sendIssueScale() {
+    var coupons = fetchCouponsFromDB()
+    var goodCoupons = selectCouponsByRank(coupons, "good")
+    var bestCoupons = selectCouponsByRank(coupons, "best")
+    var page = 0;
+    var subscribers = fetchSubscribersFromDB(page)
+    
+    while(subscribers.count > 0) {
+        let emails = emailsForSubscribers(subscribers, goodCoupons, bestCoupons)
+        for email in emails {
+            print(email)
+        }
+        page += 1
+        subscribers = fetchSubscribersFromDB(page)
+    }
+    
+
 }
