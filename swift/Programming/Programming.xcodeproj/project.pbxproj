@@ -151,6 +151,8 @@
 		E3C4EB432E69C25500ABA4E7 /* OverLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4EB412E69C24C00ABA4E7 /* OverLoad.swift */; };
 		E3C4EB452E69C27700ABA4E7 /* CustomOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4EB442E69C27100ABA4E7 /* CustomOperator.swift */; };
 		E3C4EB462E69C27700ABA4E7 /* CustomOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4EB442E69C27100ABA4E7 /* CustomOperator.swift */; };
+		E3C4EB482E69DD4900ABA4E7 /* Currying.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4EB472E69DD3D00ABA4E7 /* Currying.swift */; };
+		E3C4EB492E69DD4900ABA4E7 /* Currying.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4EB472E69DD3D00ABA4E7 /* Currying.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -253,6 +255,7 @@
 		8AFFF2472D3A5F700083F276 /* ActorReentrancy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorReentrancy.swift; sourceTree = "<group>"; };
 		E3C4EB412E69C24C00ABA4E7 /* OverLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverLoad.swift; sourceTree = "<group>"; };
 		E3C4EB442E69C27100ABA4E7 /* CustomOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperator.swift; sourceTree = "<group>"; };
+		E3C4EB472E69DD3D00ABA4E7 /* Currying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currying.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,6 +399,7 @@
 				8A5AC0552CE3349D003CBC1A /* maperror.swift */,
 				8AB12B792BF3AA4A002CADFD /* Closure.swift */,
 				8A2206F72C5237F100EC2FE5 /* FunctionProgramming.swift */,
+				E3C4EB472E69DD3D00ABA4E7 /* Currying.swift */,
 			);
 			path = FunctionalProgramming;
 			sourceTree = "<group>";
@@ -745,6 +749,7 @@
 				8A686AA92BD3590700B38E22 /* Interfaces.swift in Sources */,
 				8A5B3C262D2C8CAB002C6A28 /* MainActor.swift in Sources */,
 				8ADF4E532D354B64009B5A7D /* AsyncStreamExample.swift in Sources */,
+				E3C4EB482E69DD4900ABA4E7 /* Currying.swift in Sources */,
 				8A686A882BD32E2100B38E22 /* Loop.swift in Sources */,
 				8ABE51622D1ACC54006362FE /* Boxed.swift in Sources */,
 				8A0696202CEB68390036DEA1 /* Opaque.swift in Sources */,
@@ -795,6 +800,7 @@
 				8A1AE0072D2CD74E0038F96B /* AsyncSteamTests.swift in Sources */,
 				8A9D36D72C80236700D56018 /* ARC.swift in Sources */,
 				8AFFF23C2D38D9EE0083F276 /* ActorExample.swift in Sources */,
+				E3C4EB492E69DD4900ABA4E7 /* Currying.swift in Sources */,
 				8A5B3C252D2C8CAB002C6A28 /* MainActor.swift in Sources */,
 				8A5AC0ED2CEC8863003CBC1A /* AsyncAwaitTests.swift in Sources */,
 				8AF8303C2CC7545200B31278 /* Debug.swift in Sources */,
