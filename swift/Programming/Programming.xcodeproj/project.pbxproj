@@ -147,6 +147,10 @@
 		8AFFF2422D38F4150083F276 /* ActorNonisolated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFF2402D38F4150083F276 /* ActorNonisolated.swift */; };
 		8AFFF2482D3A5F7E0083F276 /* ActorReentrancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFF2472D3A5F700083F276 /* ActorReentrancy.swift */; };
 		8AFFF2492D3A5F7E0083F276 /* ActorReentrancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFF2472D3A5F700083F276 /* ActorReentrancy.swift */; };
+		E3C4EB422E69C25500ABA4E7 /* OverLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4EB412E69C24C00ABA4E7 /* OverLoad.swift */; };
+		E3C4EB432E69C25500ABA4E7 /* OverLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4EB412E69C24C00ABA4E7 /* OverLoad.swift */; };
+		E3C4EB452E69C27700ABA4E7 /* CustomOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4EB442E69C27100ABA4E7 /* CustomOperator.swift */; };
+		E3C4EB462E69C27700ABA4E7 /* CustomOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4EB442E69C27100ABA4E7 /* CustomOperator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -247,6 +251,8 @@
 		8AFFF23D2D38F3B60083F276 /* ActorIsolateFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorIsolateFunc.swift; sourceTree = "<group>"; };
 		8AFFF2402D38F4150083F276 /* ActorNonisolated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorNonisolated.swift; sourceTree = "<group>"; };
 		8AFFF2472D3A5F700083F276 /* ActorReentrancy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorReentrancy.swift; sourceTree = "<group>"; };
+		E3C4EB412E69C24C00ABA4E7 /* OverLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverLoad.swift; sourceTree = "<group>"; };
+		E3C4EB442E69C27100ABA4E7 /* CustomOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +380,7 @@
 				8A686A862BD32E2100B38E22 /* Resource */,
 				8A686AA42BD358E600B38E22 /* Classes */,
 				8A686AAB2BD3C56F00B38E22 /* POP */,
+				E3C4EB402E69C23900ABA4E7 /* Operator */,
 				8AB12B642BF3728B002CADFD /* Performance */,
 				8A5ABFB72CDB55D3003CBC1A /* Macro */,
 				8AF8303A2CC7543D00B31278 /* Debug */,
@@ -590,6 +597,15 @@
 			path = Debug;
 			sourceTree = "<group>";
 		};
+		E3C4EB402E69C23900ABA4E7 /* Operator */ = {
+			isa = PBXGroup;
+			children = (
+				E3C4EB412E69C24C00ABA4E7 /* OverLoad.swift */,
+				E3C4EB442E69C27100ABA4E7 /* CustomOperator.swift */,
+			);
+			path = Operator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -684,6 +700,7 @@
 				8A686AAD2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
 				8AB12B7D2BF7A167002CADFD /* Collection.swift in Sources */,
 				8ADF4E5A2D384920009B5A7D /* TaskGroupDiffType.swift in Sources */,
+				E3C4EB432E69C25500ABA4E7 /* OverLoad.swift in Sources */,
 				8A686AB12BD53D1900B38E22 /* AsyncAwait.swift in Sources */,
 				8ADF4E682D3B0E02009B5A7D /* DecodingJson.swift in Sources */,
 				8AD11F812C8FA1F4002B5D41 /* OpaqueBoxedProtocol.swift in Sources */,
@@ -722,6 +739,7 @@
 				8A686A8A2BD32E2100B38E22 /* MemoryManagement.swift in Sources */,
 				8AFFF23B2D38D9EE0083F276 /* ActorExample.swift in Sources */,
 				8A6EA1B72BFB0833005E1293 /* ClassGeneric.swift in Sources */,
+				E3C4EB462E69C27700ABA4E7 /* CustomOperator.swift in Sources */,
 				8A686AB52BD6216100B38E22 /* Exception.swift in Sources */,
 				8AD18D182BFCDF2400080AF3 /* ProtocolGeneric.swift in Sources */,
 				8A686AA92BD3590700B38E22 /* Interfaces.swift in Sources */,
@@ -750,6 +768,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A686AA82BD3590700B38E22 /* Inheritance.swift in Sources */,
+				E3C4EB422E69C25500ABA4E7 /* OverLoad.swift in Sources */,
 				8A686AAE2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
 				8AFFF2412D38F4150083F276 /* ActorNonisolated.swift in Sources */,
 				8A0FF8F32D3655C9003ACC69 /* TaskGroup.swift in Sources */,
@@ -769,6 +788,7 @@
 				8A5B3C222D2A2B34002C6A28 /* Utility.swift in Sources */,
 				8A9D36DA2C80259100D56018 /* ARCTests.swift in Sources */,
 				8A0FF8EA2D34EDEE003ACC69 /* CustomAsyncSequence.swift in Sources */,
+				E3C4EB452E69C27700ABA4E7 /* CustomOperator.swift in Sources */,
 				8AF4B5942C6ADC4E0087956A /* Properties.swift in Sources */,
 				8A92DA4A2D5472EB0088E5B9 /* LazyType.swift in Sources */,
 				8A36A0382C7404AE00C33475 /* ActorWorker.swift in Sources */,
