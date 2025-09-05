@@ -16,9 +16,9 @@ reasonable error responses.
 if the fails exceed the threshold, the circuit breaker will open the circuit, and the call will fast fail.
 */
 
-type Circuit func(context.Context) (string, error)
+type circuit func(context.Context) (string, error)
 
-func Breaker(circuit Circuit, threshold int) Circuit {
+func breaker(circuit circuit, threshold int) circuit {
 	var failures int
 	var last = time.Now()
 
@@ -60,7 +60,7 @@ func basicUsage() {
 	}
 
 	// Wrap the circuit with a breaker (threshold of 3 failures)
-	protectedService := Breaker(unstableService, 3)
+	protectedService := breaker(unstableService, 3)
 
 	// Use the protected service
 	ctx := context.Background()
