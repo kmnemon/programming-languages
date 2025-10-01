@@ -119,3 +119,12 @@ func compositionFunction() {
         .filter { $0.continent == "Europe" }
         .reduce(0) { $0 + $1.population }
 }
+
+func lazyCompositionFunction() {
+    let lazyFilter = (1..<10)
+        .lazy
+        .map { $0 * $0 }
+        .filter { $0 % 2 == 0 }
+    
+    let filtered = Array(lazyFilter)
+}

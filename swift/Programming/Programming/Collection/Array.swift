@@ -16,7 +16,7 @@ func arrayOper() {
     
     //1. iterate over
     for x in arr {
-       print(x)
+        print(x)
     }
     
     //2. iterate over but the first element of array
@@ -49,7 +49,7 @@ func arrayOper() {
     }
     
     
-
+    
     
 }
 
@@ -57,4 +57,15 @@ func someMatchingLogic(_ element: Int) -> Bool {
     return true
 }
 
+//7. array accumulate
+extension Array {
+    func accumulate<R>(_ initialResult: R, _ nextPartialResult: (R, Element) -> R) -> [R] {
+        var running = initialResult
+        return map { next in
+            running = nextPartialResult(running, next)
+            return running
+        }
+    }
+}
 
+//[1, 2, 3, 4].accumulate(0,+) //[1, 3, 6, 10]
