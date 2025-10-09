@@ -149,6 +149,9 @@
 		8AFFF2422D38F4150083F276 /* ActorNonisolated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFF2402D38F4150083F276 /* ActorNonisolated.swift */; };
 		8AFFF2482D3A5F7E0083F276 /* ActorReentrancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFF2472D3A5F700083F276 /* ActorReentrancy.swift */; };
 		8AFFF2492D3A5F7E0083F276 /* ActorReentrancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFF2472D3A5F700083F276 /* ActorReentrancy.swift */; };
+		E300BFDA2E98191500F39DA7 /* Slice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E300BFD92E98191500F39DA7 /* Slice.swift */; };
+		E300BFDB2E98191500F39DA7 /* Slice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E300BFD92E98191500F39DA7 /* Slice.swift */; };
+		E300BFDD2E98192100F39DA7 /* SliceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E300BFDC2E98192100F39DA7 /* SliceTests.swift */; };
 		E3A57B3F2E8B8E2100118E1B /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A57B3E2E8B8E1C00118E1B /* ArrayTests.swift */; };
 		E3C4EB422E69C25500ABA4E7 /* OverLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4EB412E69C24C00ABA4E7 /* OverLoad.swift */; };
 		E3C4EB432E69C25500ABA4E7 /* OverLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4EB412E69C24C00ABA4E7 /* OverLoad.swift */; };
@@ -257,6 +260,8 @@
 		8AFFF23D2D38F3B60083F276 /* ActorIsolateFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorIsolateFunc.swift; sourceTree = "<group>"; };
 		8AFFF2402D38F4150083F276 /* ActorNonisolated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorNonisolated.swift; sourceTree = "<group>"; };
 		8AFFF2472D3A5F700083F276 /* ActorReentrancy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorReentrancy.swift; sourceTree = "<group>"; };
+		E300BFD92E98191500F39DA7 /* Slice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slice.swift; sourceTree = "<group>"; };
+		E300BFDC2E98192100F39DA7 /* SliceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceTests.swift; sourceTree = "<group>"; };
 		E3A57B3E2E8B8E1C00118E1B /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		E3C4EB412E69C24C00ABA4E7 /* OverLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverLoad.swift; sourceTree = "<group>"; };
 		E3C4EB442E69C27100ABA4E7 /* CustomOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperator.swift; sourceTree = "<group>"; };
@@ -576,6 +581,7 @@
 		8AD18D1B2C00C4D200080AF3 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
+				E300BFD92E98191500F39DA7 /* Slice.swift */,
 				8A6B4C302E8A878900275AA3 /* Array.swift */,
 				8AD18D262C00D62500080AF3 /* CollectionType.swift */,
 			);
@@ -585,6 +591,7 @@
 		8AD18D1E2C00C5BD00080AF3 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
+				E300BFDC2E98192100F39DA7 /* SliceTests.swift */,
 				E3A57B3E2E8B8E1C00118E1B /* ArrayTests.swift */,
 				8AD18D232C00D4C100080AF3 /* CollectionTypeTests.swift */,
 			);
@@ -740,6 +747,7 @@
 				8A6B4C322E8A878E00275AA3 /* Array.swift in Sources */,
 				8ADF4E5C2D3852B0009B5A7D /* TaskGroupDiscard.swift in Sources */,
 				8A0FF8F62D36717F003ACC69 /* TaskGroupCancel.swift in Sources */,
+				E300BFDA2E98191500F39DA7 /* Slice.swift in Sources */,
 				8AB12B632BF36802002CADFD /* Guard.swift in Sources */,
 				8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */,
 				8A92DA4B2D5472EB0088E5B9 /* LazyType.swift in Sources */,
@@ -790,6 +798,7 @@
 				8A686AB22BD53D1900B38E22 /* AsyncAwait.swift in Sources */,
 				8AD18D2F2C01D35E00080AF3 /* LambdaTests.swift in Sources */,
 				8A5AC0562CE334A2003CBC1A /* maperror.swift in Sources */,
+				E300BFDD2E98192100F39DA7 /* SliceTests.swift in Sources */,
 				8A686A9D2BD3359800B38E22 /* Lambda.swift in Sources */,
 				8ADF4E592D384920009B5A7D /* TaskGroupDiffType.swift in Sources */,
 				8AD18D2B2C00DF8D00080AF3 /* CollectionType.swift in Sources */,
@@ -859,6 +868,7 @@
 				8A5B3C0C2D296B01002C6A28 /* LongLiveStream.swift in Sources */,
 				8A36A03E2C7C6D9D00C33475 /* ClosureTests.swift in Sources */,
 				8A2AFCCC2C5247D5004DCD4F /* FunctionProgramming.swift in Sources */,
+				E300BFDB2E98191500F39DA7 /* Slice.swift in Sources */,
 				8A36A03C2C7C3A2600C33475 /* FunctionGeneric.swift in Sources */,
 				8AFFF23F2D38F3B60083F276 /* ActorIsolateFunc.swift in Sources */,
 				8AD11F822C8FA1F4002B5D41 /* OpaqueBoxedProtocol.swift in Sources */,
