@@ -67,6 +67,10 @@
 		8A5B3C232D2A2B34002C6A28 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C212D2A2B32002C6A28 /* Utility.swift */; };
 		8A5B3C252D2C8CAB002C6A28 /* MainActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C242D2C8CA8002C6A28 /* MainActor.swift */; };
 		8A5B3C262D2C8CAB002C6A28 /* MainActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B3C242D2C8CA8002C6A28 /* MainActor.swift */; };
+		8A6457232EA9C23700E3FE18 /* OptionalWithString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6457222EA9C22100E3FE18 /* OptionalWithString.swift */; };
+		8A6457242EA9C23700E3FE18 /* OptionalWithString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6457222EA9C22100E3FE18 /* OptionalWithString.swift */; };
+		8A6457262EA9C44700E3FE18 /* OptionalAdvanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6457252EA9C43700E3FE18 /* OptionalAdvanced.swift */; };
+		8A6457272EA9C44700E3FE18 /* OptionalAdvanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6457252EA9C43700E3FE18 /* OptionalAdvanced.swift */; };
 		8A686A6E2BD32DB700B38E22 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A6D2BD32DB700B38E22 /* main.swift */; };
 		8A686A882BD32E2100B38E22 /* Loop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A852BD32E2100B38E22 /* Loop.swift */; };
 		8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A686A832BD32E2100B38E22 /* Lambda.swift */; };
@@ -215,6 +219,8 @@
 		8A5B3C1E2D2A2B2C002C6A28 /* ByteAccumulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteAccumulator.swift; sourceTree = "<group>"; };
 		8A5B3C212D2A2B32002C6A28 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		8A5B3C242D2C8CA8002C6A28 /* MainActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActor.swift; sourceTree = "<group>"; };
+		8A6457222EA9C22100E3FE18 /* OptionalWithString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalWithString.swift; sourceTree = "<group>"; };
+		8A6457252EA9C43700E3FE18 /* OptionalAdvanced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalAdvanced.swift; sourceTree = "<group>"; };
 		8A686A6A2BD32DB700B38E22 /* Programming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Programming; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A686A6D2BD32DB700B38E22 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8A686A832BD32E2100B38E22 /* Lambda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lambda.swift; sourceTree = "<group>"; };
@@ -630,6 +636,8 @@
 		E30C15912E9E9CF50071EB02 /* Optional */ = {
 			isa = PBXGroup;
 			children = (
+				8A6457252EA9C43700E3FE18 /* OptionalAdvanced.swift */,
+				8A6457222EA9C22100E3FE18 /* OptionalWithString.swift */,
 				E30C15922E9E9D100071EB02 /* ForCase.swift */,
 			);
 			path = Optional;
@@ -769,6 +777,7 @@
 				8A0FF8E12D2D0543003ACC69 /* CustomSession.swift in Sources */,
 				8AF8303D2CC7545200B31278 /* Debug.swift in Sources */,
 				8A0FF8F12D3601E8003ACC69 /* ActorContext.swift in Sources */,
+				8A6457232EA9C23700E3FE18 /* OptionalWithString.swift in Sources */,
 				8A38D2442DFAA3EB00365EA2 /* CouponEmail.swift in Sources */,
 				8A0FF8EB2D34EDEE003ACC69 /* CustomAsyncSequence.swift in Sources */,
 				8A5B3C182D297B96002C6A28 /* SendingData.swift in Sources */,
@@ -796,6 +805,7 @@
 				8A686AA92BD3590700B38E22 /* Interfaces.swift in Sources */,
 				8A5B3C262D2C8CAB002C6A28 /* MainActor.swift in Sources */,
 				8ADF4E532D354B64009B5A7D /* AsyncStreamExample.swift in Sources */,
+				8A6457262EA9C44700E3FE18 /* OptionalAdvanced.swift in Sources */,
 				E3C4EB482E69DD4900ABA4E7 /* Currying.swift in Sources */,
 				8A686A882BD32E2100B38E22 /* Loop.swift in Sources */,
 				8ABE51622D1ACC54006362FE /* Boxed.swift in Sources */,
@@ -847,6 +857,7 @@
 				8AF4B5942C6ADC4E0087956A /* Properties.swift in Sources */,
 				8A92DA4A2D5472EB0088E5B9 /* LazyType.swift in Sources */,
 				8A36A0382C7404AE00C33475 /* ActorWorker.swift in Sources */,
+				8A6457242EA9C23700E3FE18 /* OptionalWithString.swift in Sources */,
 				8A1AE0072D2CD74E0038F96B /* AsyncSteamTests.swift in Sources */,
 				8A9D36D72C80236700D56018 /* ARC.swift in Sources */,
 				8AFFF23C2D38D9EE0083F276 /* ActorExample.swift in Sources */,
@@ -890,6 +901,7 @@
 				8A6B4C312E8A878E00275AA3 /* Array.swift in Sources */,
 				8A0FF8E82D310A27003ACC69 /* AsyncSequenceExample.swift in Sources */,
 				8ADF4E562D35BA8D009B5A7D /* Continuations.swift in Sources */,
+				8A6457272EA9C44700E3FE18 /* OptionalAdvanced.swift in Sources */,
 				8A1ADFF82D2BCDA40038F96B /* TaskLocalExample.swift in Sources */,
 				8A0FF8ED2D3510E8003ACC69 /* AsyncToSequence.swift in Sources */,
 				8A0FF8E22D2D0543003ACC69 /* CustomSession.swift in Sources */,
