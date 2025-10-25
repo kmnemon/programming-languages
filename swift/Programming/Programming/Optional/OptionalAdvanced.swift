@@ -26,3 +26,42 @@ func OptionalWithFlatMap() {
     
 }
 
+//2. Force unwarp optional value with error message
+infix operator !!
+
+func !!<T>(wrapped: T?, failureText: @autoclosure () -> String) -> T {
+    if let x = wrapped{ return x }
+    fatalError(failureText())
+}
+
+//let s = "foo"
+//let i = Int(s) !! "Expecting integer, got\"\(s)\""
+
+//3. Asserting in debug builds
+infix operator !?
+
+//3.1 assert while debugging but return 0 in release
+func !?<T: ExpressibleByIntegerLiteral>(wrapped: T?, failureText: @autoclosure () -> String) -> T {
+    assert(wrapped != nil, failureText())
+    return wrapped ?? 0
+}
+
+func !?<T: ExpressibleByArrayLiteral>(wrapped: T?, failureText: @autoclosure () -> String) -> T {
+    assert(wrapped != nil, failureText())
+    return wrapped ?? []
+}
+
+//3.2 assert while debugging but return provide value in release
+func !?<T: ExpressibleByIntegerLiteral>(wrapped: T?, nilDefault: @autoclosure () -> (value: T, text: String)) -> T {
+    assert(wrapped != nil, nilDefault().text)
+    return wrapped ?? nilDefault().value
+}
+
+//4. detect optional chain hits a nil
+func !?(wrapped: ()?, failureText: @autoclosure () -> String) {
+    assert(wrapped != nil, failureText())
+}
+
+// var output: String? = nil
+// output?.write("somes") !? "Wasn't exppecting chained nil here"
+// output: "Wasn't exppecting chained nil here"

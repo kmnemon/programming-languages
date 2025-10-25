@@ -27,4 +27,13 @@ func pickNonNil() {
     sum = numbers
         .map { Int($0) }
         .reduce(0) { $0 + ($1 ?? 0) }
+    
+    //3.compactMap
+    sum = numbers.compactMap { Int($0) }.reduce(0, +)
+    
 }
+
+
+
+
+
