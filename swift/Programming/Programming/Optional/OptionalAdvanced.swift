@@ -58,6 +58,10 @@ func !?<T: ExpressibleByIntegerLiteral>(wrapped: T?, nilDefault: @autoclosure ()
 }
 
 //4. detect optional chain hits a nil
+/*
+ Why it works with optional chaining:
+ • When you call a method or property via optional chaining and you don’t care about a return value, Swift treats the result as ()? (optional Void). If the chain succeeds, you get .some(()); if it hits nil along the way, you get .none.
+ */
 func !?(wrapped: ()?, failureText: @autoclosure () -> String) {
     assert(wrapped != nil, failureText())
 }
