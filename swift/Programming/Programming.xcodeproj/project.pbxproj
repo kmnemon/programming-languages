@@ -28,6 +28,8 @@
 		8A1AE0012D2CC7E60038F96B /* TimerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE0002D2CC7E10038F96B /* TimerExample.swift */; };
 		8A1AE0022D2CC7E60038F96B /* TimerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE0002D2CC7E10038F96B /* TimerExample.swift */; };
 		8A1AE0072D2CD74E0038F96B /* AsyncSteamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE0062D2CD7480038F96B /* AsyncSteamTests.swift */; };
+		8A23E55C2EAF4ED500AEC25A /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23E55B2EAF4ED000AEC25A /* Function.swift */; };
+		8A23E55D2EAF4ED500AEC25A /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23E55B2EAF4ED000AEC25A /* Function.swift */; };
 		8A2AFCCC2C5247D5004DCD4F /* FunctionProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2206F72C5237F100EC2FE5 /* FunctionProgramming.swift */; };
 		8A2AFCCD2C5247D6004DCD4F /* FunctionProgramming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2206F72C5237F100EC2FE5 /* FunctionProgramming.swift */; };
 		8A36A0372C74047A00C33475 /* ActorWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36A0362C74047A00C33475 /* ActorWorker.swift */; };
@@ -199,6 +201,7 @@
 		8A1AE0002D2CC7E10038F96B /* TimerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerExample.swift; sourceTree = "<group>"; };
 		8A1AE0062D2CD7480038F96B /* AsyncSteamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSteamTests.swift; sourceTree = "<group>"; };
 		8A2206F72C5237F100EC2FE5 /* FunctionProgramming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionProgramming.swift; sourceTree = "<group>"; };
+		8A23E55B2EAF4ED000AEC25A /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 		8A36A0362C74047A00C33475 /* ActorWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorWorker.swift; sourceTree = "<group>"; };
 		8A36A03A2C7C39CC00C33475 /* FunctionGenericTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionGenericTests.swift; sourceTree = "<group>"; };
 		8A36A03D2C7C6D9D00C33475 /* ClosureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureTests.swift; sourceTree = "<group>"; };
@@ -424,6 +427,7 @@
 		8A686A822BD32E2100B38E22 /* FunctionalProgramming */ = {
 			isa = PBXGroup;
 			children = (
+				8A23E55B2EAF4ED000AEC25A /* Function.swift */,
 				8A38D2412DFAA37800365EA2 /* Simplicity */,
 				8A686A832BD32E2100B38E22 /* Lambda.swift */,
 				8A5AC0552CE3349D003CBC1A /* maperror.swift */,
@@ -822,6 +826,7 @@
 				8ADF4E572D35BA8D009B5A7D /* Continuations.swift in Sources */,
 				8A5ABFB52CDB41B0003CBC1A /* Operator.swift in Sources */,
 				8A686AA22BD34EE300B38E22 /* Switch.swift in Sources */,
+				8A23E55C2EAF4ED500AEC25A /* Function.swift in Sources */,
 				8A5B3C0D2D296B01002C6A28 /* LongLiveStream.swift in Sources */,
 				8AFFF2492D3A5F7E0083F276 /* ActorReentrancy.swift in Sources */,
 				8AC80B152CE39B39000317A3 /* String.swift in Sources */,
@@ -836,6 +841,7 @@
 			files = (
 				8A686AA82BD3590700B38E22 /* Inheritance.swift in Sources */,
 				E3C4EB422E69C25500ABA4E7 /* OverLoad.swift in Sources */,
+				8A23E55D2EAF4ED500AEC25A /* Function.swift in Sources */,
 				8A686AAE2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
 				8AFFF2412D38F4150083F276 /* ActorNonisolated.swift in Sources */,
 				8A0FF8F32D3655C9003ACC69 /* TaskGroup.swift in Sources */,
