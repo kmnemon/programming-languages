@@ -5,6 +5,36 @@
 //  Created by ke on 2024/5/21.
 //
 
+/*
+ Basic Protocols
+    Equatable - can compare with ==
+    Comparable - can compare with <, >, etc.
+    Hashable - can be hashed
+    Identifiable - has id property
+    CaseIterable - has allCases
+ 
+ Numeric Protocols
+    Numeric - basic numbers
+    BinaryInteger - integer types
+    FloatingPoint - floating point numbers
+    SignedNumeric - signed numbers
+    
+ Collection Protocols
+    Sequence - can be iterated
+    Collection - indexed collection
+    BidirectionalCollection - can go backwards
+    RandomAccessCollection - random access
+ 
+ String Protocols
+    StringProtocol - String and Substring
+    LosslessStringConvertible - can convert from string
+    
+ Other Protocols
+    Codable - can encode/decode
+    CustomStringConvertible - has custom string representation
+    Error - can be used as error
+ */
+
 import Foundation
 
 protocol Container {

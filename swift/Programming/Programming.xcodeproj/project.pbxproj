@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8A0696202CEB68390036DEA1 /* Opaque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A06961F2CEB68180036DEA1 /* Opaque.swift */; };
+		8A0AB9472EB87AD6004FC3FB /* Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0AB9462EB87AC8004FC3FB /* Subscripts.swift */; };
+		8A0AB9482EB87AD6004FC3FB /* Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0AB9462EB87AC8004FC3FB /* Subscripts.swift */; };
 		8A0FF8E12D2D0543003ACC69 /* CustomSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8E02D2D052A003ACC69 /* CustomSession.swift */; };
 		8A0FF8E22D2D0543003ACC69 /* CustomSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8E02D2D052A003ACC69 /* CustomSession.swift */; };
 		8A0FF8E72D310A27003ACC69 /* AsyncSequenceExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FF8E62D310A1E003ACC69 /* AsyncSequenceExample.swift */; };
@@ -191,6 +193,7 @@
 
 /* Begin PBXFileReference section */
 		8A06961F2CEB68180036DEA1 /* Opaque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opaque.swift; sourceTree = "<group>"; };
+		8A0AB9462EB87AC8004FC3FB /* Subscripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscripts.swift; sourceTree = "<group>"; };
 		8A0FF8E02D2D052A003ACC69 /* CustomSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSession.swift; sourceTree = "<group>"; };
 		8A0FF8E62D310A1E003ACC69 /* AsyncSequenceExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSequenceExample.swift; sourceTree = "<group>"; };
 		8A0FF8E92D34EDE3003ACC69 /* CustomAsyncSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncSequence.swift; sourceTree = "<group>"; };
@@ -666,6 +669,7 @@
 		E3C4EB402E69C23900ABA4E7 /* Operator */ = {
 			isa = PBXGroup;
 			children = (
+				8A0AB9462EB87AC8004FC3FB /* Subscripts.swift */,
 				E3C4EB412E69C24C00ABA4E7 /* OverLoad.swift */,
 				E3C4EB442E69C27100ABA4E7 /* CustomOperator.swift */,
 			);
@@ -798,6 +802,7 @@
 				8A0FF8F62D36717F003ACC69 /* TaskGroupCancel.swift in Sources */,
 				E300BFDA2E98191500F39DA7 /* Slice.swift in Sources */,
 				E3689F482E99476300F7C5CA /* Dictionary.swift in Sources */,
+				8A0AB9472EB87AD6004FC3FB /* Subscripts.swift in Sources */,
 				8AB12B632BF36802002CADFD /* Guard.swift in Sources */,
 				8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */,
 				8A92DA4B2D5472EB0088E5B9 /* LazyType.swift in Sources */,
@@ -920,6 +925,7 @@
 				8A0FF8E82D310A27003ACC69 /* AsyncSequenceExample.swift in Sources */,
 				8ADF4E562D35BA8D009B5A7D /* Continuations.swift in Sources */,
 				8A6457272EA9C44700E3FE18 /* OptionalAdvanced.swift in Sources */,
+				8A0AB9482EB87AD6004FC3FB /* Subscripts.swift in Sources */,
 				8A1ADFF82D2BCDA40038F96B /* TaskLocalExample.swift in Sources */,
 				8A0FF8ED2D3510E8003ACC69 /* AsyncToSequence.swift in Sources */,
 				8A0FF8E22D2D0543003ACC69 /* CustomSession.swift in Sources */,
