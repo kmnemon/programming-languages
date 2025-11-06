@@ -40,6 +40,11 @@ struct StringBuilder {
         component
     }
     
+    //6 support for...in loop
+    static func buildArray(_ components: [String]) -> String {
+        components.joined(separator: "")
+    }
+    
 }
 
 //1
@@ -150,4 +155,39 @@ func greet2_rewritten(planet: String) -> String {
     }
     let v2 = StringBuilder.buildExpression("!")
     return StringBuilder.buildBlock(v0, v1, v2)
+}
+
+//6
+@StringBuilder func greet3(planet: String?) -> String {
+    "Hello "
+    if let p = planet {
+        p
+    } else {
+        for p in planets.dropLast() {
+            "\(p), "
+        }
+        "and \(planets.last!)!"
+    }
+}
+//greet3(planet: nil)
+// Hello Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune!”
+
+func greet3_rewritten(planet: String?) -> String {
+    let v0 = StringBuilder.buildExpression("Hello ")
+    let v1: String
+    if let p = planet {
+        v1 = StringBuilder.buildBlock(StringBuilder.buildExpression(p))
+    } else {
+        var v1_0: [String] = []
+        for p in planets.dropLast() {
+            let v1_0_0 = StringBuilder.buildBlock(
+                StringBuilder.buildExpression("\(p), ")
+            )
+            v1_0.append(v1_0_0)
+        }
+        let v1_1 = StringBuilder.buildArray(v1_0)
+        let v1_2 = "and \(planets.last!)!"
+        v1 = StringBuilder.buildBlock(v1_1, v1_2)
+    }
+    return StringBuilder.buildBlock(v0, v1)
 }
