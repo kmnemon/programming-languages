@@ -164,6 +164,10 @@
 		E300BFDA2E98191500F39DA7 /* Slice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E300BFD92E98191500F39DA7 /* Slice.swift */; };
 		E300BFDB2E98191500F39DA7 /* Slice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E300BFD92E98191500F39DA7 /* Slice.swift */; };
 		E300BFDD2E98192100F39DA7 /* SliceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E300BFDC2E98192100F39DA7 /* SliceTests.swift */; };
+		E30488162EBED88A007A8A1A /* PropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30488152EBED87E007A8A1A /* PropertyWrapper.swift */; };
+		E30488172EBED88A007A8A1A /* PropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30488152EBED87E007A8A1A /* PropertyWrapper.swift */; };
+		E30488272EBEF0BA007A8A1A /* PropertyWrapperForReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30488262EBEF0B2007A8A1A /* PropertyWrapperForReference.swift */; };
+		E30488282EBEF0BA007A8A1A /* PropertyWrapperForReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30488262EBEF0B2007A8A1A /* PropertyWrapperForReference.swift */; };
 		E30C15932E9E9D140071EB02 /* ForCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30C15922E9E9D100071EB02 /* ForCase.swift */; };
 		E30C15942E9E9D140071EB02 /* ForCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30C15922E9E9D100071EB02 /* ForCase.swift */; };
 		E30C15972E9E9FFD0071EB02 /* PatternMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30C15962E9E9FF80071EB02 /* PatternMatch.swift */; };
@@ -288,6 +292,8 @@
 		8AFFF2472D3A5F700083F276 /* ActorReentrancy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorReentrancy.swift; sourceTree = "<group>"; };
 		E300BFD92E98191500F39DA7 /* Slice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slice.swift; sourceTree = "<group>"; };
 		E300BFDC2E98192100F39DA7 /* SliceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceTests.swift; sourceTree = "<group>"; };
+		E30488152EBED87E007A8A1A /* PropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapper.swift; sourceTree = "<group>"; };
+		E30488262EBEF0B2007A8A1A /* PropertyWrapperForReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperForReference.swift; sourceTree = "<group>"; };
 		E30C15922E9E9D100071EB02 /* ForCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForCase.swift; sourceTree = "<group>"; };
 		E30C15962E9E9FF80071EB02 /* PatternMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternMatch.swift; sourceTree = "<group>"; };
 		E3689F472E99475E00F7C5CA /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
@@ -412,6 +418,7 @@
 		8A686A6C2BD32DB700B38E22 /* Programming */ = {
 			isa = PBXGroup;
 			children = (
+				E30488142EBED863007A8A1A /* PropertyWrapper */,
 				8AE05E212EB9FD0900B28A5D /* ResultBuilder */,
 				E30C15952E9E9FEE0071EB02 /* PatternMatch */,
 				E30C15912E9E9CF50071EB02 /* Optional */,
@@ -659,6 +666,15 @@
 			path = Debug;
 			sourceTree = "<group>";
 		};
+		E30488142EBED863007A8A1A /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				E30488152EBED87E007A8A1A /* PropertyWrapper.swift */,
+				E30488262EBEF0B2007A8A1A /* PropertyWrapperForReference.swift */,
+			);
+			path = PropertyWrapper;
+			sourceTree = "<group>";
+		};
 		E30C15912E9E9CF50071EB02 /* Optional */ = {
 			isa = PBXGroup;
 			children = (
@@ -785,6 +801,7 @@
 				E3C4EB432E69C25500ABA4E7 /* OverLoad.swift in Sources */,
 				8A686AB12BD53D1900B38E22 /* AsyncAwait.swift in Sources */,
 				8ADF4E682D3B0E02009B5A7D /* DecodingJson.swift in Sources */,
+				E30488282EBEF0BA007A8A1A /* PropertyWrapperForReference.swift in Sources */,
 				8AD11F812C8FA1F4002B5D41 /* OpaqueBoxedProtocol.swift in Sources */,
 				8A0FF8EE2D3510E8003ACC69 /* AsyncToSequence.swift in Sources */,
 				8AD18D272C00D62500080AF3 /* CollectionType.swift in Sources */,
@@ -827,6 +844,7 @@
 				8A686A8A2BD32E2100B38E22 /* MemoryManagement.swift in Sources */,
 				E30C15932E9E9D140071EB02 /* ForCase.swift in Sources */,
 				8AFFF23B2D38D9EE0083F276 /* ActorExample.swift in Sources */,
+				E30488172EBED88A007A8A1A /* PropertyWrapper.swift in Sources */,
 				8A6EA1B72BFB0833005E1293 /* ClassGeneric.swift in Sources */,
 				E3C4EB462E69C27700ABA4E7 /* CustomOperator.swift in Sources */,
 				8A686AB52BD6216100B38E22 /* Exception.swift in Sources */,
@@ -870,6 +888,7 @@
 				8A0FF8F32D3655C9003ACC69 /* TaskGroup.swift in Sources */,
 				8AB12B7B2BF3AA4A002CADFD /* Closure.swift in Sources */,
 				8A5B3C122D2979DD002C6A28 /* ReceivingData.swift in Sources */,
+				E30488272EBEF0BA007A8A1A /* PropertyWrapperForReference.swift in Sources */,
 				8A686AB22BD53D1900B38E22 /* AsyncAwait.swift in Sources */,
 				E30C15982E9E9FFD0071EB02 /* PatternMatch.swift in Sources */,
 				8AD18D2F2C01D35E00080AF3 /* LambdaTests.swift in Sources */,
@@ -889,6 +908,7 @@
 				8A0FF8EA2D34EDEE003ACC69 /* CustomAsyncSequence.swift in Sources */,
 				E3C4EB452E69C27700ABA4E7 /* CustomOperator.swift in Sources */,
 				E30C15942E9E9D140071EB02 /* ForCase.swift in Sources */,
+				E30488162EBED88A007A8A1A /* PropertyWrapper.swift in Sources */,
 				8AF4B5942C6ADC4E0087956A /* Properties.swift in Sources */,
 				8A92DA4A2D5472EB0088E5B9 /* LazyType.swift in Sources */,
 				8A36A0382C7404AE00C33475 /* ActorWorker.swift in Sources */,
