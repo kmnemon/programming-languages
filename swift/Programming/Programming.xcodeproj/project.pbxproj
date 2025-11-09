@@ -172,6 +172,10 @@
 		E30C15942E9E9D140071EB02 /* ForCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30C15922E9E9D100071EB02 /* ForCase.swift */; };
 		E30C15972E9E9FFD0071EB02 /* PatternMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30C15962E9E9FF80071EB02 /* PatternMatch.swift */; };
 		E30C15982E9E9FFD0071EB02 /* PatternMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30C15962E9E9FF80071EB02 /* PatternMatch.swift */; };
+		E342183B2EC019D700944241 /* PropertyWrapperForFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342183A2EC019CE00944241 /* PropertyWrapperForFunction.swift */; };
+		E342183C2EC019D700944241 /* PropertyWrapperForFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342183A2EC019CE00944241 /* PropertyWrapperForFunction.swift */; };
+		E342183F2EC0338200944241 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342183E2EC0337D00944241 /* KeyPath.swift */; };
+		E34218402EC0338200944241 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342183E2EC0337D00944241 /* KeyPath.swift */; };
 		E3689F482E99476300F7C5CA /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3689F472E99475E00F7C5CA /* Dictionary.swift */; };
 		E3689F492E99476300F7C5CA /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3689F472E99475E00F7C5CA /* Dictionary.swift */; };
 		E3A5223A2EADC5770021C70B /* ImplicitUnwrappedOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A522392EADC55F0021C70B /* ImplicitUnwrappedOptional.swift */; };
@@ -296,6 +300,8 @@
 		E30488262EBEF0B2007A8A1A /* PropertyWrapperForReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperForReference.swift; sourceTree = "<group>"; };
 		E30C15922E9E9D100071EB02 /* ForCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForCase.swift; sourceTree = "<group>"; };
 		E30C15962E9E9FF80071EB02 /* PatternMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternMatch.swift; sourceTree = "<group>"; };
+		E342183A2EC019CE00944241 /* PropertyWrapperForFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperForFunction.swift; sourceTree = "<group>"; };
+		E342183E2EC0337D00944241 /* KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
 		E3689F472E99475E00F7C5CA /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		E3A522392EADC55F0021C70B /* ImplicitUnwrappedOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitUnwrappedOptional.swift; sourceTree = "<group>"; };
 		E3A57B3E2E8B8E1C00118E1B /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
@@ -418,6 +424,7 @@
 		8A686A6C2BD32DB700B38E22 /* Programming */ = {
 			isa = PBXGroup;
 			children = (
+				E342183D2EC0337300944241 /* KeyPath */,
 				E30488142EBED863007A8A1A /* PropertyWrapper */,
 				8AE05E212EB9FD0900B28A5D /* ResultBuilder */,
 				E30C15952E9E9FEE0071EB02 /* PatternMatch */,
@@ -669,6 +676,7 @@
 		E30488142EBED863007A8A1A /* PropertyWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				E342183A2EC019CE00944241 /* PropertyWrapperForFunction.swift */,
 				E30488152EBED87E007A8A1A /* PropertyWrapper.swift */,
 				E30488262EBEF0B2007A8A1A /* PropertyWrapperForReference.swift */,
 			);
@@ -692,6 +700,14 @@
 				E30C15962E9E9FF80071EB02 /* PatternMatch.swift */,
 			);
 			path = PatternMatch;
+			sourceTree = "<group>";
+		};
+		E342183D2EC0337300944241 /* KeyPath */ = {
+			isa = PBXGroup;
+			children = (
+				E342183E2EC0337D00944241 /* KeyPath.swift */,
+			);
+			path = KeyPath;
 			sourceTree = "<group>";
 		};
 		E3C4EB402E69C23900ABA4E7 /* Operator */ = {
@@ -799,6 +815,7 @@
 				8AB12B7D2BF7A167002CADFD /* Collection.swift in Sources */,
 				8ADF4E5A2D384920009B5A7D /* TaskGroupDiffType.swift in Sources */,
 				E3C4EB432E69C25500ABA4E7 /* OverLoad.swift in Sources */,
+				E34218402EC0338200944241 /* KeyPath.swift in Sources */,
 				8A686AB12BD53D1900B38E22 /* AsyncAwait.swift in Sources */,
 				8ADF4E682D3B0E02009B5A7D /* DecodingJson.swift in Sources */,
 				E30488282EBEF0BA007A8A1A /* PropertyWrapperForReference.swift in Sources */,
@@ -842,6 +859,7 @@
 				8A6EA1B52BFABF39005E1293 /* FunctionGeneric.swift in Sources */,
 				8A1ADFF72D2BCDA40038F96B /* TaskLocalExample.swift in Sources */,
 				8A686A8A2BD32E2100B38E22 /* MemoryManagement.swift in Sources */,
+				E342183B2EC019D700944241 /* PropertyWrapperForFunction.swift in Sources */,
 				E30C15932E9E9D140071EB02 /* ForCase.swift in Sources */,
 				8AFFF23B2D38D9EE0083F276 /* ActorExample.swift in Sources */,
 				E30488172EBED88A007A8A1A /* PropertyWrapper.swift in Sources */,
@@ -907,6 +925,7 @@
 				8A3B0F012EB0AF2F00A0731D /* SortCombination.swift in Sources */,
 				8A0FF8EA2D34EDEE003ACC69 /* CustomAsyncSequence.swift in Sources */,
 				E3C4EB452E69C27700ABA4E7 /* CustomOperator.swift in Sources */,
+				E342183C2EC019D700944241 /* PropertyWrapperForFunction.swift in Sources */,
 				E30C15942E9E9D140071EB02 /* ForCase.swift in Sources */,
 				E30488162EBED88A007A8A1A /* PropertyWrapper.swift in Sources */,
 				8AF4B5942C6ADC4E0087956A /* Properties.swift in Sources */,
@@ -957,6 +976,7 @@
 				8A6B4C312E8A878E00275AA3 /* Array.swift in Sources */,
 				8A0FF8E82D310A27003ACC69 /* AsyncSequenceExample.swift in Sources */,
 				8ADF4E562D35BA8D009B5A7D /* Continuations.swift in Sources */,
+				E342183F2EC0338200944241 /* KeyPath.swift in Sources */,
 				8A6457272EA9C44700E3FE18 /* OptionalAdvanced.swift in Sources */,
 				8A0AB9482EB87AD6004FC3FB /* Subscripts.swift in Sources */,
 				8A1ADFF82D2BCDA40038F96B /* TaskLocalExample.swift in Sources */,

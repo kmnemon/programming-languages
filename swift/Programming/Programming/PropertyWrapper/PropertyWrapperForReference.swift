@@ -69,3 +69,34 @@ func makeEditor() -> Persion3Editor {
     @Box3 var person = Person3(name: "Chris")
     return Persion3Editor(person: $person)
 }
+
+/*
+ ****Explain:****
+
+//@Box3 var person = Person3(name: "Chris")
+//the compiler synthesize the _person for actual storage
+
+private var _person = Box3(wrappedValue: Person3(name: "Chris"))
+var person: Person3 {
+    get { _person.wrappedValue }
+    set { _person.wrappedValue = newValue }
+}
+ 
+ 1.
+ symbol:@Box3 var person
+ type:Person3
+ meaning:The user-facing property you access normally,
+ Computed getter/setter delegating to _person.wrappedValue
+ 
+ 2.
+ symbol:_person
+ type:Box3<Person3>
+ meaning:The synthesized storage property created by the compiler,
+ Actual storage for the wrapped value
+ 
+ 3.
+ symbol:$person
+ type:Reference<Person3>
+ meaning:The projected value, coming from _person.projectedValue
+ A computed property derived from _person (not stored separately)
+*/
