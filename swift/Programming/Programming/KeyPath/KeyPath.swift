@@ -17,6 +17,7 @@ struct Person4 {
 }
 
 func keyPathExample() {
+    //1. basic
     // WritableKeyPath<Person, String>, “WritableKeyPath. Because all properties that form this latter key path are mutable, the key path itself allows mutation of the underlying value"
     let streetKeyPath = \Person4.address.street
     // KayPath<Person, String>
@@ -25,5 +26,12 @@ func keyPathExample() {
     let simpsonResidence = Address(street: "1094 eve", city: "Springfield", zipCode: 97475)
     var jackson = Person4(name: "mj", address: simpsonResidence)
     print(jackson[keyPath: nameKeyPath]) // mj
+    
+    //2. using in array
+    var mia = Person4(name: "mia", address: simpsonResidence)
+    let people = [jackson, mia]
+    print(people[keyPath: \.[1].name])
+
+   
 
 }
