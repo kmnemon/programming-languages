@@ -265,6 +265,7 @@
 		8A92DA492D5472E50088E5B9 /* LazyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyType.swift; sourceTree = "<group>"; };
 		8A9D36D52C80236700D56018 /* ARC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARC.swift; sourceTree = "<group>"; };
 		8A9D36D92C80259100D56018 /* ARCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCTests.swift; sourceTree = "<group>"; };
+		8AAF1AEE2EC3158600BEFF0B /* ReferenceCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceCycle.swift; sourceTree = "<group>"; };
 		8AB12B622BF36802002CADFD /* Guard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guard.swift; sourceTree = "<group>"; };
 		8AB12B6C2BF375C6002CADFD /* Lazy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lazy.swift; sourceTree = "<group>"; };
 		8AB12B6F2BF375CF002CADFD /* LazyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyTests.swift; sourceTree = "<group>"; };
@@ -408,6 +409,7 @@
 		8A686A612BD32DB700B38E22 = {
 			isa = PBXGroup;
 			children = (
+				8AAF1AED2EC3157300BEFF0B /* ReferenceCycle */,
 				8A686A6C2BD32DB700B38E22 /* Programming */,
 				8A686A6D2BD32DB700B38E22 /* main.swift */,
 				8A686A902BD32E7400B38E22 /* ProgrammingTests */,
@@ -595,6 +597,14 @@
 				8A9D36D92C80259100D56018 /* ARCTests.swift */,
 			);
 			path = Memory;
+			sourceTree = "<group>";
+		};
+		8AAF1AED2EC3157300BEFF0B /* ReferenceCycle */ = {
+			isa = PBXGroup;
+			children = (
+				8AAF1AEE2EC3158600BEFF0B /* ReferenceCycle.swift */,
+			);
+			path = ReferenceCycle;
 			sourceTree = "<group>";
 		};
 		8AB12B642BF3728B002CADFD /* Performance */ = {
