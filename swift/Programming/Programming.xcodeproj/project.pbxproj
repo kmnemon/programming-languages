@@ -174,6 +174,8 @@
 		E30C15942E9E9D140071EB02 /* ForCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30C15922E9E9D100071EB02 /* ForCase.swift */; };
 		E30C15972E9E9FFD0071EB02 /* PatternMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30C15962E9E9FF80071EB02 /* PatternMatch.swift */; };
 		E30C15982E9E9FFD0071EB02 /* PatternMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30C15962E9E9FF80071EB02 /* PatternMatch.swift */; };
+		E3189B4A2EC5741700158700 /* CopyOnWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3189B492EC5741300158700 /* CopyOnWrite.swift */; };
+		E3189B4B2EC5741700158700 /* CopyOnWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3189B492EC5741300158700 /* CopyOnWrite.swift */; };
 		E342183B2EC019D700944241 /* PropertyWrapperForFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342183A2EC019CE00944241 /* PropertyWrapperForFunction.swift */; };
 		E342183C2EC019D700944241 /* PropertyWrapperForFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342183A2EC019CE00944241 /* PropertyWrapperForFunction.swift */; };
 		E342183F2EC0338200944241 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342183E2EC0337D00944241 /* KeyPath.swift */; };
@@ -304,6 +306,7 @@
 		E30488262EBEF0B2007A8A1A /* PropertyWrapperForReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperForReference.swift; sourceTree = "<group>"; };
 		E30C15922E9E9D100071EB02 /* ForCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForCase.swift; sourceTree = "<group>"; };
 		E30C15962E9E9FF80071EB02 /* PatternMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternMatch.swift; sourceTree = "<group>"; };
+		E3189B492EC5741300158700 /* CopyOnWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyOnWrite.swift; sourceTree = "<group>"; };
 		E342183A2EC019CE00944241 /* PropertyWrapperForFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperForFunction.swift; sourceTree = "<group>"; };
 		E342183E2EC0337D00944241 /* KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
 		E3689F472E99475E00F7C5CA /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
@@ -409,7 +412,6 @@
 		8A686A612BD32DB700B38E22 = {
 			isa = PBXGroup;
 			children = (
-				8AAF1AED2EC3157300BEFF0B /* ReferenceCycle */,
 				8A686A6C2BD32DB700B38E22 /* Programming */,
 				8A686A6D2BD32DB700B38E22 /* main.swift */,
 				8A686A902BD32E7400B38E22 /* ProgrammingTests */,
@@ -429,6 +431,8 @@
 		8A686A6C2BD32DB700B38E22 /* Programming */ = {
 			isa = PBXGroup;
 			children = (
+				E3189B482EC573F500158700 /* CopyOnWrite */,
+				8AAF1AED2EC3157300BEFF0B /* ReferenceCycle */,
 				E342183D2EC0337300944241 /* KeyPath */,
 				E30488142EBED863007A8A1A /* PropertyWrapper */,
 				8AE05E212EB9FD0900B28A5D /* ResultBuilder */,
@@ -715,6 +719,14 @@
 			path = PatternMatch;
 			sourceTree = "<group>";
 		};
+		E3189B482EC573F500158700 /* CopyOnWrite */ = {
+			isa = PBXGroup;
+			children = (
+				E3189B492EC5741300158700 /* CopyOnWrite.swift */,
+			);
+			path = CopyOnWrite;
+			sourceTree = "<group>";
+		};
 		E342183D2EC0337300944241 /* KeyPath */ = {
 			isa = PBXGroup;
 			children = (
@@ -842,6 +854,7 @@
 				8A0FF8E72D310A27003ACC69 /* AsyncSequenceExample.swift in Sources */,
 				8A5B3C032D24B382002C6A28 /* Senario.swift in Sources */,
 				8A2AFCCD2C5247D6004DCD4F /* FunctionProgramming.swift in Sources */,
+				E3189B4B2EC5741700158700 /* CopyOnWrite.swift in Sources */,
 				8A36A0372C74047A00C33475 /* ActorWorker.swift in Sources */,
 				8A1AE0012D2CC7E60038F96B /* TimerExample.swift in Sources */,
 				8AF830392CC74D2C00B31278 /* Type.swift in Sources */,
@@ -916,6 +929,7 @@
 				8A686AA82BD3590700B38E22 /* Inheritance.swift in Sources */,
 				E3C4EB422E69C25500ABA4E7 /* OverLoad.swift in Sources */,
 				8A23E55D2EAF4ED500AEC25A /* Function.swift in Sources */,
+				E3189B4A2EC5741700158700 /* CopyOnWrite.swift in Sources */,
 				8A686AAE2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
 				8AFFF2412D38F4150083F276 /* ActorNonisolated.swift in Sources */,
 				8A0FF8F32D3655C9003ACC69 /* TaskGroup.swift in Sources */,
