@@ -7,8 +7,19 @@
 
 import Foundation
 
+// new
+func firstMatchExampleRegularExpression() {
+    let regex = /User ID: (\d+)/
 
-//1. using swift range(utf8) warp the Foundation NSRange(utf16)
+    if let match = try? regex.firstMatch(in: "User ID: 42") {
+        let id = Int(match.1)!   // automatically typed as Int
+        print(id) // 42
+    }
+}
+
+
+// Old Foundation API need wrap
+//1. using swift range(utf8) wrap the Foundation NSRange(utf16)
 extension NSRegularExpression {
     func firstMatch(in input: String) -> Substring? {
         // NSRegularExpression expects the "substring" in which
@@ -34,7 +45,7 @@ extension NSRegularExpression {
     }
 }
 
-func exampleOfRegularExpression() {
+func firstMatchExampleOfRegularExpressionOld() {
     let input = "My favorite numbers are -9, 27, and 81."
     let regex = try! NSRegularExpression(pattern: "-?[0-9]+")
     if let match = regex.firstMatch(in: input) {
@@ -43,3 +54,30 @@ func exampleOfRegularExpression() {
         print("Not found")
     }
 }
+
+//2. match
+extension NSRegularExpression {
+    func matches(in input: String) -> [Substring] {
+        let inputRange = NSRange(input.startIndex..., in: input)
+        let matches = self.matches(in: input, range: inputRange)
+        return matches.compactMap { match in
+            guard match.range != NSRange(location: NSNotFound, length: 0) else {
+                // NSTextChecking should never have a "nil" range.
+                fatalError("Should never happen")
+            }
+            guard let matchRange = Range(match.range, in: input) else {
+                // Match doesn’t fall on a Character boundary.
+                return nil
+            }
+            return input[matchRange]
+        }
+    }
+}
+
+func matchExampleRegularExpressionOld() {
+    let input = "My favorite numbers are -9, 27, and 81."
+    let regex = try! NSRegularExpression(pattern: "-?[0-9]+")
+    
+    print(regex.matches(in: input)) // ["-9", "27", "81"]”
+}
+
