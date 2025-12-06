@@ -34,7 +34,14 @@ func stringLiteralExample() {
     //safe: <p>...</p>
 }
 
-//2. String interpolation
+/*2. String interpolation - here we use the same SafeHTML type to conform the ExpressibleByStringInterpolation and StringInterpolationProtocol,
+but we can use different type to construct
+ usage1: SafeHTML: ExpressibleByStringInterpolation
+ let safe: SafeHTML = "<p>...</p>"
+ 
+ usage2:SafeHTML: StringInterpolationProtocol
+ "<li>Username: \(unsafeInput)</li>"
+ */
 extension SafeHTML: ExpressibleByStringInterpolation {
     init(stringInterpolation: SafeHTML) {
         self.value = stringInterpolation.value
