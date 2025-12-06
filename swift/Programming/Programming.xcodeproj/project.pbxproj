@@ -178,6 +178,9 @@
 		E30C15982E9E9FFD0071EB02 /* PatternMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30C15962E9E9FF80071EB02 /* PatternMatch.swift */; };
 		E3189B4A2EC5741700158700 /* CopyOnWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3189B492EC5741300158700 /* CopyOnWrite.swift */; };
 		E3189B4B2EC5741700158700 /* CopyOnWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3189B492EC5741300158700 /* CopyOnWrite.swift */; };
+		E31EECD42EE3CE7A00D9DC1D /* StringLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EECD32EE3CE6D00D9DC1D /* StringLiteral.swift */; };
+		E31EECD52EE3CE7A00D9DC1D /* StringLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EECD32EE3CE6D00D9DC1D /* StringLiteral.swift */; };
+		E31EECD82EE3D64400D9DC1D /* StringLiteralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EECD72EE3D63D00D9DC1D /* StringLiteralTests.swift */; };
 		E342183B2EC019D700944241 /* PropertyWrapperForFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342183A2EC019CE00944241 /* PropertyWrapperForFunction.swift */; };
 		E342183C2EC019D700944241 /* PropertyWrapperForFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342183A2EC019CE00944241 /* PropertyWrapperForFunction.swift */; };
 		E342183F2EC0338200944241 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342183E2EC0337D00944241 /* KeyPath.swift */; };
@@ -310,6 +313,8 @@
 		E30C15922E9E9D100071EB02 /* ForCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForCase.swift; sourceTree = "<group>"; };
 		E30C15962E9E9FF80071EB02 /* PatternMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternMatch.swift; sourceTree = "<group>"; };
 		E3189B492EC5741300158700 /* CopyOnWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyOnWrite.swift; sourceTree = "<group>"; };
+		E31EECD32EE3CE6D00D9DC1D /* StringLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLiteral.swift; sourceTree = "<group>"; };
+		E31EECD72EE3D63D00D9DC1D /* StringLiteralTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLiteralTests.swift; sourceTree = "<group>"; };
 		E342183A2EC019CE00944241 /* PropertyWrapperForFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperForFunction.swift; sourceTree = "<group>"; };
 		E342183E2EC0337D00944241 /* KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
 		E3689F472E99475E00F7C5CA /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
@@ -503,6 +508,7 @@
 			isa = PBXGroup;
 			children = (
 				8A5AC0E92CEC33EF003CBC1A /* swifttesting.swift */,
+				E31EECD62EE3D62A00D9DC1D /* String */,
 				8A5AC0EB2CEC8842003CBC1A /* Concurrency */,
 				8A5B3C0E2D2974EC002C6A28 /* Network */,
 				8AD11F832C8FAFB1002B5D41 /* POP */,
@@ -594,6 +600,7 @@
 		8A9CC09E2EDE76AC00DC7D59 /* String */ = {
 			isa = PBXGroup;
 			children = (
+				E31EECD32EE3CE6D00D9DC1D /* StringLiteral.swift */,
 				8A9CC09F2EDE76BA00DC7D59 /* RegularExpression.swift */,
 			);
 			path = String;
@@ -739,6 +746,14 @@
 			path = CopyOnWrite;
 			sourceTree = "<group>";
 		};
+		E31EECD62EE3D62A00D9DC1D /* String */ = {
+			isa = PBXGroup;
+			children = (
+				E31EECD72EE3D63D00D9DC1D /* StringLiteralTests.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 		E342183D2EC0337300944241 /* KeyPath */ = {
 			isa = PBXGroup;
 			children = (
@@ -861,6 +876,7 @@
 				8A0FF8EE2D3510E8003ACC69 /* AsyncToSequence.swift in Sources */,
 				8AD18D272C00D62500080AF3 /* CollectionType.swift in Sources */,
 				8A9D36D62C80236700D56018 /* ARC.swift in Sources */,
+				E31EECD42EE3CE7A00D9DC1D /* StringLiteral.swift in Sources */,
 				8A6EA1B92BFB1CAC005E1293 /* ValueReference.swift in Sources */,
 				8A5B3C1B2D2A016E002C6A28 /* Download.swift in Sources */,
 				8A0FF8E72D310A27003ACC69 /* AsyncSequenceExample.swift in Sources */,
@@ -939,6 +955,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E31EECD52EE3CE7A00D9DC1D /* StringLiteral.swift in Sources */,
 				8A686AA82BD3590700B38E22 /* Inheritance.swift in Sources */,
 				E3C4EB422E69C25500ABA4E7 /* OverLoad.swift in Sources */,
 				8A23E55D2EAF4ED500AEC25A /* Function.swift in Sources */,
@@ -1022,6 +1039,7 @@
 				8ADF4E562D35BA8D009B5A7D /* Continuations.swift in Sources */,
 				E342183F2EC0338200944241 /* KeyPath.swift in Sources */,
 				8A6457272EA9C44700E3FE18 /* OptionalAdvanced.swift in Sources */,
+				E31EECD82EE3D64400D9DC1D /* StringLiteralTests.swift in Sources */,
 				8A0AB9482EB87AD6004FC3FB /* Subscripts.swift in Sources */,
 				8A1ADFF82D2BCDA40038F96B /* TaskLocalExample.swift in Sources */,
 				8A0FF8ED2D3510E8003ACC69 /* AsyncToSequence.swift in Sources */,
