@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A0240742EE7FAB500C45892 /* ProtocolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0240732EE7FAAC00C45892 /* ProtocolType.swift */; };
+		8A0240752EE7FAB500C45892 /* ProtocolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0240732EE7FAAC00C45892 /* ProtocolType.swift */; };
 		8A0696202CEB68390036DEA1 /* Opaque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A06961F2CEB68180036DEA1 /* Opaque.swift */; };
 		8A0AB9472EB87AD6004FC3FB /* Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0AB9462EB87AC8004FC3FB /* Subscripts.swift */; };
 		8A0AB9482EB87AD6004FC3FB /* Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0AB9462EB87AC8004FC3FB /* Subscripts.swift */; };
@@ -214,6 +216,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A0240732EE7FAAC00C45892 /* ProtocolType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolType.swift; sourceTree = "<group>"; };
 		8A06961F2CEB68180036DEA1 /* Opaque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opaque.swift; sourceTree = "<group>"; };
 		8A0AB9462EB87AC8004FC3FB /* Subscripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscripts.swift; sourceTree = "<group>"; };
 		8A0FF8E02D2D052A003ACC69 /* CustomSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSession.swift; sourceTree = "<group>"; };
@@ -348,6 +351,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A0240722EE7FAA300C45892 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8A0240732EE7FAAC00C45892 /* ProtocolType.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		8A36A0392C7C39AB00C33475 /* Generic */ = {
 			isa = PBXGroup;
 			children = (
@@ -444,6 +455,7 @@
 		8A686A6C2BD32DB700B38E22 /* Programming */ = {
 			isa = PBXGroup;
 			children = (
+				8A0240722EE7FAA300C45892 /* Protocol */,
 				8A9CC09E2EDE76AC00DC7D59 /* String */,
 				E3189B482EC573F500158700 /* CopyOnWrite */,
 				8AAF1AED2EC3157300BEFF0B /* ReferenceCycle */,
@@ -870,6 +882,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A686AA72BD3590700B38E22 /* Inheritance.swift in Sources */,
+				8A0240742EE7FAB500C45892 /* ProtocolType.swift in Sources */,
 				8AB12B6D2BF375C6002CADFD /* Lazy.swift in Sources */,
 				8A686AAD2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
 				8AB12B7D2BF7A167002CADFD /* Collection.swift in Sources */,
@@ -1048,6 +1061,7 @@
 				8A0FF8E82D310A27003ACC69 /* AsyncSequenceExample.swift in Sources */,
 				8ADF4E562D35BA8D009B5A7D /* Continuations.swift in Sources */,
 				E342183F2EC0338200944241 /* KeyPath.swift in Sources */,
+				8A0240752EE7FAB500C45892 /* ProtocolType.swift in Sources */,
 				8A6457272EA9C44700E3FE18 /* OptionalAdvanced.swift in Sources */,
 				E31EECD82EE3D64400D9DC1D /* StringLiteralTests.swift in Sources */,
 				8A0AB9482EB87AD6004FC3FB /* Subscripts.swift in Sources */,
