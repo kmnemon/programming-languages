@@ -14,6 +14,7 @@ func draw<T: Drawable>(_ value: T) {
 
 //2. Existential Type (Protocol as a Runtime Box)
 //dynamic dispatch, runtime, the compiler don't know the type when compile
+//any is type erased
 func drawContext() {
     var _: any Drawable = Circle()
 }
