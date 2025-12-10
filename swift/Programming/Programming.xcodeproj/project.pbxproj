@@ -192,6 +192,8 @@
 		E3616AC72EE50AFA00BA179F /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3616AC62EE50AF600BA179F /* BinaryTree.swift */; };
 		E3689F482E99476300F7C5CA /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3689F472E99475E00F7C5CA /* Dictionary.swift */; };
 		E3689F492E99476300F7C5CA /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3689F472E99475E00F7C5CA /* Dictionary.swift */; };
+		E387D7512EE9B53F00ABC04D /* ProtocolConcept.swift in Sources */ = {isa = PBXBuildFile; fileRef = E387D7502EE9B53300ABC04D /* ProtocolConcept.swift */; };
+		E387D7522EE9B53F00ABC04D /* ProtocolConcept.swift in Sources */ = {isa = PBXBuildFile; fileRef = E387D7502EE9B53300ABC04D /* ProtocolConcept.swift */; };
 		E390DAA72EE874E00012BB55 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390DAA62EE874BD0012BB55 /* Dispatch.swift */; };
 		E390DAA82EE874E00012BB55 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390DAA62EE874BD0012BB55 /* Dispatch.swift */; };
 		E3A5223A2EADC5770021C70B /* ImplicitUnwrappedOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A522392EADC55F0021C70B /* ImplicitUnwrappedOptional.swift */; };
@@ -328,6 +330,7 @@
 		E3616AC32EE503AF00BA179F /* OutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputStream.swift; sourceTree = "<group>"; };
 		E3616AC62EE50AF600BA179F /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		E3689F472E99475E00F7C5CA /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		E387D7502EE9B53300ABC04D /* ProtocolConcept.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolConcept.swift; sourceTree = "<group>"; };
 		E390DAA62EE874BD0012BB55 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		E3A522392EADC55F0021C70B /* ImplicitUnwrappedOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitUnwrappedOptional.swift; sourceTree = "<group>"; };
 		E3A57B3E2E8B8E1C00118E1B /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
@@ -357,6 +360,7 @@
 		8A0240722EE7FAA300C45892 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				E387D7502EE9B53300ABC04D /* ProtocolConcept.swift */,
 				E390DAA62EE874BD0012BB55 /* Dispatch.swift */,
 				8A0240732EE7FAAC00C45892 /* ProtocolType.swift */,
 			);
@@ -935,6 +939,7 @@
 				8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */,
 				8A92DA4B2D5472EB0088E5B9 /* LazyType.swift in Sources */,
 				8A5B3C132D2979DD002C6A28 /* ReceivingData.swift in Sources */,
+				E387D7512EE9B53F00ABC04D /* ProtocolConcept.swift in Sources */,
 				8A5AC0572CE334A2003CBC1A /* maperror.swift in Sources */,
 				8AF4B5982C70288D0087956A /* Tasks.swift in Sources */,
 				8AE05E242EB9FD7500B28A5D /* StringBuilder.swift in Sources */,
@@ -996,6 +1001,7 @@
 				8A686AB22BD53D1900B38E22 /* AsyncAwait.swift in Sources */,
 				E30C15982E9E9FFD0071EB02 /* PatternMatch.swift in Sources */,
 				8AD18D2F2C01D35E00080AF3 /* LambdaTests.swift in Sources */,
+				E387D7522EE9B53F00ABC04D /* ProtocolConcept.swift in Sources */,
 				8A5AC0562CE334A2003CBC1A /* maperror.swift in Sources */,
 				E300BFDD2E98192100F39DA7 /* SliceTests.swift in Sources */,
 				8A686A9D2BD3359800B38E22 /* Lambda.swift in Sources */,
