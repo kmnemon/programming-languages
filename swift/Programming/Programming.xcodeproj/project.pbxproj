@@ -194,6 +194,10 @@
 		E3689F492E99476300F7C5CA /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3689F472E99475E00F7C5CA /* Dictionary.swift */; };
 		E387D7512EE9B53F00ABC04D /* ProtocolConcept.swift in Sources */ = {isa = PBXBuildFile; fileRef = E387D7502EE9B53300ABC04D /* ProtocolConcept.swift */; };
 		E387D7522EE9B53F00ABC04D /* ProtocolConcept.swift in Sources */ = {isa = PBXBuildFile; fileRef = E387D7502EE9B53300ABC04D /* ProtocolConcept.swift */; };
+		E38B37CE2EEC746E0093EA03 /* OpaqueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38B37CD2EEC74650093EA03 /* OpaqueType.swift */; };
+		E38B37CF2EEC746E0093EA03 /* OpaqueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38B37CD2EEC74650093EA03 /* OpaqueType.swift */; };
+		E38FB59D2EEC4DD30053D440 /* Existential.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FB59C2EEC4CFD0053D440 /* Existential.swift */; };
+		E38FB59E2EEC4DD30053D440 /* Existential.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FB59C2EEC4CFD0053D440 /* Existential.swift */; };
 		E390DAA72EE874E00012BB55 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390DAA62EE874BD0012BB55 /* Dispatch.swift */; };
 		E390DAA82EE874E00012BB55 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390DAA62EE874BD0012BB55 /* Dispatch.swift */; };
 		E3A5223A2EADC5770021C70B /* ImplicitUnwrappedOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A522392EADC55F0021C70B /* ImplicitUnwrappedOptional.swift */; };
@@ -331,6 +335,8 @@
 		E3616AC62EE50AF600BA179F /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		E3689F472E99475E00F7C5CA /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		E387D7502EE9B53300ABC04D /* ProtocolConcept.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolConcept.swift; sourceTree = "<group>"; };
+		E38B37CD2EEC74650093EA03 /* OpaqueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpaqueType.swift; sourceTree = "<group>"; };
+		E38FB59C2EEC4CFD0053D440 /* Existential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Existential.swift; sourceTree = "<group>"; };
 		E390DAA62EE874BD0012BB55 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		E3A522392EADC55F0021C70B /* ImplicitUnwrappedOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitUnwrappedOptional.swift; sourceTree = "<group>"; };
 		E3A57B3E2E8B8E1C00118E1B /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
@@ -360,6 +366,8 @@
 		8A0240722EE7FAA300C45892 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				E38B37CD2EEC74650093EA03 /* OpaqueType.swift */,
+				E38FB59C2EEC4CFD0053D440 /* Existential.swift */,
 				E387D7502EE9B53300ABC04D /* ProtocolConcept.swift */,
 				E390DAA62EE874BD0012BB55 /* Dispatch.swift */,
 				8A0240732EE7FAAC00C45892 /* ProtocolType.swift */,
@@ -902,11 +910,13 @@
 				E30488282EBEF0BA007A8A1A /* PropertyWrapperForReference.swift in Sources */,
 				8AD11F812C8FA1F4002B5D41 /* OpaqueBoxedProtocol.swift in Sources */,
 				8A0FF8EE2D3510E8003ACC69 /* AsyncToSequence.swift in Sources */,
+				E38B37CE2EEC746E0093EA03 /* OpaqueType.swift in Sources */,
 				8AD18D272C00D62500080AF3 /* CollectionType.swift in Sources */,
 				8A9D36D62C80236700D56018 /* ARC.swift in Sources */,
 				E31EECD42EE3CE7A00D9DC1D /* StringLiteral.swift in Sources */,
 				8A6EA1B92BFB1CAC005E1293 /* ValueReference.swift in Sources */,
 				8A5B3C1B2D2A016E002C6A28 /* Download.swift in Sources */,
+				E38FB59E2EEC4DD30053D440 /* Existential.swift in Sources */,
 				8A0FF8E72D310A27003ACC69 /* AsyncSequenceExample.swift in Sources */,
 				8A5B3C032D24B382002C6A28 /* Senario.swift in Sources */,
 				8A2AFCCD2C5247D6004DCD4F /* FunctionProgramming.swift in Sources */,
@@ -1066,6 +1076,7 @@
 				8A5B3C1A2D2A016E002C6A28 /* Download.swift in Sources */,
 				8A5ABFB92CDB55F5003CBC1A /* PropertyWrappers.swift in Sources */,
 				8A1ADFFA2D2BDBE10038F96B /* TaskLocalExampleTests.swift in Sources */,
+				E38B37CF2EEC746E0093EA03 /* OpaqueType.swift in Sources */,
 				8AD18D252C00D4C100080AF3 /* CollectionTypeTests.swift in Sources */,
 				8A6B4C312E8A878E00275AA3 /* Array.swift in Sources */,
 				8A6167312EC17F6C00051E3D /* KeyPathWithFunction.swift in Sources */,
@@ -1089,6 +1100,7 @@
 				8A5B3C0C2D296B01002C6A28 /* LongLiveStream.swift in Sources */,
 				8A36A03E2C7C6D9D00C33475 /* ClosureTests.swift in Sources */,
 				8A2AFCCC2C5247D5004DCD4F /* FunctionProgramming.swift in Sources */,
+				E38FB59D2EEC4DD30053D440 /* Existential.swift in Sources */,
 				E300BFDB2E98191500F39DA7 /* Slice.swift in Sources */,
 				8AE05E232EB9FD7500B28A5D /* StringBuilder.swift in Sources */,
 				8A36A03C2C7C3A2600C33475 /* FunctionGeneric.swift in Sources */,
