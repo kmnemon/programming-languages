@@ -33,6 +33,8 @@ func fibsIterator() -> AnyIterator<Int> {
  return self
  }
  }
+ 
+ Most iterators in the standard library conform to Sequence.
  */
 
 struct FibsIterator2: IteratorProtocol, Sequence {
