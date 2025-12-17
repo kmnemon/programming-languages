@@ -23,7 +23,8 @@ func createSequence() {
     let fibsSequence = AnySequence(fibsIterator)
     print(Array(fibsSequence.prefix(10))) // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
     
-    //3. sequence(first:next:)
+    //3. sequence(first:next:), return unfold sequence, which means expand a single value to generate a sequence
+    //reduce - fold, which means reduces a sequence to a single value
     let numbers = sequence(first: 1) { previous in
         previous + 2
     }
@@ -40,5 +41,6 @@ func createSequence() {
     }
     print(Array(fibsSequence2.prefix(10))) // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 }
+
 
 
