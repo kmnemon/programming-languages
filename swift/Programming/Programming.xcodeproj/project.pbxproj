@@ -198,8 +198,16 @@
 		E38B37CF2EEC746E0093EA03 /* OpaqueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38B37CD2EEC74650093EA03 /* OpaqueType.swift */; };
 		E38FB59D2EEC4DD30053D440 /* Existential.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FB59C2EEC4CFD0053D440 /* Existential.swift */; };
 		E38FB59E2EEC4DD30053D440 /* Existential.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FB59C2EEC4CFD0053D440 /* Existential.swift */; };
+		E38FED8E2EF249A400C77A34 /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FED8D2EF2497A00C77A34 /* Iterator.swift */; };
+		E38FED8F2EF249A400C77A34 /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FED8D2EF2497A00C77A34 /* Iterator.swift */; };
+		E38FED912EF24A2F00C77A34 /* CreateSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FED902EF24A2B00C77A34 /* CreateSequence.swift */; };
+		E38FED922EF24A2F00C77A34 /* CreateSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FED902EF24A2B00C77A34 /* CreateSequence.swift */; };
 		E390DAA72EE874E00012BB55 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390DAA62EE874BD0012BB55 /* Dispatch.swift */; };
 		E390DAA82EE874E00012BB55 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390DAA62EE874BD0012BB55 /* Dispatch.swift */; };
+		E39A00B42EEDC249004657E9 /* ManualTypeEraser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A00B32EEDC224004657E9 /* ManualTypeEraser.swift */; };
+		E39A00B52EEDC249004657E9 /* ManualTypeEraser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A00B32EEDC224004657E9 /* ManualTypeEraser.swift */; };
+		E39A00B72EEDD2C9004657E9 /* ManualTypeEraserUnlockExistential.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A00B62EEDD282004657E9 /* ManualTypeEraserUnlockExistential.swift */; };
+		E39A00B82EEDD2C9004657E9 /* ManualTypeEraserUnlockExistential.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A00B62EEDD282004657E9 /* ManualTypeEraserUnlockExistential.swift */; };
 		E3A5223A2EADC5770021C70B /* ImplicitUnwrappedOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A522392EADC55F0021C70B /* ImplicitUnwrappedOptional.swift */; };
 		E3A5223B2EADC5770021C70B /* ImplicitUnwrappedOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A522392EADC55F0021C70B /* ImplicitUnwrappedOptional.swift */; };
 		E3A57B3F2E8B8E2100118E1B /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A57B3E2E8B8E1C00118E1B /* ArrayTests.swift */; };
@@ -337,7 +345,11 @@
 		E387D7502EE9B53300ABC04D /* ProtocolConcept.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolConcept.swift; sourceTree = "<group>"; };
 		E38B37CD2EEC74650093EA03 /* OpaqueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpaqueType.swift; sourceTree = "<group>"; };
 		E38FB59C2EEC4CFD0053D440 /* Existential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Existential.swift; sourceTree = "<group>"; };
+		E38FED8D2EF2497A00C77A34 /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
+		E38FED902EF24A2B00C77A34 /* CreateSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSequence.swift; sourceTree = "<group>"; };
 		E390DAA62EE874BD0012BB55 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
+		E39A00B32EEDC224004657E9 /* ManualTypeEraser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualTypeEraser.swift; sourceTree = "<group>"; };
+		E39A00B62EEDD282004657E9 /* ManualTypeEraserUnlockExistential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualTypeEraserUnlockExistential.swift; sourceTree = "<group>"; };
 		E3A522392EADC55F0021C70B /* ImplicitUnwrappedOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitUnwrappedOptional.swift; sourceTree = "<group>"; };
 		E3A57B3E2E8B8E1C00118E1B /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		E3C4EB412E69C24C00ABA4E7 /* OverLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverLoad.swift; sourceTree = "<group>"; };
@@ -366,6 +378,8 @@
 		8A0240722EE7FAA300C45892 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				E39A00B62EEDD282004657E9 /* ManualTypeEraserUnlockExistential.swift */,
+				E39A00B32EEDC224004657E9 /* ManualTypeEraser.swift */,
 				E38B37CD2EEC74650093EA03 /* OpaqueType.swift */,
 				E38FB59C2EEC4CFD0053D440 /* Existential.swift */,
 				E387D7502EE9B53300ABC04D /* ProtocolConcept.swift */,
@@ -701,6 +715,8 @@
 		8AD18D1B2C00C4D200080AF3 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
+				E38FED902EF24A2B00C77A34 /* CreateSequence.swift */,
+				E38FED8D2EF2497A00C77A34 /* Iterator.swift */,
 				E3689F472E99475E00F7C5CA /* Dictionary.swift */,
 				E300BFD92E98191500F39DA7 /* Slice.swift */,
 				8A6B4C302E8A878900275AA3 /* Array.swift */,
@@ -932,6 +948,7 @@
 				8AFFF2422D38F4150083F276 /* ActorNonisolated.swift in Sources */,
 				8A0FF8E12D2D0543003ACC69 /* CustomSession.swift in Sources */,
 				8AF8303D2CC7545200B31278 /* Debug.swift in Sources */,
+				E39A00B42EEDC249004657E9 /* ManualTypeEraser.swift in Sources */,
 				8A9CC0A12EDE76BE00DC7D59 /* RegularExpression.swift in Sources */,
 				8A0FF8F12D3601E8003ACC69 /* ActorContext.swift in Sources */,
 				8A6457232EA9C23700E3FE18 /* OptionalWithString.swift in Sources */,
@@ -947,14 +964,17 @@
 				8A0AB9472EB87AD6004FC3FB /* Subscripts.swift in Sources */,
 				8AB12B632BF36802002CADFD /* Guard.swift in Sources */,
 				8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */,
+				E38FED8F2EF249A400C77A34 /* Iterator.swift in Sources */,
 				8A92DA4B2D5472EB0088E5B9 /* LazyType.swift in Sources */,
 				8A5B3C132D2979DD002C6A28 /* ReceivingData.swift in Sources */,
 				E387D7512EE9B53F00ABC04D /* ProtocolConcept.swift in Sources */,
 				8A5AC0572CE334A2003CBC1A /* maperror.swift in Sources */,
 				8AF4B5982C70288D0087956A /* Tasks.swift in Sources */,
 				8AE05E242EB9FD7500B28A5D /* StringBuilder.swift in Sources */,
+				E39A00B72EEDD2C9004657E9 /* ManualTypeEraserUnlockExistential.swift in Sources */,
 				8A6EA1B52BFABF39005E1293 /* FunctionGeneric.swift in Sources */,
 				8A1ADFF72D2BCDA40038F96B /* TaskLocalExample.swift in Sources */,
+				E38FED912EF24A2F00C77A34 /* CreateSequence.swift in Sources */,
 				8A686A8A2BD32E2100B38E22 /* MemoryManagement.swift in Sources */,
 				E342183B2EC019D700944241 /* PropertyWrapperForFunction.swift in Sources */,
 				E30C15932E9E9D140071EB02 /* ForCase.swift in Sources */,
@@ -1026,11 +1046,13 @@
 				8A9D36DA2C80259100D56018 /* ARCTests.swift in Sources */,
 				8A9CC0A02EDE76BE00DC7D59 /* RegularExpression.swift in Sources */,
 				8A3B0F012EB0AF2F00A0731D /* SortCombination.swift in Sources */,
+				E39A00B52EEDC249004657E9 /* ManualTypeEraser.swift in Sources */,
 				8A0FF8EA2D34EDEE003ACC69 /* CustomAsyncSequence.swift in Sources */,
 				E3C4EB452E69C27700ABA4E7 /* CustomOperator.swift in Sources */,
 				E342183C2EC019D700944241 /* PropertyWrapperForFunction.swift in Sources */,
 				E30C15942E9E9D140071EB02 /* ForCase.swift in Sources */,
 				E30488162EBED88A007A8A1A /* PropertyWrapper.swift in Sources */,
+				E38FED8E2EF249A400C77A34 /* Iterator.swift in Sources */,
 				8AF4B5942C6ADC4E0087956A /* Properties.swift in Sources */,
 				8A92DA4A2D5472EB0088E5B9 /* LazyType.swift in Sources */,
 				8A36A0382C7404AE00C33475 /* ActorWorker.swift in Sources */,
@@ -1050,6 +1072,7 @@
 				8A9D36D12C7DC6FF00D56018 /* main.swift in Sources */,
 				E3616AC42EE503B500BA179F /* OutputStream.swift in Sources */,
 				8A0FF8F72D36717F003ACC69 /* TaskGroupCancel.swift in Sources */,
+				E38FED922EF24A2F00C77A34 /* CreateSequence.swift in Sources */,
 				8AB12B7E2BF7A167002CADFD /* Collection.swift in Sources */,
 				8A5AC0EA2CEC33F6003CBC1A /* swifttesting.swift in Sources */,
 				8A5B3C072D24C3DC002C6A28 /* Tasks.swift in Sources */,
@@ -1066,6 +1089,7 @@
 				8AFFF2482D3A5F7E0083F276 /* ActorReentrancy.swift in Sources */,
 				E3A57B3F2E8B8E2100118E1B /* ArrayTests.swift in Sources */,
 				8AB12B742BF396F8002CADFD /* StructType.swift in Sources */,
+				E39A00B82EEDD2C9004657E9 /* ManualTypeEraserUnlockExistential.swift in Sources */,
 				8A5B3C102D297516002C6A28 /* LongLiveStreamTests.swift in Sources */,
 				8A5B3C022D24B382002C6A28 /* Senario.swift in Sources */,
 				8ADF4E542D354B64009B5A7D /* AsyncStreamExample.swift in Sources */,
