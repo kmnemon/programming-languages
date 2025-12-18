@@ -106,6 +106,8 @@
 		8A6EA1B52BFABF39005E1293 /* FunctionGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6EA1B42BFABF39005E1293 /* FunctionGeneric.swift */; };
 		8A6EA1B72BFB0833005E1293 /* ClassGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6EA1B62BFB0833005E1293 /* ClassGeneric.swift */; };
 		8A6EA1B92BFB1CAC005E1293 /* ValueReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6EA1B82BFB1CAC005E1293 /* ValueReference.swift */; };
+		8A874F542EF3A8DC00F44F31 /* FIFOQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A874F532EF3A8D200F44F31 /* FIFOQueue.swift */; };
+		8A874F552EF3A8DC00F44F31 /* FIFOQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A874F532EF3A8D200F44F31 /* FIFOQueue.swift */; };
 		8A92DA4A2D5472EB0088E5B9 /* LazyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A92DA492D5472E50088E5B9 /* LazyType.swift */; };
 		8A92DA4B2D5472EB0088E5B9 /* LazyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A92DA492D5472E50088E5B9 /* LazyType.swift */; };
 		8A9CC0A02EDE76BE00DC7D59 /* RegularExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CC09F2EDE76BA00DC7D59 /* RegularExpression.swift */; };
@@ -291,6 +293,7 @@
 		8A6EA1B42BFABF39005E1293 /* FunctionGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionGeneric.swift; sourceTree = "<group>"; };
 		8A6EA1B62BFB0833005E1293 /* ClassGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassGeneric.swift; sourceTree = "<group>"; };
 		8A6EA1B82BFB1CAC005E1293 /* ValueReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueReference.swift; sourceTree = "<group>"; };
+		8A874F532EF3A8D200F44F31 /* FIFOQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIFOQueue.swift; sourceTree = "<group>"; };
 		8A92DA492D5472E50088E5B9 /* LazyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyType.swift; sourceTree = "<group>"; };
 		8A9CC09F2EDE76BA00DC7D59 /* RegularExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularExpression.swift; sourceTree = "<group>"; };
 		8A9D36D52C80236700D56018 /* ARC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARC.swift; sourceTree = "<group>"; };
@@ -715,6 +718,7 @@
 		8AD18D1B2C00C4D200080AF3 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
+				8A874F532EF3A8D200F44F31 /* FIFOQueue.swift */,
 				E38FED902EF24A2B00C77A34 /* CreateSequence.swift */,
 				E38FED8D2EF2497A00C77A34 /* Iterator.swift */,
 				E3689F472E99475E00F7C5CA /* Dictionary.swift */,
@@ -992,6 +996,7 @@
 				8ADF4E532D354B64009B5A7D /* AsyncStreamExample.swift in Sources */,
 				8A6457262EA9C44700E3FE18 /* OptionalAdvanced.swift in Sources */,
 				E3C4EB482E69DD4900ABA4E7 /* Currying.swift in Sources */,
+				8A874F542EF3A8DC00F44F31 /* FIFOQueue.swift in Sources */,
 				8A686A882BD32E2100B38E22 /* Loop.swift in Sources */,
 				8ABE51622D1ACC54006362FE /* Boxed.swift in Sources */,
 				E3616AC72EE50AFA00BA179F /* BinaryTree.swift in Sources */,
@@ -1096,6 +1101,7 @@
 				8AB12B712BF375CF002CADFD /* LazyTests.swift in Sources */,
 				8A5B3C152D297ABB002C6A28 /* SendingReceivingDataTests.swift in Sources */,
 				8A36A03B2C7C39CC00C33475 /* FunctionGenericTests.swift in Sources */,
+				8A874F552EF3A8DC00F44F31 /* FIFOQueue.swift in Sources */,
 				8A686A9E2BD335FD00B38E22 /* MemoryManagement.swift in Sources */,
 				8A5B3C1A2D2A016E002C6A28 /* Download.swift in Sources */,
 				8A5ABFB92CDB55F5003CBC1A /* PropertyWrappers.swift in Sources */,
