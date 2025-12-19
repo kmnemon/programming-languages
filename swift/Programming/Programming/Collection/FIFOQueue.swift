@@ -66,6 +66,11 @@ extension FIFOQueue: Collection {
             return right[position - left.endIndex]
         }
     }
+    
+    typealias Indices = Range<Int>
+    var indices: Range<Int> {
+        startIndex..<endIndex
+    }
 }
 
 extension FIFOQueue: ExpressibleByArrayLiteral {
@@ -73,3 +78,5 @@ extension FIFOQueue: ExpressibleByArrayLiteral {
         self.init(left: elements.reversed(), right: [])
     }
 }
+
+
