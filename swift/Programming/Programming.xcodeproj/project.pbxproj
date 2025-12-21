@@ -185,6 +185,10 @@
 		E31EECD42EE3CE7A00D9DC1D /* StringLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EECD32EE3CE6D00D9DC1D /* StringLiteral.swift */; };
 		E31EECD52EE3CE7A00D9DC1D /* StringLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EECD32EE3CE6D00D9DC1D /* StringLiteral.swift */; };
 		E31EECD82EE3D64400D9DC1D /* StringLiteralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EECD72EE3D63D00D9DC1D /* StringLiteralTests.swift */; };
+		E3357FEE2EF8290D00D720B7 /* LoopInCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3357FED2EF828FE00D720B7 /* LoopInCollection.swift */; };
+		E3357FEF2EF8290D00D720B7 /* LoopInCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3357FED2EF828FE00D720B7 /* LoopInCollection.swift */; };
+		E341BC182EF6588F009DDA41 /* CustomIndices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341BC172EF6588B009DDA41 /* CustomIndices.swift */; };
+		E341BC192EF6588F009DDA41 /* CustomIndices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341BC172EF6588B009DDA41 /* CustomIndices.swift */; };
 		E342183B2EC019D700944241 /* PropertyWrapperForFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342183A2EC019CE00944241 /* PropertyWrapperForFunction.swift */; };
 		E342183C2EC019D700944241 /* PropertyWrapperForFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342183A2EC019CE00944241 /* PropertyWrapperForFunction.swift */; };
 		E342183F2EC0338200944241 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342183E2EC0337D00944241 /* KeyPath.swift */; };
@@ -340,6 +344,8 @@
 		E3189B492EC5741300158700 /* CopyOnWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyOnWrite.swift; sourceTree = "<group>"; };
 		E31EECD32EE3CE6D00D9DC1D /* StringLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLiteral.swift; sourceTree = "<group>"; };
 		E31EECD72EE3D63D00D9DC1D /* StringLiteralTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLiteralTests.swift; sourceTree = "<group>"; };
+		E3357FED2EF828FE00D720B7 /* LoopInCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopInCollection.swift; sourceTree = "<group>"; };
+		E341BC172EF6588B009DDA41 /* CustomIndices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndices.swift; sourceTree = "<group>"; };
 		E342183A2EC019CE00944241 /* PropertyWrapperForFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperForFunction.swift; sourceTree = "<group>"; };
 		E342183E2EC0337D00944241 /* KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
 		E3616AC32EE503AF00BA179F /* OutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputStream.swift; sourceTree = "<group>"; };
@@ -718,6 +724,8 @@
 		8AD18D1B2C00C4D200080AF3 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
+				E3357FED2EF828FE00D720B7 /* LoopInCollection.swift */,
+				E341BC172EF6588B009DDA41 /* CustomIndices.swift */,
 				8A874F532EF3A8D200F44F31 /* FIFOQueue.swift */,
 				E38FED902EF24A2B00C77A34 /* CreateSequence.swift */,
 				E38FED8D2EF2497A00C77A34 /* Iterator.swift */,
@@ -975,6 +983,7 @@
 				8A5AC0572CE334A2003CBC1A /* maperror.swift in Sources */,
 				8AF4B5982C70288D0087956A /* Tasks.swift in Sources */,
 				8AE05E242EB9FD7500B28A5D /* StringBuilder.swift in Sources */,
+				E3357FEE2EF8290D00D720B7 /* LoopInCollection.swift in Sources */,
 				E39A00B72EEDD2C9004657E9 /* ManualTypeEraserUnlockExistential.swift in Sources */,
 				8A6EA1B52BFABF39005E1293 /* FunctionGeneric.swift in Sources */,
 				8A1ADFF72D2BCDA40038F96B /* TaskLocalExample.swift in Sources */,
@@ -994,6 +1003,7 @@
 				8A3B0F002EB0AF2F00A0731D /* SortCombination.swift in Sources */,
 				8A5B3C262D2C8CAB002C6A28 /* MainActor.swift in Sources */,
 				8ADF4E532D354B64009B5A7D /* AsyncStreamExample.swift in Sources */,
+				E341BC192EF6588F009DDA41 /* CustomIndices.swift in Sources */,
 				8A6457262EA9C44700E3FE18 /* OptionalAdvanced.swift in Sources */,
 				E3C4EB482E69DD4900ABA4E7 /* Currying.swift in Sources */,
 				8A874F542EF3A8DC00F44F31 /* FIFOQueue.swift in Sources */,
@@ -1030,6 +1040,7 @@
 				8A686AAE2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
 				8AFFF2412D38F4150083F276 /* ActorNonisolated.swift in Sources */,
 				8A0FF8F32D3655C9003ACC69 /* TaskGroup.swift in Sources */,
+				E341BC182EF6588F009DDA41 /* CustomIndices.swift in Sources */,
 				8AB12B7B2BF3AA4A002CADFD /* Closure.swift in Sources */,
 				8A5B3C122D2979DD002C6A28 /* ReceivingData.swift in Sources */,
 				E30488272EBEF0BA007A8A1A /* PropertyWrapperForReference.swift in Sources */,
@@ -1063,6 +1074,7 @@
 				8A36A0382C7404AE00C33475 /* ActorWorker.swift in Sources */,
 				8A6457242EA9C23700E3FE18 /* OptionalWithString.swift in Sources */,
 				8A1AE0072D2CD74E0038F96B /* AsyncSteamTests.swift in Sources */,
+				E3357FEF2EF8290D00D720B7 /* LoopInCollection.swift in Sources */,
 				8A9D36D72C80236700D56018 /* ARC.swift in Sources */,
 				8AFFF23C2D38D9EE0083F276 /* ActorExample.swift in Sources */,
 				E3C4EB492E69DD4900ABA4E7 /* Currying.swift in Sources */,
