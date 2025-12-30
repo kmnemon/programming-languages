@@ -73,6 +73,32 @@ extension FIFOQueue: Collection {
     }
 }
 
+//extension FIFOQueue: MutableCollection {
+//    public var startIndex: Int { return 0 }
+//    public var endIndex: Int { return left.count + right.count }
+//    public func index(after i: Int) -> Int {
+//        i + 1
+//    }
+//    public subscript(position: Int) -> Element {
+//        get {
+//            precondition((0..<endIndex).contains(position), "Index out of bounds")
+//            if position < left.endIndex {
+//                return left[left.count - position - 1]
+//            } else {
+//                return right[position - left.count]
+//            }
+//        }
+//        set {
+//            precondition((0..<endIndex).contains(position), "Index out of bounds")
+//            if position < left.endIndex {
+//                left[left.count - position - 1] = newValue
+//            } else {
+//                return right[position - left.count] = newValue
+//            }
+//        }
+//    }
+//}
+
 extension FIFOQueue: ExpressibleByArrayLiteral {
     public init(arrayLiteral elements: Element...) {
         self.init(left: elements.reversed(), right: [])
@@ -80,3 +106,14 @@ extension FIFOQueue: ExpressibleByArrayLiteral {
 }
 
 
+
+extension FIFOQueue: RangeReplaceableCollection {
+    mutating public func replaceSubrange<C: Collection>(
+        _ subrange: Range<Int>,
+        with newElements: C) where C.Element == Element
+    {
+        right = left.reversed() + right
+        left.removeAll()
+        right.replaceSubrange(subrange, with: newElements)
+    }
+}

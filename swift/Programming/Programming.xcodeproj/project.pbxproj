@@ -198,6 +198,14 @@
 		E3616AC72EE50AFA00BA179F /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3616AC62EE50AF600BA179F /* BinaryTree.swift */; };
 		E3689F482E99476300F7C5CA /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3689F472E99475E00F7C5CA /* Dictionary.swift */; };
 		E3689F492E99476300F7C5CA /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3689F472E99475E00F7C5CA /* Dictionary.swift */; };
+		E36BFC792F03CA2400715930 /* RawRepresentableEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36BFC782F03CA1600715930 /* RawRepresentableEnums.swift */; };
+		E36BFC7A2F03CA2400715930 /* RawRepresentableEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36BFC782F03CA1600715930 /* RawRepresentableEnums.swift */; };
+		E36BFC7C2F03CAEB00715930 /* CustomCodingKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36BFC7B2F03CAE400715930 /* CustomCodingKeys.swift */; };
+		E36BFC7D2F03CAEB00715930 /* CustomCodingKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36BFC7B2F03CAE400715930 /* CustomCodingKeys.swift */; };
+		E36BFC7F2F03CC2E00715930 /* CustomEncodingAndInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36BFC7E2F03CC2500715930 /* CustomEncodingAndInit.swift */; };
+		E36BFC802F03CC2E00715930 /* CustomEncodingAndInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36BFC7E2F03CC2500715930 /* CustomEncodingAndInit.swift */; };
+		E36BFC902F03DCCA00715930 /* PropertyWrapperDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36BFC8F2F03DCC400715930 /* PropertyWrapperDecode.swift */; };
+		E36BFC912F03DCCA00715930 /* PropertyWrapperDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36BFC8F2F03DCC400715930 /* PropertyWrapperDecode.swift */; };
 		E387D7512EE9B53F00ABC04D /* ProtocolConcept.swift in Sources */ = {isa = PBXBuildFile; fileRef = E387D7502EE9B53300ABC04D /* ProtocolConcept.swift */; };
 		E387D7522EE9B53F00ABC04D /* ProtocolConcept.swift in Sources */ = {isa = PBXBuildFile; fileRef = E387D7502EE9B53300ABC04D /* ProtocolConcept.swift */; };
 		E38B37CE2EEC746E0093EA03 /* OpaqueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38B37CD2EEC74650093EA03 /* OpaqueType.swift */; };
@@ -217,6 +225,8 @@
 		E3A5223A2EADC5770021C70B /* ImplicitUnwrappedOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A522392EADC55F0021C70B /* ImplicitUnwrappedOptional.swift */; };
 		E3A5223B2EADC5770021C70B /* ImplicitUnwrappedOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A522392EADC55F0021C70B /* ImplicitUnwrappedOptional.swift */; };
 		E3A57B3F2E8B8E2100118E1B /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A57B3E2E8B8E1C00118E1B /* ArrayTests.swift */; };
+		E3B5A9A92F03644700BCFE7C /* PropertyWrapperEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B5A9A82F0363D100BCFE7C /* PropertyWrapperEncode.swift */; };
+		E3B5A9AA2F03644700BCFE7C /* PropertyWrapperEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B5A9A82F0363D100BCFE7C /* PropertyWrapperEncode.swift */; };
 		E3C4EB422E69C25500ABA4E7 /* OverLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4EB412E69C24C00ABA4E7 /* OverLoad.swift */; };
 		E3C4EB432E69C25500ABA4E7 /* OverLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4EB412E69C24C00ABA4E7 /* OverLoad.swift */; };
 		E3C4EB452E69C27700ABA4E7 /* CustomOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4EB442E69C27100ABA4E7 /* CustomOperator.swift */; };
@@ -351,6 +361,10 @@
 		E3616AC32EE503AF00BA179F /* OutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputStream.swift; sourceTree = "<group>"; };
 		E3616AC62EE50AF600BA179F /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		E3689F472E99475E00F7C5CA /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		E36BFC782F03CA1600715930 /* RawRepresentableEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawRepresentableEnums.swift; sourceTree = "<group>"; };
+		E36BFC7B2F03CAE400715930 /* CustomCodingKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCodingKeys.swift; sourceTree = "<group>"; };
+		E36BFC7E2F03CC2500715930 /* CustomEncodingAndInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEncodingAndInit.swift; sourceTree = "<group>"; };
+		E36BFC8F2F03DCC400715930 /* PropertyWrapperDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperDecode.swift; sourceTree = "<group>"; };
 		E387D7502EE9B53300ABC04D /* ProtocolConcept.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolConcept.swift; sourceTree = "<group>"; };
 		E38B37CD2EEC74650093EA03 /* OpaqueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpaqueType.swift; sourceTree = "<group>"; };
 		E38FB59C2EEC4CFD0053D440 /* Existential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Existential.swift; sourceTree = "<group>"; };
@@ -361,6 +375,7 @@
 		E39A00B62EEDD282004657E9 /* ManualTypeEraserUnlockExistential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualTypeEraserUnlockExistential.swift; sourceTree = "<group>"; };
 		E3A522392EADC55F0021C70B /* ImplicitUnwrappedOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitUnwrappedOptional.swift; sourceTree = "<group>"; };
 		E3A57B3E2E8B8E1C00118E1B /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
+		E3B5A9A82F0363D100BCFE7C /* PropertyWrapperEncode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperEncode.swift; sourceTree = "<group>"; };
 		E3C4EB412E69C24C00ABA4E7 /* OverLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverLoad.swift; sourceTree = "<group>"; };
 		E3C4EB442E69C27100ABA4E7 /* CustomOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperator.swift; sourceTree = "<group>"; };
 		E3C4EB472E69DD3D00ABA4E7 /* Currying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currying.swift; sourceTree = "<group>"; };
@@ -494,6 +509,7 @@
 		8A686A6C2BD32DB700B38E22 /* Programming */ = {
 			isa = PBXGroup;
 			children = (
+				E3B5A9A72F03639900BCFE7C /* Codable */,
 				8A0240722EE7FAA300C45892 /* Protocol */,
 				8A9CC09E2EDE76AC00DC7D59 /* String */,
 				E3189B482EC573F500158700 /* CopyOnWrite */,
@@ -826,6 +842,18 @@
 			path = KeyPath;
 			sourceTree = "<group>";
 		};
+		E3B5A9A72F03639900BCFE7C /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				E36BFC7E2F03CC2500715930 /* CustomEncodingAndInit.swift */,
+				E36BFC782F03CA1600715930 /* RawRepresentableEnums.swift */,
+				E36BFC7B2F03CAE400715930 /* CustomCodingKeys.swift */,
+				E3B5A9A82F0363D100BCFE7C /* PropertyWrapperEncode.swift */,
+				E36BFC8F2F03DCC400715930 /* PropertyWrapperDecode.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
 		E3C4EB402E69C23900ABA4E7 /* Operator */ = {
 			isa = PBXGroup;
 			children = (
@@ -932,6 +960,7 @@
 				8AB12B7D2BF7A167002CADFD /* Collection.swift in Sources */,
 				8ADF4E5A2D384920009B5A7D /* TaskGroupDiffType.swift in Sources */,
 				E3C4EB432E69C25500ABA4E7 /* OverLoad.swift in Sources */,
+				E36BFC912F03DCCA00715930 /* PropertyWrapperDecode.swift in Sources */,
 				E34218402EC0338200944241 /* KeyPath.swift in Sources */,
 				8A686AB12BD53D1900B38E22 /* AsyncAwait.swift in Sources */,
 				8ADF4E682D3B0E02009B5A7D /* DecodingJson.swift in Sources */,
@@ -940,6 +969,7 @@
 				8A0FF8EE2D3510E8003ACC69 /* AsyncToSequence.swift in Sources */,
 				E38B37CE2EEC746E0093EA03 /* OpaqueType.swift in Sources */,
 				8AD18D272C00D62500080AF3 /* CollectionType.swift in Sources */,
+				E36BFC7F2F03CC2E00715930 /* CustomEncodingAndInit.swift in Sources */,
 				8A9D36D62C80236700D56018 /* ARC.swift in Sources */,
 				E31EECD42EE3CE7A00D9DC1D /* StringLiteral.swift in Sources */,
 				8A6EA1B92BFB1CAC005E1293 /* ValueReference.swift in Sources */,
@@ -978,6 +1008,7 @@
 				8A686A892BD32E2100B38E22 /* Lambda.swift in Sources */,
 				E38FED8F2EF249A400C77A34 /* Iterator.swift in Sources */,
 				8A92DA4B2D5472EB0088E5B9 /* LazyType.swift in Sources */,
+				E3B5A9A92F03644700BCFE7C /* PropertyWrapperEncode.swift in Sources */,
 				8A5B3C132D2979DD002C6A28 /* ReceivingData.swift in Sources */,
 				E387D7512EE9B53F00ABC04D /* ProtocolConcept.swift in Sources */,
 				8A5AC0572CE334A2003CBC1A /* maperror.swift in Sources */,
@@ -986,6 +1017,7 @@
 				E3357FEE2EF8290D00D720B7 /* LoopInCollection.swift in Sources */,
 				E39A00B72EEDD2C9004657E9 /* ManualTypeEraserUnlockExistential.swift in Sources */,
 				8A6EA1B52BFABF39005E1293 /* FunctionGeneric.swift in Sources */,
+				E36BFC792F03CA2400715930 /* RawRepresentableEnums.swift in Sources */,
 				8A1ADFF72D2BCDA40038F96B /* TaskLocalExample.swift in Sources */,
 				E38FED912EF24A2F00C77A34 /* CreateSequence.swift in Sources */,
 				8A686A8A2BD32E2100B38E22 /* MemoryManagement.swift in Sources */,
@@ -1015,6 +1047,7 @@
 				8AF4B5932C6ADC4E0087956A /* Properties.swift in Sources */,
 				8A686A6E2BD32DB700B38E22 /* main.swift in Sources */,
 				8A5ABFBA2CDB55F5003CBC1A /* PropertyWrappers.swift in Sources */,
+				E36BFC7C2F03CAEB00715930 /* CustomCodingKeys.swift in Sources */,
 				8ADF4E572D35BA8D009B5A7D /* Continuations.swift in Sources */,
 				8A5ABFB52CDB41B0003CBC1A /* Operator.swift in Sources */,
 				E3616AC52EE503B500BA179F /* OutputStream.swift in Sources */,
@@ -1040,6 +1073,7 @@
 				8A686AAE2BD3C5F100B38E22 /* ProtocolProgramming.swift in Sources */,
 				8AFFF2412D38F4150083F276 /* ActorNonisolated.swift in Sources */,
 				8A0FF8F32D3655C9003ACC69 /* TaskGroup.swift in Sources */,
+				E36BFC902F03DCCA00715930 /* PropertyWrapperDecode.swift in Sources */,
 				E341BC182EF6588F009DDA41 /* CustomIndices.swift in Sources */,
 				8AB12B7B2BF3AA4A002CADFD /* Closure.swift in Sources */,
 				8A5B3C122D2979DD002C6A28 /* ReceivingData.swift in Sources */,
@@ -1084,8 +1118,10 @@
 				8AF8303C2CC7545200B31278 /* Debug.swift in Sources */,
 				E3A5223B2EADC5770021C70B /* ImplicitUnwrappedOptional.swift in Sources */,
 				8A5B3C172D297B96002C6A28 /* SendingData.swift in Sources */,
+				E36BFC7D2F03CAEB00715930 /* CustomCodingKeys.swift in Sources */,
 				8ABE51612D1ACC54006362FE /* Boxed.swift in Sources */,
 				8A686A9C2BD3354200B38E22 /* Loop.swift in Sources */,
+				E36BFC802F03CC2E00715930 /* CustomEncodingAndInit.swift in Sources */,
 				8A9D36D12C7DC6FF00D56018 /* main.swift in Sources */,
 				E3616AC42EE503B500BA179F /* OutputStream.swift in Sources */,
 				8A0FF8F72D36717F003ACC69 /* TaskGroupCancel.swift in Sources */,
@@ -1103,6 +1139,7 @@
 				8AB12B812BF7A237002CADFD /* TypeTests.swift in Sources */,
 				8AD11F852C8FAFD2002B5D41 /* OpaqueBoxedProtocolTests.swift in Sources */,
 				8A5ABFB62CDB41B0003CBC1A /* Operator.swift in Sources */,
+				E3B5A9AA2F03644700BCFE7C /* PropertyWrapperEncode.swift in Sources */,
 				8AFFF2482D3A5F7E0083F276 /* ActorReentrancy.swift in Sources */,
 				E3A57B3F2E8B8E2100118E1B /* ArrayTests.swift in Sources */,
 				8AB12B742BF396F8002CADFD /* StructType.swift in Sources */,
@@ -1117,6 +1154,7 @@
 				8A686A9E2BD335FD00B38E22 /* MemoryManagement.swift in Sources */,
 				8A5B3C1A2D2A016E002C6A28 /* Download.swift in Sources */,
 				8A5ABFB92CDB55F5003CBC1A /* PropertyWrappers.swift in Sources */,
+				E36BFC7A2F03CA2400715930 /* RawRepresentableEnums.swift in Sources */,
 				8A1ADFFA2D2BDBE10038F96B /* TaskLocalExampleTests.swift in Sources */,
 				E38B37CF2EEC746E0093EA03 /* OpaqueType.swift in Sources */,
 				8AD18D252C00D4C100080AF3 /* CollectionTypeTests.swift in Sources */,
