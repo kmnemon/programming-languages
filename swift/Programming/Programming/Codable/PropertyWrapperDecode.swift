@@ -16,6 +16,7 @@ extension PropertyWrapperDecode {
         // Nothing to implement here.
     }
     
+    //handle the “empty object as nil” case
     @propertyWrapper
     struct NilWhenKeyNotFound<Value: Decodable>: Decodable {
         var wrappedValue: Value?

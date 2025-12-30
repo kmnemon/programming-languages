@@ -206,6 +206,10 @@
 		E36BFC802F03CC2E00715930 /* CustomEncodingAndInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36BFC7E2F03CC2500715930 /* CustomEncodingAndInit.swift */; };
 		E36BFC902F03DCCA00715930 /* PropertyWrapperDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36BFC8F2F03DCC400715930 /* PropertyWrapperDecode.swift */; };
 		E36BFC912F03DCCA00715930 /* PropertyWrapperDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36BFC8F2F03DCC400715930 /* PropertyWrapperDecode.swift */; };
+		E36BFC952F03F3A100715930 /* MakeCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36BFC942F03F34D00715930 /* MakeCodable.swift */; };
+		E36BFC962F03F3A100715930 /* MakeCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36BFC942F03F34D00715930 /* MakeCodable.swift */; };
+		E36BFC982F03F83A00715930 /* MakeClassCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36BFC972F03F83500715930 /* MakeClassCodable.swift */; };
+		E36BFC992F03F83A00715930 /* MakeClassCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36BFC972F03F83500715930 /* MakeClassCodable.swift */; };
 		E387D7512EE9B53F00ABC04D /* ProtocolConcept.swift in Sources */ = {isa = PBXBuildFile; fileRef = E387D7502EE9B53300ABC04D /* ProtocolConcept.swift */; };
 		E387D7522EE9B53F00ABC04D /* ProtocolConcept.swift in Sources */ = {isa = PBXBuildFile; fileRef = E387D7502EE9B53300ABC04D /* ProtocolConcept.swift */; };
 		E38B37CE2EEC746E0093EA03 /* OpaqueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38B37CD2EEC74650093EA03 /* OpaqueType.swift */; };
@@ -365,6 +369,8 @@
 		E36BFC7B2F03CAE400715930 /* CustomCodingKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCodingKeys.swift; sourceTree = "<group>"; };
 		E36BFC7E2F03CC2500715930 /* CustomEncodingAndInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEncodingAndInit.swift; sourceTree = "<group>"; };
 		E36BFC8F2F03DCC400715930 /* PropertyWrapperDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperDecode.swift; sourceTree = "<group>"; };
+		E36BFC942F03F34D00715930 /* MakeCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeCodable.swift; sourceTree = "<group>"; };
+		E36BFC972F03F83500715930 /* MakeClassCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeClassCodable.swift; sourceTree = "<group>"; };
 		E387D7502EE9B53300ABC04D /* ProtocolConcept.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolConcept.swift; sourceTree = "<group>"; };
 		E38B37CD2EEC74650093EA03 /* OpaqueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpaqueType.swift; sourceTree = "<group>"; };
 		E38FB59C2EEC4CFD0053D440 /* Existential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Existential.swift; sourceTree = "<group>"; };
@@ -845,6 +851,8 @@
 		E3B5A9A72F03639900BCFE7C /* Codable */ = {
 			isa = PBXGroup;
 			children = (
+				E36BFC942F03F34D00715930 /* MakeCodable.swift */,
+				E36BFC972F03F83500715930 /* MakeClassCodable.swift */,
 				E36BFC7E2F03CC2500715930 /* CustomEncodingAndInit.swift */,
 				E36BFC782F03CA1600715930 /* RawRepresentableEnums.swift */,
 				E36BFC7B2F03CAE400715930 /* CustomCodingKeys.swift */,
@@ -961,6 +969,7 @@
 				8ADF4E5A2D384920009B5A7D /* TaskGroupDiffType.swift in Sources */,
 				E3C4EB432E69C25500ABA4E7 /* OverLoad.swift in Sources */,
 				E36BFC912F03DCCA00715930 /* PropertyWrapperDecode.swift in Sources */,
+				E36BFC992F03F83A00715930 /* MakeClassCodable.swift in Sources */,
 				E34218402EC0338200944241 /* KeyPath.swift in Sources */,
 				8A686AB12BD53D1900B38E22 /* AsyncAwait.swift in Sources */,
 				8ADF4E682D3B0E02009B5A7D /* DecodingJson.swift in Sources */,
@@ -991,6 +1000,7 @@
 				8A0FF8E12D2D0543003ACC69 /* CustomSession.swift in Sources */,
 				8AF8303D2CC7545200B31278 /* Debug.swift in Sources */,
 				E39A00B42EEDC249004657E9 /* ManualTypeEraser.swift in Sources */,
+				E36BFC962F03F3A100715930 /* MakeCodable.swift in Sources */,
 				8A9CC0A12EDE76BE00DC7D59 /* RegularExpression.swift in Sources */,
 				8A0FF8F12D3601E8003ACC69 /* ActorContext.swift in Sources */,
 				8A6457232EA9C23700E3FE18 /* OptionalWithString.swift in Sources */,
@@ -1148,6 +1158,7 @@
 				8A5B3C022D24B382002C6A28 /* Senario.swift in Sources */,
 				8ADF4E542D354B64009B5A7D /* AsyncStreamExample.swift in Sources */,
 				8AB12B712BF375CF002CADFD /* LazyTests.swift in Sources */,
+				E36BFC982F03F83A00715930 /* MakeClassCodable.swift in Sources */,
 				8A5B3C152D297ABB002C6A28 /* SendingReceivingDataTests.swift in Sources */,
 				8A36A03B2C7C39CC00C33475 /* FunctionGenericTests.swift in Sources */,
 				8A874F552EF3A8DC00F44F31 /* FIFOQueue.swift in Sources */,
@@ -1177,6 +1188,7 @@
 				8ADF4E672D3B0E02009B5A7D /* DecodingJson.swift in Sources */,
 				8AC80B162CE39B39000317A3 /* String.swift in Sources */,
 				8A686AA32BD34EE300B38E22 /* Switch.swift in Sources */,
+				E36BFC952F03F3A100715930 /* MakeCodable.swift in Sources */,
 				8A5B3C0C2D296B01002C6A28 /* LongLiveStream.swift in Sources */,
 				8A36A03E2C7C6D9D00C33475 /* ClosureTests.swift in Sources */,
 				8A2AFCCC2C5247D5004DCD4F /* FunctionProgramming.swift in Sources */,
